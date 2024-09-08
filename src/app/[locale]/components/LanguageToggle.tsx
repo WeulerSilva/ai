@@ -2,13 +2,12 @@
 
 import { Link } from '@/app/navigation';
 import Image from 'next/image';
-import { usePathname, useRouter } from 'next/navigation';
+import { usePathname} from 'next/navigation';
 import { useState } from 'react';
 
 export default function LanguageToggle() {
     const [isOpen, setIsOpen] = useState(false);
     const pathName = usePathname();
-    const router = useRouter();
 
     // Extrair o idioma atual do caminho da URL
     const currentLocale = pathName.split('/')[1];

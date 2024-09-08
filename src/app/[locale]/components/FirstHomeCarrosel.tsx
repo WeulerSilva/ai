@@ -1,12 +1,10 @@
 "use client"
 
-import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 
 
 
 export const FirstHomeCarrosel = () => {
-    const t = useTranslations('contact');
     const [changeBanner, setChangeBanner] = useState(0)
 
     useEffect(() => {

@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { useRouter, usePathname } from "next/navigation";
+import { useRouter} from "next/navigation";
 
 type Props = {
     style?: string;

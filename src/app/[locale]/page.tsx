@@ -1,13 +1,10 @@
 import { useTranslations } from 'next-intl';
-import { EmailContact } from './components/EmailContact';
 import { FirstHomeCarrosel } from './components/FirstHomeCarrosel';
 import { AboutSpan } from './components/AboutSpan';
 import { SecondHomeCarrosel } from './components/SecondHomecarrosel';
 
 
 export default function HomePage() {
-  const t = useTranslations('HomePage');
-  const h = useTranslations('header');
 
   return (
     <>

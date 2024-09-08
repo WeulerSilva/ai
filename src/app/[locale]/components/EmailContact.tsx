@@ -75,12 +75,12 @@ export const EmailContact = () => {
         console.log(process.env.NEXT_PUBLIC_EMAILJS_USER_ID)
 
         emailjs.send("service_sehnuts", "template_tpoqg2s", templateParams, "b8thRCDhLUkpVcbAB")
-            .then((response) => {
+            .then(() => {
                 setMessage('');
                 setEmail('');
                 setName('');
                 setSucessEmail(true);
-            }, (err) => {
+            }, () => {
             });
     }
 
