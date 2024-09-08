@@ -41,12 +41,11 @@ export default function Header() {
                                     : pathname.startsWith(item.href);
 
                             return (
-                                <div>
+                                <div key={item.key}> {/* Adicione a key aqui */}
                                     <li
-                                        key={item.key}
                                         className={`font-conthrax cursor-pointer leading-3 font-semibold text-center 
-                                ${isActive ? 'border-b-2 border-white' : 'border-b-2 border-browndark hover:border-white'} 
-                                text-blue-950`}
+                                            ${isActive ? 'border-b-2 border-white' : 'border-b-2 border-browndark hover:border-white'} 
+                                            text-blue-950`}
                                         onClick={() => router.push(item.href)}
                                     >
                                         <a className="relative">
@@ -61,7 +60,6 @@ export default function Header() {
                                 </div>
                             );
                         })}
-
                     </ul>
                 </div>
 
