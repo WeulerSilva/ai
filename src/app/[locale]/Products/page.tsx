@@ -116,13 +116,16 @@ export default function Pages() {
         <div className="w-full h-[60px] bg-[#00679a3d] flex justify-start items-center uppercase text-[14px] font-bold
                text-bluedark md:text-[16px] lg:text-xl">
           <div className="flex w-full h-full justify-around items-center space-x-8 md:justify-start md:ml-[5%]">
-            <span onClick={() => handleTypeClick('photo-1')} className="cursor-pointer">
+            <span onClick={() => handleTypeClick('photo-1')} className={`${selectedType === 'photo-1' ? 
+                'border-b-4 border-bluelight text-bluelight' : 'border-b-4 border-transparent'} cursor-pointer`}>
               {t(`${productsName}.type-1`)}
             </span>
-            <span onClick={() => handleTypeClick('photo-2')} className="cursor-pointer">
+            <span onClick={() => handleTypeClick('photo-2')} className={`${selectedType === 'photo-2' ? 
+                'border-b-4 border-bluelight text-bluelight' : 'border-b-4 border-transparent'} cursor-pointer`}>
               {t(`${productsName}.type-2`)}
             </span>
-            <span onClick={() => handleTypeClick('photo-3')} className="cursor-pointer">
+            <span onClick={() => handleTypeClick('photo-3')} className={`${selectedType === 'photo-3' 
+              ? 'border-b-4 border-bluelight text-bluelight' : 'border-b-4 border-transparent'} cursor-pointer`}>
               {t(`${productsName}.type-3`)}
             </span>
           </div>
