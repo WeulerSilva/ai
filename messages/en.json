@@ -1,0 +1,46 @@
+{
+    "meta": {
+        "title": "",
+        "desc": "",
+        "key": "",
+        "op": "",
+        "x": ""
+    },
+    "HomePage": {
+        "about": "About",
+        "image-p": "SINCE 1986, BUILDING LONG-LASTING RELATIONSHIPS BASED ON TRUST; WITH EFFICIENCY AND TRANSPARENCY.",
+        "brands": "Our Brands",
+        "desc": "2024 All rights reserved. Developed by WBusiness",
+        "products": "OUR PRODUCTS:",
+        "products-legend": "Products",
+        "more": "SEE MORE",
+        "more-legend": "Discover our products",
+        "services": "OUR SERVICES",
+        "serv-1": "Business Plans",
+        "serv-2": "International Consulting",
+        "serv-3": "International Representation",
+        "politic": "Privacy Policy",
+        "condiction": "Terms and Conditions"
+    },
+    "header": {
+        "About": "Brands",
+        "Products": "Products",
+        "Market": "Services",
+        "Contact": "Contact"
+    },
+    "contact": {
+        "h1": "Contact:",
+        "name": "Name / Company",
+        "name-erro": "The name must be at least 3 letters long.",
+        "email": "Email",
+        "email-erro": "Please enter a valid email address.",
+        "message": "Message",
+        "message-erro": "The message must be at least 10 characters long.",
+        "send": "Send",
+        "ok": "Thank you for sending us your information. We look forward to speaking with you soon...",
+        "ok-more": "Learn more about ANK & ILUMER",
+        "social": "Official Website:",
+        "back": "Back to the homepage:",
+        "ok-back": "Back"
+    }
+}
