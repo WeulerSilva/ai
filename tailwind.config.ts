@@ -62,6 +62,12 @@ const config: Config = {
       }
     },
   },
+  safelist: [
+    'bg-adult-1',
+    'bg-adult-2',
+    'bg-adult-3',
+    // Adicione outras classes que você deseja preservar
+  ],
   plugins: [],
 };
 export default config;
