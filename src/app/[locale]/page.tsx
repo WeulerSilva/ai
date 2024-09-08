@@ -1,4 +1,3 @@
-import { useTranslations } from 'next-intl';
 import { FirstHomeCarrosel } from './components/FirstHomeCarrosel';
 import { AboutSpan } from './components/AboutSpan';
 import { SecondHomeCarrosel } from './components/SecondHomecarrosel';
