@@ -34,6 +34,8 @@ export default function Pages() {
     ["a&l-wl", "bg-adult-1", "bg-adult-2", "bg-adult-3"],
   ]
 
+  console.log(modalImg)
+
   const nextIcons = () => {
     setVisibleIcons((prev) =>
       prev + 2 >= logos.length ? 0 : prev + 2
