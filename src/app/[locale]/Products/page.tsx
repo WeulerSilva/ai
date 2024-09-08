@@ -23,6 +23,17 @@ export default function Pages() {
     ["bg-logo-8", "a&l-wl"]
   ];
 
+  const modalImg = [
+    ["adult-sec", "bg-adult-1", "bg-adult-2", "bg-adult-3"],
+    ["lady-sec", "bg-adult-3", "bg-adult-2", "bg-adult-1"],
+    ["babyfral", "bg-adult-1", "bg-adult-2", "bg-adult-3"],
+    ["limpdent", "bg-adult-1", "bg-adult-2", "bg-adult-3"],
+    ["petsec", "bg-adult-1", "bg-adult-2", "bg-adult-3"],
+    ["ecovida", "bg-adult-1", "bg-adult-2", "bg-adult-3"],
+    ["a&l-mp", "bg-adult-1", "bg-adult-2", "bg-adult-3"],
+    ["a&l-wl", "bg-adult-1", "bg-adult-2", "bg-adult-3"],
+  ]
+
   const nextIcons = () => {
     setVisibleIcons((prev) =>
       prev + 2 >= logos.length ? 0 : prev + 2
