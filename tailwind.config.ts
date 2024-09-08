@@ -49,9 +49,9 @@ const config: Config = {
         "icon-1": "url('/images/icon-1.webp')",
         "icon-2": "url('/images/icon-2.webp')",
         "icon-3": "url('/images/icon-3.webp')",
-        "adult-img-1": "url('/images/adult-img.png')",
-        "adult-img-2": "url('/images/adult-img.png')",
-        "adult-img-3": "url('/images/adult-img.png')",
+        "adult-1": "url('/images/adult-img.png')",
+        "adult-2": "url('/images/bag.png')",
+        "adult-3": "url('/images/box-brand.png')",
       },
       colors: {
         "laranja" : "#FAB21A",

@@ -130,7 +130,7 @@ export default function Pages() {
 
         <div className="w-full h-full bg-white flex-col flex lg:flex-row">
           <div className="w-full bg-[#00679a27] flex justify-center items-center flex-col lg:w-[40%]">
-            <div className={`${t(`${productsName}.${selectedType}`)} w-[90%] h-[260px] mt-12 bg-contain bg-center bg-no-repeat md:h-[320px] lg:h-[340px] md:w-[70%] 2xl:h-[530px] 3xl:h-[450px]`}>
+            <div className={`${t(`${productsName}.${selectedType}`)} w-[90%] h-[260px] mt-12 bg-contain bg-center bg-no-repeat md:h-[320px] lg:h-[340px] md:w-[70%] 2xl:h-[530px]`}>
             </div>
 
             {(productsName === "adult-sec" || productsName === 'babyfral') && (

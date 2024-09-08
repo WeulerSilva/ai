@@ -41,21 +41,33 @@ export default function Header() {
                                     : pathname.startsWith(item.href);
 
                             return (
-                                <li
-                                    key={item.key} // Adicionando a prop "key" diretamente no <li>
-                                    className={`font-conthrax cursor-pointer leading-3 font-semibold text-center 
+                                <div>
+                                    <li
+                                        key={item.key}
+                                        className={`font-conthrax cursor-pointer leading-3 font-semibold text-center 
                                 ${isActive ? 'border-b-2 border-white' : 'border-b-2 border-browndark hover:border-white'} 
                                 text-blue-950`}
-                                    onClick={() => router.push(item.href)}
-                                >
-                                    <a className="relative">
-                                        {t(item.key)}
-                                    </a>
-                                </li>
+                                        onClick={() => router.push(item.href)}
+                                    >
+                                        <a className="relative">
+                                            {t(item.key)}
+                                        </a>
+                                    </li>
+                                    {item.key === 'Contact' &&
+                                        <div className="w-[1px] h-[60px] z-30 hidden md:absolute md:top-[-38px] right-[30px] md:flex justify-center items-center">
+                                            <LanguageToggle />
+                                        </div>
+                                    }
+                                </div>
                             );
                         })}
+
                     </ul>
                 </div>
+
+
+
+
 
                 <MenuMobile
                     MenuMobileOpen={MenuMobileOpen}
@@ -75,7 +87,7 @@ export default function Header() {
 
                                 return (
                                     <li
-                                        key={item.key} // Adicionando a prop "key" diretamente no <li>
+                                        key={item.key}
                                         className={`cursor-pointer max-w-full leading-none font-bold
                                 ${isActive ? 'border-b-4 border-white text-bluedark' : 'border-b-4 border-laranja hover:border-white'} `}
                                         onClick={() => {
@@ -86,6 +98,7 @@ export default function Header() {
                                         <a className="font-conthrax">
                                             {t(item.key)}
                                         </a>
+
                                     </li>
                                 );
                             })}
@@ -96,6 +109,7 @@ export default function Header() {
                     </div>
                 </div>
             </div>
+
         </header>
     );
 }
