@@ -7,7 +7,7 @@ export default function RawMaterial() {
     return (
         <>
             <div className="w-full h-[900px] flex justify-center items-center flex-col mb-10 md:h-[800px] lg:h-[400px] xl:h-[530px]">
-                <h2 className="text-2xl text-laranja font-bold mb-8 xl:text-4xl">Materia-<span className="text-bluedark">Prima</span></h2>
+                <h2 id="Raw-Material" className="text-2xl text-laranja font-bold mb-8 xl:text-4xl">Materia-<span className="text-bluedark">Prima</span></h2>
 
                 <div className="w-full h-full flex flex-col border-y-[12px] border-laranja lg:w-[90%] lg:flex-row">
                     <div className="w-full h-full bg-raw-material bg-contain bg-center bg-no-repeat lg:bg-cover lg:bg-left lg:w-[40%]">
@@ -21,7 +21,7 @@ export default function RawMaterial() {
                                 materiais nos permite criar produtos que não apenas atendem, mas superam as
                                 expectativas de nossos clientes em termos de conforto, absorção e respeito ao
                                 meio ambiente.</p>
-                            <div className="w-full h-full flex text-[20px] flex-col mt-4 text-bluedark font-semibold mb-4
+                            <div id="White" className="w-full h-full flex text-[20px] flex-col mt-4 text-bluedark font-semibold mb-4
                              md:flex-row md:leading-10 md:text-2xl lg:text-xl xl:text-3xl">
                                 <ul className="list-disc marker:text-laranja w-full pl-6">
                                     <li>Filme de Polietileno</li>

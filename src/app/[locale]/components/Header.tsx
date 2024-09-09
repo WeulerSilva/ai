@@ -12,9 +12,9 @@ export default function Header() {
 
     const menuItems = [
         { key: 'Home', href: '/' },
-        { key: 'Brands', href: '/' },
-        { key: 'Journey', href: '/' },
-        { key: 'Inovation', href: '/' },
+        { key: 'Brands', href: '/#Brands' },
+        { key: 'Journey', href: '/Inovation#test' },
+        { key: 'Inovation', href: '/Inovation' },
         { key: 'Products', href: '/Products' },
         { key: 'Contact', href: '/' }
     ];

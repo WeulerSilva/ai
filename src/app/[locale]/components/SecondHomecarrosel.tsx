@@ -68,7 +68,7 @@ export const SecondHomeCarrosel = () => {
         </div>
 
         {/* Layout tradicional para desktop */}
-        <div className='w-full h-[120px] bg-white hidden justify-center items-center md:flex md:h-[80px] md:space-x-6 xl:h-[120px]'>
+        <div id="Brands" className='w-full h-[120px] bg-white hidden justify-center items-center md:flex md:h-[80px] md:space-x-6 xl:h-[120px]'>
           {logos.map((logo, index) => (
             <div
               key={index}
