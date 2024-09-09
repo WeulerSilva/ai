@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { useState } from "react";
+import RawMaterial from "../components/RawMaterial";
 
 type LogoItem = [string, string];
 
@@ -115,7 +116,7 @@ export default function Pages() {
       <div className="w-full h-full flex flex-col justify-start items-center mb-10 lg:w-[90%]">
         <div className="w-full h-[60px] bg-[#00679a3d] flex justify-start items-center uppercase text-[14px] font-bold
                text-bluedark md:text-[16px] lg:text-xl">
-          <div className="flex w-full h-full justify-around items-center space-x-8 md:justify-start md:ml-[5%]">
+          <div className="flex w-full h-full justify-center items-center space-x-8 md:justify-start md:w-full md:ml-[5%]">
             <span onClick={() => handleTypeClick('photo-1')} className={`${selectedType === 'photo-1' ? 
                 'border-b-4 border-bluelight text-bluelight' : 'border-b-4 border-transparent'} cursor-pointer`}>
               {t(`${productsName}.type-1`)}
@@ -208,7 +209,8 @@ export default function Pages() {
             <div className="w-full h-[90%] bg-white rounded-[40px] flex flex-col justify-start items-center px-6 lg:w-[90%]">
               <div className="flex items-center justify-between w-full mt-6 mb-3">
                 <h6 className="text-xl font-bold text-bluelight md:text-2xl xl:text-3xl">{t(`${productsName}.h1`)}</h6>
-                <span className="w-[120px] h-[60px] bg-green-600"></span>
+                <span className={`w-[120px] h-[60px] bg-contain bg-center bg-no-repeat
+                  ${productsName === 'babyfral' || productsName === 'adult-sec' ? 'bg-unisex' : ''}`}></span>
               </div>
 
               <div className="w-full h-full flex flex-col justify-start items-start mb-16">
@@ -256,6 +258,7 @@ export default function Pages() {
 
       </div>
 
+      <RawMaterial/>
     </section>
   );
 };
