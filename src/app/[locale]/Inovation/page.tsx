@@ -48,6 +48,54 @@ export default function Pages() {
                 </div>
 
             </div>
+
+            <div className="w-[90%] h-full flex justify-center items-center flex-col mt-4 mb-12 text-[18px] md:w-[80%] xl:text-xl">
+                <h2 className="text-2xl text-bluedark font-bold mt-10 mb-8 xl:text-4xl">Conheça <span className="text-laranja">nossas fábricas</span></h2>
+
+                <p className="mb-6"><span className="pl-8"></span>Nosso principal diferencial reside em nossa equipe de profissionais. A excelência na qualidade dos produtos oferecidos é o resultado de um
+                    compromisso contínuo com o aprimoramento pessoal; marcado pela seriedade e dedicação.
+                </p>
+
+                <p className=""><span className="pl-8"></span>
+                    A colaboração é um valor fundamental, pois reconhecemos que juntos somos mais fortes e capazes de alcançar resultados excepcionais. E,
+                    finalmente, o comprometimento é o alicerce que sustenta todos esses valores, demonstrando nossa dedicação e esforço contínuo para alcançar
+                    nossos objetivos e contribuir para um mundo melhor.
+                </p>
+
+                <p id="test" className="w-full">
+                    Ao integrar esses princípios em nosso cotidiano, construímos uma base sólida para um futuro próspero e harmonioso.
+                </p>
+
+                <h2 className="text-2xl text-bluedark font-bold mt-10 mb-8 xl:text-4xl">Nossas fabricas contam com certificação GMP, livres de poeira.</h2>
+            
+                <div className="w-full h-full flex justify-between items-center mb-8 flex-col space-y-6 md:space-y-0 md:flex-row">
+                    <div className="w-full h-[200px] bg-red-700 border-[6px] border-laranja md:w-[32%]">
+
+                    </div>
+
+                    <div className="w-full h-[200px] bg-red-700 border-[6px] border-laranja md:w-[32%]">
+
+                    </div>
+
+                    <div className="w-full h-[200px] bg-red-700 border-[6px] border-laranja md:w-[32%]">
+
+                    </div>
+                </div>
+
+                <div className="w-full h-full flex justify-between items-center flex-col space-y-6 md:space-y-0 md:flex-row">
+                    <div className="w-full h-[200px] bg-red-700 border-[6px] border-laranja md:w-[32%]">
+
+                    </div>
+
+                    <div className="w-full h-[200px] bg-red-700 border-[6px] border-laranja md:w-[32%]">
+
+                    </div>
+
+                    <div className="w-full h-[200px] bg-red-700 border-[6px] border-laranja md:w-[32%]">
+
+                    </div>
+                </div>
+            </div>
         </section>
     );
 };
