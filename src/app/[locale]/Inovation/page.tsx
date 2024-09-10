@@ -1,5 +1,8 @@
-export default function Pages() {
+import { useTranslations } from "next-intl";
+import YearDiv from "../components/YearDiv";
 
+export default function Pages() {
+    const t = useTranslations('journey')
 
     return (
         <section className='w-screen h-full flex justify-center items-center flex-col mt-16 lg:mt-24 xl:mt-24'>
@@ -28,6 +31,22 @@ export default function Pages() {
                     A&I, se dedica a melhorar a qualidade de vida das pessoas através de produtos inovadores e responsáveis.
                     ILUMER S.A., desde o ano 1986, se dedica à comercialização de produtos higiênicos descartáveis e matérias primas.
                 </p>
+            </div>
+
+            <div className="w-full h-[500px] bg-laranja/10 flex flex-row justify-start items-center overflow-x-auto lg:justify-center lg:overflow-x-hidden
+                    lg:h-[700px] xl:h-[600px] 2xl:h-[500px]">
+
+                <div className="flex justify-start items-center min-w-[427%] md:min-w-[250%] lg:min-w-0 lg:w-[90%]">
+                    <YearDiv direction year={t('t-y-1')} text={t('t-1')} />
+                    <YearDiv year={t('t-y-2')} text={t('t-2')} />
+                    <YearDiv direction year={t('t-y-3')} text={t('t-3')} />
+                    <YearDiv year={t('t-y-4')} text={t('t-4')} />
+                    <YearDiv direction year={t('t-y-5')} text={t('t-5')} />
+                    <YearDiv year={t('t-y-6')} text={t('t-6')} />
+                    <YearDiv direction year={t('t-y-7')} text={t('t-7')} />
+                    <YearDiv year={t('t-y-8')} text={t('t-8')} />
+                </div>
+
             </div>
         </section>
     );
