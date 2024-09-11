@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import YearDiv from "../components/YearDiv";
+import FabricsDivs from "../components/FabricsDivs";
 
 export default function Pages() {
     const t = useTranslations('journey')
@@ -44,7 +45,7 @@ export default function Pages() {
                     <YearDiv direction year={t('t-y-5')} text={t('t-5')} />
                     <YearDiv year={t('t-y-6')} text={t('t-6')} />
                     <YearDiv direction year={t('t-y-7')} text={t('t-7')} />
-                    <YearDiv year={t('t-y-8')} text={t('t-8')} />
+                    <YearDiv hidden year={t('t-y-8')} text={t('t-8')} />
                 </div>
 
             </div>
@@ -66,35 +67,74 @@ export default function Pages() {
                     Ao integrar esses princípios em nosso cotidiano, construímos uma base sólida para um futuro próspero e harmonioso.
                 </p>
 
-                <h2 className="text-2xl text-bluedark font-bold mt-10 mb-8 xl:text-4xl">Nossas fabricas contam com certificação GMP, livres de poeira.</h2>
-            
+                <h2 className="text-2xl text-bluedark font-bold mt-10 mb-12 xl:text-4xl">Nossas fabricas contam com certificação GMP, livres de poeira.</h2>
+
                 <div className="w-full h-full flex justify-between items-center mb-8 flex-col space-y-6 md:space-y-0 md:flex-row">
-                    <div className="w-full h-[200px] bg-red-700 border-[6px] border-laranja md:w-[32%]">
+                    <FabricsDivs text="Máquinas para a indústria de produtos higiênicos descartáveis." />
 
-                    </div>
+                    <FabricsDivs text="Matéria Prima para a indústria de higiênicos descartáveis." />
 
-                    <div className="w-full h-[200px] bg-red-700 border-[6px] border-laranja md:w-[32%]">
-
-                    </div>
-
-                    <div className="w-full h-[200px] bg-red-700 border-[6px] border-laranja md:w-[32%]">
-
-                    </div>
+                    <FabricsDivs text="Produtos descartáveis para a higiene pessoal e para pet." />
                 </div>
 
-                <div className="w-full h-full flex justify-between items-center flex-col space-y-6 md:space-y-0 md:flex-row">
-                    <div className="w-full h-[200px] bg-red-700 border-[6px] border-laranja md:w-[32%]">
+                <div className="w-full h-full flex justify-between items-center mb-12 flex-col space-y-6 md:space-y-0 md:flex-row">
+                    <FabricsDivs text="Fraldas descartávei adulto e infantil." />
+
+                    <FabricsDivs text="Produtos descartáveis para viagem." />
+
+                    <FabricsDivs text="Produtos para o cuidado pessoal." />
+                </div>
+            </div>
+
+
+            <div className="w-full h-[600px] flex flex-col justify-center bg-[#AAAAA9]/30 lg:w-[100%] lg:flex-row lg:h-[400px] xl:h-[500px] 2xl:h-[450px]">
+                <div className="w-[90%] h-full flex justify-center items-center flex-col lg:w-[80%] lg:flex-row-reverse">
+                    <div className="w-full h-full flex justify-center items-start text-2xl font-bold text-bluedark 
+                        border-l-[16px] border-laranja md:h-[50%] lg:h-full xl:text-4xl lg:w-[50%]">
+                        <div className="w-full pl-10 lg:w-[100%] xl:pl-20">
+                            <h1 className="mt-4 text-laranja lg:my-6 xl:my-16">Inovação</h1>
+                            <p className="text-[16px] text-gray-700 text-justify pt-4 lg:pt-0 xl:mt-4 xl:text-[20px]">
+                                <span className="pl-6"></span>A inovação é um dos pilares fundamentais da nossa
+                                empresa. Buscamos constantemente maneiras de melhorar e
+                                evoluir. Não se trata apenas de avanços tecnológicos, mas
+                                também de inovações em modelos de negócios, práticas de
+                                gestão, estratégias de marketing e até mesmo em nossa cultura
+                                organizacional.</p>
+                        </div>
 
                     </div>
 
-                    <div className="w-full h-[200px] bg-red-700 border-[6px] border-laranja md:w-[32%]">
-
-                    </div>
-
-                    <div className="w-full h-[200px] bg-red-700 border-[6px] border-laranja md:w-[32%]">
-
+                    <div className="w-full h-[50%] flex flex-col space-y-2 md:space-y-0 md:space-x-2 md:flex-row lg:h-full lg:w-[50%]">
+                        <div className="w-full h-full bg-inovation bg-cover bg-center bg-no-repeat md:bg-cover lg:bg-left bg-green-200"></div>
                     </div>
                 </div>
+            </div>
+
+            <div className="w-full h-[600px] flex flex-col justify-center bg-[#93C248]/30 lg:w-[100%] lg:flex-row lg:h-[400px] xl:h-[500px] 2xl:h-[450px]">
+                <div className="w-[90%] h-full flex justify-center items-center flex-col lg:w-[80%] lg:flex-row">
+                    <div className="w-full h-full flex justify-start items-start text-2xl font-bold text-bluedark 
+                        border-l-[16px] border-laranja  md:h-[50%] lg:border-none lg:h-full xl:text-4xl lg:justify-center lg:w-[50%]">
+                        <div className="w-full pl-10 lg:pl-0 lg:pr-10 lg:border-none lg:w-[100%] xl:pr-20">
+                            <h1 className="mt-4 text-[#356A2D] lg:my-6 xl:my-16">Sustentabilidade</h1>
+                            <p className="text-[16px] text-gray-700 text-justify pt-4 lg:pt-0 xl:mt-4 xl:text-[20px]">
+                                <span className="pl-6"></span>Estamos comprometidos com a preservação dos recursos
+                                naturais para as futuras gerações, adotando práticas que
+                                minimizem o impacto ambiental. A busca pela qualidade em tudo
+                                o que fazemos assegura a entrega de produtos e serviços que
+                                atendam ou superem as expectativas dos nossos clientes.</p>
+                        </div>
+
+                    </div>
+
+                    <div className="w-full h-[50%] flex flex-col space-y-2 lg:border-l-[16px] border-laranja md:space-y-0 md:space-x-2 md:flex-row lg:h-full lg:w-[50%]">
+                        <div className="w-full h-full bg-sustentability bg-cover bg-center bg-no-repeat md:bg-cover lg:bg-left bg-green-200"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="w-[80%] h-full text-base font-bold text-bluedark text-center py-10 xl:text-xl 2xl:text-3xl">
+                <h4>A inovação é um fator crucial para a sustentabilidade. Estamos comprometidos em desenvolver soluções que
+                otimizem o uso de recursos naturais, reduzam o impacto ambiental e promovam o bem-estar social.</h4>
             </div>
         </section>
     );
