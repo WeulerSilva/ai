@@ -91,55 +91,52 @@ export const EmailContact = () => {
             }
 
 
-            <div className='text-bluedark w-full h-full flex justify-center items-center flex-col text-[15px] text-justify 
-                   bg-[#F0F0F0] md:pl-0'>
+            <div className='text-bluedark w-full h-[400px] flex justify-center items-center flex-col text-[15px] text-justify 
+                   bg-[#F0F0F0] md:h-[300px] md:pl-0'>
                 <div className="w-full h-full flex justify-center items-center flex-col mt-7 md:items-start">
                     <span className="w-full uppercase mb-5 font-renogare font-bold text-[15px] md:text-[27px] text-center text-redclear">
                         {t('h1')}</span>
 
-                    <form className="w-full h-full font-gothan flex justify-center items-center mb-7 flex-col
-                            md:text-[12px] md:flex-row lg:text-[15px] md:space-x-6 2xl:space-x-1" onSubmit={sendEmail}>
-                        <div className="w-full h-full flex items-start justify-start flex-col space-y-5 mb-10 md:w-[40%]">
-                            <div className="w-full h-full flex items-center flex-col md:items-start">
-                                <span className="text-[14px] mb-1 md:text-[19px]">{t('name')}</span>
+                    <form className="w-full h-full font-gothan flex justify-end items-start  flex-col
+                            md:text-[12px] md:flex-row lg:text-[15px] md:w-[90%] md:space-x-6 2xl:space-x-1" onSubmit={sendEmail}>
+                        <div className="w-full flex items-center justify-between flex-col md:w-[20%] md:h-[60%]">
+                            <div className="w-full flex items-center flex-col mb-6 md:mb-0 md:items-start">
                                 <input type="text"
-                                    placeholder={nameError || "Digite seu nome..."}
+                                    placeholder={nameError || t('name')}
                                     onChange={(e) => setName(e.target.value)}
                                     value={name}
                                     maxLength={100}
                                     className={`w-[90%] h-[36px] bg-white rounded-lg md:w-full 2xl:w-[95%]
-                                        ${nameError ? 'placeholder-red-600' : 'placeholder-[#6FC7DA]/0'}`}
+                                        ${nameError ? 'placeholder-red-600' : 'placeholder:text-black placeholder:pl-6'}`}
                                 />
                             </div>
 
-                            <div className="w-full h-full flex flex-col items-center md:items-start">
-                                <span className="text-[14px] mb-1 md:text-[19px]">{t('email')}</span>
+                            <div className="w-full flex flex-col items-center md:items-start">
                                 <input type="text"
-                                    placeholder={emailError || "Digite seu email..."}
+                                    placeholder={emailError || t('email')}
                                     onChange={(e) => setEmail(e.target.value)}
                                     value={email}
                                     className={`w-[90%] h-[36px] bg-white rounded-lg md:w-full 2xl:w-[95%]
-                                        ${emailError ? 'placeholder-red-600' : 'placeholder-[#6FC7DA]/0'}`}
+                                        ${emailError ? 'placeholder-red-600' : 'placeholder:text-black placeholder:pl-6'}`}
                                 />
                             </div>
 
                         </div>
 
-                        <div className="w-full h-full mt-7 flex justify-center items-center md:mt-0 md:w-[35%]">
+                        <div className="w-full h-full mt-7 flex justify-center items-center flex-col md:flex-row md:mt-0 md:w-[30%]">
                             <div className="w-full h-full flex justify-start items-center flex-col md:items-start">
-                                <span className="text-[14px] mb-2 md:text-[19px]">{t('message')}</span>
                                 <textarea
-                                    placeholder={messageError || "Digite sua mensagem..."}
+                                    placeholder={messageError || t('message')}
                                     onChange={(e) => setMessage(e.target.value)}
                                     value={message}
                                     maxLength={500}
                                     className={`w-[90%] h-[130px] bg-white md:w-full rounded-2xl 2xl:w-[95%]
-                                        ${messageError ? 'placeholder-red-600' : 'placeholder-[#6FC7DA]/0'}`}
+                                        ${messageError ? 'placeholder-red-600' : 'placeholder:text-black placeholder:pl-6'}`}
                                 />
+                            </div>
 
-                                <div className="w-[90%] h-full flex justify-end items-center md:w-[95%]">
-                                    <button type="submit" className="mt-4 font-renogare text-[13px] bg-redclear text-white px-3 py-2 rounded-2xl uppercase">{t('send')}</button>
-                                </div>
+                            <div className="w-[90%] h-full flex justify-center items-center md:justify-end md:w-[25%]">
+                                <button type="submit" className="mt-4 font-renogare text-[13px] bg-redclear text-white px-3 py-2 rounded-2xl uppercase">{t('send')}</button>
                             </div>
                         </div>
 

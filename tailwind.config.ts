@@ -48,6 +48,7 @@ const config: Config = {
         "products-mobile": "url('/images/products-mobile2.png')",
         "inovation": "url('/images/inovation.png')",
         "sustentability": "url('/images/sustentability.png')",
+        "contact-first": "url('/images/contact-first.png')",
         "icon-1": "url('/images/icon-1.webp')",
         "icon-2": "url('/images/icon-2.webp')",
         "icon-3": "url('/images/icon-3.webp')",

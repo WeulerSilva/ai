@@ -16,7 +16,7 @@ export default function Header() {
         { key: 'Journey', href: '/Inovation#test' },
         { key: 'Inovation', href: '/Inovation' },
         { key: 'Products', href: '/Products' },
-        { key: 'Contact', href: '/' }
+        { key: 'Contact', href: '/Contact' }
     ];
 
     const router = useRouter();

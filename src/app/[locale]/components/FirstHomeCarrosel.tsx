@@ -22,7 +22,7 @@ export const FirstHomeCarrosel = () => {
                 <div className={`w-full h-full flex justify-end flex-col items-center mb-4 bg-cover bg-center bg-no-repeat relative
                         ${changeBanner === 0 ? 'bg-banner-0' : changeBanner === 1 ? 'bg-banner-1' : 'bg-banner-2'} cursor-pointer md:w-[90%] 
                           md:h-[210px] lg:h-[300px] xl:h-[400px] 2xl:h-[520px] 2xl:bg-contain`}>
-
+                            
                     <div className='w-[100px] h-[30px]'>
                         <div className="w-full h-full flex justify-between items-center">
                             <div className={`w-[15px] h-[15px] ${changeBanner === 0 ? 'bg-laranja' : 'bg-white'} rounded-full
