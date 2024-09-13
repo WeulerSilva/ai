@@ -1,9 +1,7 @@
-import { useTranslations } from "next-intl";
 import { EmailContact } from "../components/EmailContact";
 
 
 export default function Pages() {
-    const t = useTranslations('journey')
 
     return (
         <section className='w-screen h-full flex justify-center items-center flex-col mt-6 md:mt-16 lg:mt-24 xl:mt-24'>
