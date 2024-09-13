@@ -82,14 +82,14 @@ export const SecondHomeCarrosel = () => {
 
       {/* Exibição do banner */}
       <div
-        className={`w-full h-[300px] mb-4 bg-cover mt-10 bg-center bg-no-repeat relative cursor-pointer md:mt-0 xl:mt-10 md:w-[90%] 
+        className={`w-full h-[430px] mb-4 bg-cover mt-10 bg-center bg-no-repeat relative cursor-pointer md:mt-0 xl:mt-10 md:w-[90%] 
             z-40 md:bg-cover md:bg-top md:h-[225px] lg:h-[300px] xl:h-[420px] 2xl:h-[560px] 2xl:bg-contain
-          ${changeBanner === 0 ? 'bg-banner-2' : ''}
-          ${changeBanner === 1 ? 'bg-banner-3' : ''}
-          ${changeBanner === 2 ? 'bg-banner-4' : ''}
-          ${changeBanner === 3 ? 'bg-banner-1' : ''}
-          ${changeBanner === 4 ? 'bg-banner-5' : ''}
-          ${changeBanner === 5 ? 'bg-banner-6' : ''}`}
+          ${changeBanner === 0 ? 'bg-banner-mobile-2 md:bg-banner-2' : ''}
+          ${changeBanner === 1 ? 'bg-banner-mobile-3 md:bg-banner-3' : ''}
+          ${changeBanner === 2 ? 'bg-banner-mobile-4 md:bg-banner-4' : ''}
+          ${changeBanner === 3 ? 'bg-banner-mobile-1 md:bg-banner-1' : ''}
+          ${changeBanner === 4 ? 'bg-banner-mobile-5 md:bg-banner-5' : ''}
+          ${changeBanner === 5 ? 'bg-banner-mobile-6 md:bg-banner-6' : ''}`}
       >
       </div>
     </section>
