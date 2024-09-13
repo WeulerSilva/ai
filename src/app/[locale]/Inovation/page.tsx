@@ -1,12 +1,53 @@
+"use client"
+
 import { useTranslations } from "next-intl";
 import YearDiv from "../components/YearDiv";
 import FabricsDivs from "../components/FabricsDivs";
+import { useState } from "react";
+import FabricsModal from "../components/FabricsModal";
 
 export default function Pages() {
-    const t = useTranslations('journey')
+    const t = useTranslations('journey');
+
+    const [isVisible, setIsVisible] = useState(false);
+    const [modalContent, setModalContent] = useState<{ factory: string; title: string; text: string; textTwo: string; imgOne: string; imgTwo: string; imgThree: string; imgFour: string; li1: string; li2: string; li3: string; li4: string; li5: string; li6: string; li7: string; li8: string; li9: string; li10: string; li11: string; li12: string; li13: string}>({
+        factory: '',
+        title: '',
+        text: '', 
+        textTwo: '',
+        imgOne: '',
+        imgTwo: '',
+        imgThree: '',
+        imgFour: '',
+        li1: '',
+        li2: '',
+        li3: '',
+        li4: '',
+        li5: '',
+        li6: '',
+        li7: '',
+        li8: '',
+        li9: '',
+        li10: '',
+        li11: '',
+        li12: '',
+        li13: '',
+    });
+
+    // Função para abrir o modal
+    const openModal = (factory: string, title: string, text: string, textTwo: string, imgOne: string, imgTwo: string, imgThree: string, imgFour: string, li1: string, li2: string, li3: string, li4: string, li5: string, li6: string, li7: string, li8: string, li9: string, li10: string, li11: string, li12: string, li13: string) => {
+        setModalContent({ factory, title, text, textTwo, imgOne, imgTwo, imgThree, imgFour, li1, li2, li3, li4, li5, li6, li7, li8,li9, li10, li11, li12, li13 });
+        setIsVisible(true);
+    };
 
     return (
         <section className='w-screen h-full flex justify-center items-center flex-col mt-16 lg:mt-24 xl:mt-24'>
+            <FabricsModal
+                isVisible={isVisible}
+                onClose={() => setIsVisible(false)}
+                content={modalContent}
+            />
+
             <div className="w-full h-[60vh] bg-green-200 md:w-[90%] lg:h-[80%]">
                 <video src="https://cdn.pixabay.com/video/2022/12/01/141192-777517647_tiny.mp4"
                     controls
@@ -70,19 +111,163 @@ export default function Pages() {
                 <h2 className="text-2xl text-bluedark font-bold mt-10 mb-12 xl:text-4xl">Nossas fabricas contam com certificação GMP, livres de poeira.</h2>
 
                 <div className="w-full h-full flex justify-between items-center mb-8 flex-col space-y-6 md:space-y-0 md:flex-row">
-                    <FabricsDivs text="Máquinas para a indústria de produtos higiênicos descartáveis." />
+                    <FabricsDivs onClick={() =>
+                        openModal(
+                            'Fabrica 1',
+                            'Máquinas',
+                            '• Máquinas de última geração. Contamos com equipes de trabalho dedicadas à pesquisa e desenvolvimento contínuo: fraldas/pull up para bebês, fraldas/pull up para adultos, produtos para incontinência, toalhas e protetores femininos. • Contamos com uma equipe técnica sofisticada. Possuímos ampla experiência na indústria.',
+                            '• Insumos da melhor qualidade. Importamos matérias-primas das marcas mais conhecidas do mercado, como:',
+                            'bg-fachada1',
+                            'bg-machine1',
+                            'bg-prod1',
+                            'bg-emb1',
+                            'Mitsubishi do Japão, Omron do Japão,',
+                            'Schneider da França, Gates da América do Norte,',
+                            'Like de Taiwan, Sick da Alemanha.',
+                            '',
+                            '',
+                            '',
+                            '',
+                            '',
+                            '',
+                            '',
+                            '',
+                            '',
+                            ''
+                        )}
+                        text="Máquinas para a indústria de produtos higiênicos descartáveis." />
 
-                    <FabricsDivs text="Matéria Prima para a indústria de higiênicos descartáveis." />
+                    <FabricsDivs onClick={() =>
+                        openModal(
+                            'Fabrica 2',
+                            'Máquinas',
+                            '',
+                            '',
+                            'bg-fachada2',
+                            'bg-machine2',
+                            'bg-prod2',
+                            'bg-emb2',
+                            'Segunda fábrica com 40.000 m²',
+                            'departamento de Pesquisa e Desenvolvimento e produção de matéria-prima',
+                            '.',
+                            'Filme de fundo',
+                            'Tecidos não tecidos',
+                            'Saco de polietileno',
+                            'Fitas',
+                            'Papel siliconado',
+                            'Filme perfurado',
+                            '',
+                            '',
+                            '',
+                            ''
+                        )}
+                        text="Matéria Prima para a indústria de higiênicos descartáveis" />
 
-                    <FabricsDivs text="Produtos descartáveis para a higiene pessoal e para pet." />
+                    <FabricsDivs onClick={() =>
+                        openModal(
+                            'Fabrica 3',
+                            'Máquinas',
+                            '',
+                            '',
+                            'bg-fachada3',
+                            'bg-machine3',
+                            'bg-prod3',
+                            'bg-emb3',
+                            'Terceira fábrica com 100.000 m²',
+                            'Oficina de produção livre de poeira GMP',
+                            'Cinco fábricas na China',
+                            'Toalhas e protetores femininos',
+                            'Toalhas úmidas',
+                            'Almofada para a bexiga masculina',
+                            'Curativos pós-parto',
+                            '',
+                            '',
+                            '',
+                            '',
+                            '',
+                            ''
+                        )}
+                        text="Produtos descartáveis para a higiene pessoal e para pet." />
                 </div>
 
                 <div className="w-full h-full flex justify-between items-center mb-12 flex-col space-y-6 md:space-y-0 md:flex-row">
-                    <FabricsDivs text="Fraldas descartávei adulto e infantil." />
+                    <FabricsDivs onClick={() =>
+                        openModal(
+                            'Fabrica 4',
+                            'Máquinas',
+                            '',
+                            '',
+                            'bg-fachada4',
+                            'bg-machine4',
+                            'bg-prod4',
+                            'bg-emb4',
+                            'Quarta fábrica com 65.000 m²',
+                            'Oficina de produção livre de poeira GMP',
+                            'Cuidado do bebê:',
+                            'Fraldas para bebês',
+                            'Roupa íntima para bebês',
+                            'Toalhinhas úmidas para bebês',
+                            'Cuidado do adulto:',
+                            'Fraldas para adultos',
+                            'Roupa íntima para adultos',
+                            'Lençol descartável para adultos',
+                            'Cuidado dos animais de estimação',
+                            'Fraldas para animais de estimação',
+                            'Tapete descartável para animais de estimação'
+                        )}
+                        text="Fraldas descartáveis adulto e infantil." />
 
-                    <FabricsDivs text="Produtos descartáveis para viagem." />
+                    <FabricsDivs onClick={() =>
+                        openModal(
+                            'Fabrica 5',
+                            'Máquinas',
+                            '',
+                            '',
+                            'bg-fachada5',
+                            'bg-machine5',
+                            'bg-prod5',
+                            'bg-emb5',
+                            'Quinta fábrica com 80.000 m²',
+                            'Oficina de produção livre de poeira GMP',
+                            'Produtos descartáveis para bebês:',
+                            'Adesivo de saliva',
+                            'Toalha de saliva',
+                            'Babador para bebê',
+                            'Conjunto de dedo para limpeza oral',
+                            'Limpeza da boca do bebê',
+                            'Escova de dente confinada maternal',
+                            '',
+                            '',
+                            '',
+                            ''
+                        )}
+                        text="Produtos descartáveis para viagem." />
 
-                    <FabricsDivs text="Produtos para o cuidado pessoal." />
+                    <FabricsDivs onClick={() =>
+                        openModal(
+                            'Fabrica 6',
+                            'Máquinas',
+                            '',
+                            '',
+                            'bg-fachada6',
+                            'bg-machine5',
+                            'bg-prod6',
+                            'bg-emb6',
+                            'lorem5 iput dhs lkhe tiver',
+                            'loruy tuirp biu tos',
+                            'uty twge dkdo dsdsd',
+                            ' lorem dsa siytuo ouit buie',
+                            'lorem huitjou t fer',
+                            'utiy lorem nuios ',
+                            'lopoio buinous canaitus',
+                            'bistuixos buito cuit oiu',
+                            '',
+                            '',
+                            '',
+                            '',
+                            ''
+                        )}
+                        text="Produtos para o cuidado pessoal." />
                 </div>
             </div>
 
@@ -134,7 +319,7 @@ export default function Pages() {
 
             <div className="w-[80%] h-full text-base font-bold text-bluedark text-center py-10 xl:text-xl 2xl:text-3xl">
                 <h4>A inovação é um fator crucial para a sustentabilidade. Estamos comprometidos em desenvolver soluções que
-                otimizem o uso de recursos naturais, reduzam o impacto ambiental e promovam o bem-estar social.</h4>
+                    otimizem o uso de recursos naturais, reduzam o impacto ambiental e promovam o bem-estar social.</h4>
             </div>
         </section>
     );
