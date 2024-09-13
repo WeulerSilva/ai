@@ -136,7 +136,7 @@ export default function Pages() {
                             ''
                         )}
                         text="Máquinas para a indústria de produtos higiênicos descartáveis."
-                        image="bg-prod4" />
+                        image="bg-prod4"/>
 
                     <FabricsDivs onClick={() =>
                         openModal(

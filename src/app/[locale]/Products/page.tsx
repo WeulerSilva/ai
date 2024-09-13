@@ -192,10 +192,10 @@ export default function Pages() {
               <div className="w-[85%] h-full flex flex-col justify-start items-start pt-8 md:w-[85%] lg:w-[70%]">
                 <h6 className="text-xl mb-4 font-bold text-bluedark md:text-3xl 2xl:text-4xl">Principais <span className="text-laranja">Caracteristicas:</span></h6>
                 <ul className="text-base font-bold text-bluedark md:text-xl xl:text-2xl">
-                  <li className="list-disc border-b-4 border-white mb-2">Saboroso</li>
-                  <li className="list-disc border-b-4 border-white mb-2">adosicado</li>
-                  <li className="list-disc border-b-4 border-white mb-2">cheiroso</li>
-                  <li className="list-disc border-b-4 border-white mb-2">rapida absorção</li>
+                  <li className="list-disc border-b-4 border-white mb-2">{t(`${productsName}.caract1`)}</li>
+                  <li className="list-disc border-b-4 border-white mb-2">{t(`${productsName}.caract2`)}</li>
+                  <li className="list-disc border-b-4 border-white mb-2">{t(`${productsName}.caract3`)}</li>
+                  <li className="list-disc border-b-4 border-white mb-2">{t(`${productsName}.caract4`)}</li>
                 </ul>
               </div>
             )}

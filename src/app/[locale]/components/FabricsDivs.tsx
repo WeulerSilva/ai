@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl";
-import { AboutSpan } from "./AboutSpan";
+
 
 type Props = {
     text: string;
