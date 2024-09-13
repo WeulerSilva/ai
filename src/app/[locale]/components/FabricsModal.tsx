@@ -34,7 +34,7 @@ const FabricsModal = ({ isVisible, onClose, content }: Props) => {
     if (!isVisible) return null;
 
     return (
-        <div className="fixed inset-0 w-screen h-screen bg-black bg-opacity-50 flex justify-center items-center">
+        <div className="fixed inset-0 z-50 w-screen h-screen bg-black bg-opacity-50 flex justify-center items-center">
             <div className="bg-white pt-8 rounded-3xl relative w-[94%] h-[96%] md:px-2 md:h-[100%] lg:h-[80%] lg:w-[85%] lg:pt-0 lg:p-8">
                 <button className="absolute top-2 right-4 text-3xl text-laranja" onClick={onClose}>X</button>
                 <div className="flex justify-center items-center w-full h-full flex-col lg:flex-row">

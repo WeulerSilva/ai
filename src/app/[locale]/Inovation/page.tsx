@@ -135,7 +135,8 @@ export default function Pages() {
                             '',
                             ''
                         )}
-                        text="Máquinas para a indústria de produtos higiênicos descartáveis." />
+                        text="Máquinas para a indústria de produtos higiênicos descartáveis."
+                        image="bg-prod4" />
 
                     <FabricsDivs onClick={() =>
                         openModal(
@@ -161,7 +162,8 @@ export default function Pages() {
                             '',
                             ''
                         )}
-                        text="Matéria Prima para a indústria de higiênicos descartáveis" />
+                        text="Matéria Prima para a indústria de higiênicos descartáveis"
+                        image="bg-machine3" />
 
                     <FabricsDivs onClick={() =>
                         openModal(
@@ -187,7 +189,8 @@ export default function Pages() {
                             '',
                             ''
                         )}
-                        text="Produtos descartáveis para a higiene pessoal e para pet." />
+                        text="Produtos descartáveis para a higiene pessoal e para pet." 
+                        image="bg-fachada1"/>
                 </div>
 
                 <div className="w-full h-full flex justify-between items-center mb-12 flex-col space-y-6 md:space-y-0 md:flex-row">
@@ -215,7 +218,8 @@ export default function Pages() {
                             'Fraldas para animais de estimação',
                             'Tapete descartável para animais de estimação'
                         )}
-                        text="Fraldas descartáveis adulto e infantil." />
+                        text="Fraldas descartáveis adulto e infantil."
+                        image="bg-fachada3" />
 
                     <FabricsDivs onClick={() =>
                         openModal(
@@ -241,7 +245,8 @@ export default function Pages() {
                             '',
                             ''
                         )}
-                        text="Produtos descartáveis para viagem." />
+                        text="Produtos descartáveis para viagem." 
+                        image="bg-emb4" />
 
                     <FabricsDivs onClick={() =>
                         openModal(
@@ -267,7 +272,8 @@ export default function Pages() {
                             '',
                             ''
                         )}
-                        text="Produtos para o cuidado pessoal." />
+                        text="Produtos para o cuidado pessoal."
+                        image="bg-emb1" />
                 </div>
             </div>
 
