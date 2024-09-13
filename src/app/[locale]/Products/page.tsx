@@ -43,7 +43,7 @@ export default function Pages() {
   };
 
   return (
-    <section className='w-screen h-full flex justify-center items-center flex-col mt-16 lg:mt-24 xl:mt-36'>
+    <section className='w-screen h-full flex justify-center items-center flex-col mt-16 lg:mt-20 xl:mt-20'>
       <div className='w-[90%] h-full flex justify-start items-start flex-col lg:w-[80%]'>
         <h1 className='text-bluedark text-[20px] font-bold mb-4 lg:text-[24px] md:mb-0 lg:mb-4 xl:text-[30px] 2xl:text-[2.6rem] 2xl:mb-10'>
           {t('h1')} <span className='text-laranja'>{t('h1-2')}</span>

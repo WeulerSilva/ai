@@ -44,7 +44,7 @@ export default function Header() {
                                 <div key={item.key}> {/* Adicione a key aqui */}
                                     <li
                                         className={`font-conthrax cursor-pointer leading-3 font-semibold text-center 
-                                            ${isActive ? 'border-b-2 border-white' : 'border-b-2 border-browndark hover:border-white'} 
+                                            ${isActive ? 'border-b-2 border-browndark' : 'border-b-2 border-white hover:border-browndark'} 
                                             text-blue-950`}
                                         onClick={() => router.push(item.href)}
                                     >

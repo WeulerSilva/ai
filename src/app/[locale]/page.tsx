@@ -66,10 +66,10 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className='w-full h-[380px] flex justify-center relative mt-10 md:w-[55%] md:mt-0 md:justify-end
-            md:rounded-3xl lg:h-[350px] 2xl:h-[380px]'>
-            <div className='w-full h-[90%] absolute bg-bag bg-cover bg-top bg-no-repeat md:top-[-80px]
-                md:h-[70%] lg:h-[100%] xl:h-[120%] 2xl:h-[140%] 2xl:top-[-120px]'></div>
+          <div className='w-full h-[250px] flex justify-center relative mt-10 md:w-[55%] md:mt-0 md:justify-end
+            md:rounded-3xl md:h-[380px] lg:h-[300px] 2xl:h-[380px]'>
+            <div className='w-full h-[90%] absolute bg-bag bg-contain bg-top bg-no-repeat md:top-[-80px]
+                md:h-[70%] lg:h-[100%] xl:h-[100%] 2xl:h-[120%] 2xl:top-[-120px]'></div>
           </div>
 
         </div>
