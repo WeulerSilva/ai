@@ -114,9 +114,9 @@ export default function Pages() {
       {/* Exibição do "Modal" */}
 
       <div className="w-full h-full flex flex-col justify-start items-center mb-10 lg:w-[90%]">
-        <div className="w-full h-[60px] bg-[#00679a3d] flex justify-start items-center uppercase text-[14px] font-bold
+        <div className="w-full h-[60px] bg-[#00679a3d] flex justify-start items-center uppercase text-[12px] font-bold
                text-bluedark md:text-[16px] lg:text-xl">
-          <div className="flex w-full h-full justify-center items-center space-x-8 md:justify-start md:w-full md:ml-[5%]">
+          <div className="flex w-full h-full justify-around items-center space-x-2 md:space-x-8 md:justify-start md:w-full md:ml-[5%]">
             <span onClick={() => handleTypeClick('photo-1')} className={`${selectedType === 'photo-1' ? 
                 'border-b-4 border-bluelight text-bluelight' : 'border-b-4 border-transparent'} cursor-pointer`}>
               {t(`${productsName}.type-1`)}
@@ -133,8 +133,8 @@ export default function Pages() {
 
         </div>
 
-        <div className="w-full h-full bg-white flex-col flex lg:flex-row">
-          <div className="w-full bg-[#00679a27] flex justify-center items-center flex-col lg:w-[40%]">
+        <div className="w-full h-full bg-white flex-col flex lg:flex-row lg:h-[880px]">
+          <div className="w-full bg-[#00679a27] h-full flex justify-center items-center flex-col lg:w-[40%]">
             <div className={`${t(`${productsName}.${selectedType}`)} w-[90%] h-[260px] mt-12 bg-contain bg-center bg-no-repeat md:h-[320px] lg:h-[340px] md:w-[70%] xl:w-[90%] 2xl:h-[530px]`}>
             </div>
 
@@ -167,22 +167,22 @@ export default function Pages() {
                   <div className="w-[90%] flex justify-around items-center bg-white border-2 border-bluedark rounded-3xl py-1 mb-4
                   text-sm 2xl:text-lg">
                     <span className="px-4 w-[116px] 2xl:w-[200px]"><span className="text-lg md:text-2xl 2xl:text-3xl">M</span> Mediana</span>
-                    <span className="border-x-2 border-bluedark px-2">de 20 a 45 Kg</span>
-                    <span className="px-8 w-[117px] 2xl:w-[200px] 2xl:text-right">70-110</span>
+                    <span className="border-x-2 border-bluedark px-2">{t(`${productsName}.size-m`)}</span>
+                    <span className="px-8 w-[117px] 2xl:w-[200px] 2xl:text-right">{t(`${productsName}.cint-m`)}</span>
                   </div>
 
                   <div className="w-[90%] flex justify-around items-center bg-white border-2 border-bluedark rounded-3xl py-1 mb-4
                   text-sm 2xl:text-lg">
                     <span className="px-4 w-[116px] 2xl:w-[200px]"><span className="text-lg md:text-2xl 2xl:text-3xl">L</span> Grande</span>
-                    <span className="border-x-2 border-bluedark px-2">de 45 a 75 Kg</span>
-                    <span className="px-8 w-[118px] 2xl:w-[200px] 2xl:text-right">105-170</span>
+                    <span className="border-x-2 border-bluedark px-2">{t(`${productsName}.size-l`)}</span>
+                    <span className="px-8 w-[118px] 2xl:w-[200px] 2xl:text-right">{t(`${productsName}.cint-l`)}</span>
                   </div>
 
                   <div className="w-[90%] flex justify-around items-center bg-white border-2 border-bluedark rounded-3xl py-1 mb-4
                   text-sm 2xl:text-lg">
                     <span className="px-4 w-[116px] 2xl:w-[200px]"><span className="text-lg md:text-2xl 2xl:text-3xl">XL</span> Extra Grande</span>
-                    <span className="border-x-2 border-bluedark px-2">mais de 75 Kg</span>
-                    <span className="px-8 w-[118px] 2xl:w-[200px] 2xl:text-right">145-170</span>
+                    <span className="border-x-2 border-bluedark px-2">{t(`${productsName}.size-xl`)}</span>
+                    <span className="px-8 w-[118px] 2xl:w-[200px] 2xl:text-right">{t(`${productsName}.cint-xl`)}</span>
                   </div>
                 </div>
               </div>
@@ -190,7 +190,7 @@ export default function Pages() {
 
             {(productsName != "adult-sec" && productsName != 'babyfral') && (
               <div className="w-[85%] h-full flex flex-col justify-start items-start pt-8 md:w-[85%] lg:w-[70%]">
-                <h6 className="text-xl mb-4 font-bold text-bluedark md:text-3xl 2xl:text-4xl">Principais <span className="text-laranja">Caracteristicas:</span></h6>
+                <h6 className="text-xl mb-4 font-bold text-bluedark md:text-3xl 2xl:text-4xl">{t('carac-1')} <span className="text-laranja">{t('carac-2')}</span></h6>
                 <ul className="text-base font-bold text-bluedark md:text-xl xl:text-2xl">
                   <li className="list-disc border-b-4 border-white mb-2">{t(`${productsName}.caract1`)}</li>
                   <li className="list-disc border-b-4 border-white mb-2">{t(`${productsName}.caract2`)}</li>
@@ -205,9 +205,9 @@ export default function Pages() {
 
 
           {/* Infors about the products */}
-          <div className="w-full h-full bg-[#00679a27] flex justify-start items-center py-8 lg:w-[60%]">
-            <div className="w-full h-[90%] bg-white rounded-[40px] flex flex-col justify-start items-center px-6 lg:w-[90%]">
-              <div className="flex items-center justify-between w-full mt-6 mb-3">
+          <div className="w-full h-full bg-[#00679a27] flex justify-start items-center py-8 lg:w-[60%] lg:h-[880px]">
+            <div className="w-full h-[90%] bg-white rounded-[40px] flex flex-col justify-start items-center px-6 2xl:h-full lg:w-[90%]">
+              <div className="flex items-start justify-between w-full mt-6 mb-3">
                 <h6 className="text-xl font-bold text-bluelight md:text-2xl xl:text-3xl">{t(`${productsName}.h1`)}</h6>
                 <span className={`w-[120px] h-[60px] bg-contain bg-center bg-no-repeat
                   ${productsName === 'babyfral' || productsName === 'adult-sec' ? 'bg-unisex' : ''}`}></span>
@@ -215,38 +215,38 @@ export default function Pages() {
 
               <div className="w-full h-full flex flex-col justify-start items-start mb-16">
                 <ul className="space-y-4">
-                  <div className="text-bluedark text-lg font-semibold md:text-xl xl:text-2xl">
-                    <li>{t(`${productsName}.li-1`)}</li>
+                  <div className={`${productsName === '.' ? 'text-white' : 'text-bluedark'} text-lg font-semibold md:text-xl xl:text-2xl`}>
+                    <li className="uppercase">{t(`${productsName}.li-1`)}</li>
                     <p className="text-base xl:text-xl">{t(`${productsName}.li-1-p`)}</p>
                   </div>
 
                   <div className="text-bluedark text-lg font-semibold md:text-xl xl:text-2xl">
-                    <li>{t(`${productsName}.li-2`)}</li>
+                    <li className="uppercase">{t(`${productsName}.li-2`)}</li>
                     <p className="text-base xl:text-xl">{t(`${productsName}.li-2-p`)}</p>
                   </div>
 
                   <div className="text-bluedark text-lg font-semibold md:text-xl xl:text-2xl">
-                    <li>{t(`${productsName}.li-3`)}</li>
+                    <li className="uppercase">{t(`${productsName}.li-3`)}</li>
                     <p className="text-base xl:text-xl">{t(`${productsName}.li-3-p`)}</p>
                   </div>
 
                   <div className="text-bluedark text-lg font-semibold md:text-xl xl:text-2xl">
-                    <li>{t(`${productsName}.li-4`)}</li>
+                    <li className="uppercase">{t(`${productsName}.li-4`)}</li>
                     <p className="text-base xl:text-xl">{t(`${productsName}.li-4-p`)}</p>
                   </div>
 
                   <div className="text-bluedark text-lg font-semibold md:text-xl xl:text-2xl">
-                    <li>{t(`${productsName}.li-5`)}</li>
+                    <li className="uppercase">{t(`${productsName}.li-5`)}</li>
                     <p className="text-base xl:text-xl">{t(`${productsName}.li-5-p`)}</p>
                   </div>
 
                   <div className="text-bluedark text-lg font-semibold md:text-xl xl:text-2xl">
-                    <li>{t(`${productsName}.li-6`)}</li>
+                    <li className="uppercase">{t(`${productsName}.li-6`)}</li>
                     <p className="text-base xl:text-xl">{t(`${productsName}.li-6-p`)}</p>
                   </div>
 
-                  <div className="text-bluedark text-lg font-semibold md:text-xl xl:text-2xl">
-                    <li>{t(`${productsName}.li-7`)}</li>
+                  <div className={`${productsName === '.' ? 'text-white' : 'text-bluedark'} text-lg font-semibold md:text-xl xl:text-2xl`}>
+                    <li className="uppercase">{t(`${productsName}.li-7`)}</li>
                     <p className="text-base xl:text-xl">{t(`${productsName}.li-7-p`)}</p>
                   </div>
                 </ul>

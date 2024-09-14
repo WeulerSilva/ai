@@ -1,8 +1,10 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { useState } from "react";
 
 export const SecondHomeCarrosel = () => {
+  const t = useTranslations('HomePage');
   const [changeBanner, setChangeBanner] = useState(1);
   const [visibleIcons, setVisibleIcons] = useState(0);
 
@@ -31,7 +33,7 @@ export const SecondHomeCarrosel = () => {
     <section className='w-screen h-full flex justify-center items-center flex-col'>
       <div className='w-[90%] h-full flex justify-start items-start flex-col md:w-[80%]'>
         <h1 className='text-bluedark text-[20px] font-bold mb-10 lg:text-[24px] md:mb-0 lg:mb-4 xl:text-[30px] 2xl:text-[2.6rem] 2xl:mb-10'>
-          Conheça nossas <span className='text-laranja'>linhas de produtos</span>
+          {t('knew-1')} <span className='text-laranja'>{t('knew-2')}</span>
         </h1>
 
         {/* Carrossel para mobile */}

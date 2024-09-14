@@ -24,7 +24,7 @@ export const AboutSpan = ({ style, text, link = '/' }: Props) => {
             onClick={handleClick}
             className={`${style} font-conthrax px-3 h-fit text-[10px] font-semibold rounded-xl uppercase cursor-pointer`}
         >
-            {text ? text : t('video-span')}
+            {text ? text : t('more')}
         </span>
     );
 }

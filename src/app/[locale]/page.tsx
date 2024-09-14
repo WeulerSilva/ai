@@ -1,9 +1,14 @@
+"use client"
+
 import { FirstHomeCarrosel } from './components/FirstHomeCarrosel';
 import { AboutSpan } from './components/AboutSpan';
 import { SecondHomeCarrosel } from './components/SecondHomecarrosel';
+import { useTranslations } from 'use-intl';
 
 
 export default function HomePage() {
+  const t = useTranslations('products');
+
 
   return (
     <>
@@ -16,16 +21,14 @@ export default function HomePage() {
               <h6 className='text-[22px] font-semibold text-bluedark pl-6 uppercase font-conthrax md:pl-0 md:text-md lg:text-2xl xl:text-5xl'>
                 ANK & ILUMER
               </h6>
-              <AboutSpan link='/Inovation' text='Ver Mais' style='bg-bluedark text-laranja mr-6 md:mr-0 text-[12px] lg:text-[16px] xl:text-lg' />
+              <AboutSpan link='/Inovation' style='bg-bluedark text-laranja mr-6 md:mr-0 text-[12px] lg:text-[16px] xl:text-lg' />
             </div>
 
             <div className='w-full h-[6px] bg-laranja xl:mt-2'></div>
 
             <p className='w-full mt-4 px-6 text-bluedark text-justify font-nexa md:text-[16px] md:w-[90%] md:px-0 md:mt-6 xl:text-[20px]'>
-              <span className='md:pr-4 lg:pr-6 xl:pr-12'></span>Em um mundo cada vez mais interconectado e dinâmico, os valores
-              de ética, responsabilidade e sustentabilidade se tornam essenciais para
-              nosso sucesso. A ética orienta nossas ações, garantindo que todas as
-              nossas decisões sejam justas e transparentes.
+              <span className='md:pr-4 lg:pr-6 xl:pr-12'></span>
+              {t('ank-p')}
             </p>
           </div>
 
@@ -48,26 +51,24 @@ export default function HomePage() {
           <div className='w-full h-full flex justify-start flex-col md:w-[70%]'>
             <div className='w-full h-[56px] flex justify-between items-start md:w-[90%]'>
               <h6 className='text-[22px] font-bold text-bluedark pl-6 uppercase font-conthrax md:pl-0 md:text-md lg:text-2xl xl:text-3xl'>
-                Fornecimento de <br /> <span className='text-laranja flex items-end'>Matéria-Prima <div className='w-[1px] h-[1px] bg-black relative'>
+                {t('raw-1')} <br /> <span className='text-laranja flex items-end'>{t('raw-2')}  <div className='w-[1px] h-[1px] bg-black relative'>
                   <div className='absolute left-4 bottom-[6px] w-[80px] bg-black h-[4px] md:w-[50vw]'></div></div></span>
               </h6>
-              <AboutSpan link='/Products#Raw-Material' text='Ver Mais' 
+              <AboutSpan link='/Products#Raw-Material' 
                 style='bg-bluedark text-laranja mr-6 md:mr-0 text-[12px] lg:text-[16px] xl:text-lg' />
             </div>
 
             <p className='w-full mt-4 px-6 text-bluedark text-justify font-nexa md:text-[16px] md:w-[90%] md:px-0 md:mt-6 xl:text-[20px]'>
-              <span className='md:pr-4 lg:pr-6 xl:pr-12'></span>Na ANK&ILUMER, estamos comprometidos em fornecer matérias-primas
-              de alta qualidade a um preço justo para a indústria de higiene e cuidado
-              pessoal. Nossas matérias-primas variam desde polímeros super absorventes
-              até fibras inovadoras como viscose e bambu.<br />
-              <span className='md:pr-4 lg:pr-6 xl:pr-12'></span>Esta diversidade de materiais nos permite criar produtos que não apenas
-              atendem, mas superam as expectativas de nossos clientes em termos de
-              conforto, tecnologia, eficiência e respeito ao meio ambiente.
+              <span className='md:pr-4 lg:pr-6 xl:pr-12'></span>
+              {t('raw-p1')} 
+              <br />
+              <span className='md:pr-4 lg:pr-6 xl:pr-12'></span>
+              {t('raw-p2')} 
             </p>
           </div>
 
-          <div className='w-full h-[250px] flex justify-center relative mt-10 md:w-[55%] md:mt-0 md:justify-end
-            md:rounded-3xl md:h-[380px] lg:h-[300px] 2xl:h-[380px]'>
+          <div className='w-full h-[250px] flex justify-center relative mt-10 md:w-[55%] md:mb-6 md:mt-0 md:justify-end
+            md:rounded-3xl md:h-[380px] lg:h-[300px] 2xl:h-[300px]'>
             <div className='w-full h-[90%] absolute bg-bag bg-contain bg-top bg-no-repeat md:top-[-80px]
                 md:h-[70%] lg:h-[100%] xl:h-[100%] 2xl:h-[120%] 2xl:top-[-120px]'></div>
           </div>
@@ -87,17 +88,15 @@ export default function HomePage() {
               <div className='w-full h-full flex justify-end items-end flex-col'>
                 <div className='w-full h-[56px] flex justify-between items-center md:w-[90%]'>
                   <h6 className='text-[22px] font-semibold text-bluedark pl-6 font-conthrax md:pl-0 md:text-md lg:text-2xl xl:text-4xl'>
-                    White <span className='text-laranja'>Label</span>
+                    {t('white-1')} <span className='text-laranja'>{t('white-2')}</span>
                   </h6>
-                  <AboutSpan link='/Products#White' text='Ver Mais' style='bg-bluedark text-laranja mr-6 md:mr-0 text-[12px] lg:text-[16px] xl:text-lg' />
+                  <AboutSpan link='/Products#White' style='bg-bluedark text-laranja mr-6 md:mr-0 text-[12px] lg:text-[16px] xl:text-lg' />
                 </div>
 
                 <p className='w-full mt-4 px-6 text-bluedark text-justify font-nexa font-medium md:px-0 md:mt-6 
                   md:text-[16px] md:w-[90%] md:mb-[30px] xl:text-[20px]'>
-                  <span className='md:pr-4 lg:pr-6 xl:pr-12'></span>ANK&ILUMER oferece serviços de white label,
-                  permitindo que outras empresas vendam seus produtos
-                  sob suas próprias marcas, o que inclui uma gama
-                  completa de produtos de cuidado pessoal.
+                  <span className='md:pr-4 lg:pr-6 xl:pr-12'></span>
+                  {t('white-p')}
                 </p>
               </div>
 
