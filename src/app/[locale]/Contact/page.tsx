@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import { EmailContact } from "../components/EmailContact";
+import { EmailPhone } from "../components/EmailPhone";
 
 
 export default function Pages() {
@@ -14,6 +15,7 @@ export default function Pages() {
                 </p>
             </div>
             <EmailContact/>
+            <EmailPhone/>
         </section>
     );
 };

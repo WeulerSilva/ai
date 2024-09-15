@@ -11,37 +11,38 @@ export const viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "ilumer, Construindo relações duradouras.",
-  description: "Desde 1986, construindo relações duradouras, baseadas na confiança, com eficiência e transparência.",
-  keywords: 'ilumer, relações duradouras, confiança, eficiência, transparência, ANK, Babyfral, LadySec, PetSec, AdultSec, ECO VIDA, LIMPDENT',
+  title: "ANK&ILUMER, Fornecendo Qualidade e Inovação.",
+  description: "Na ANK&ILUMER, oferecemos soluções inovadoras desde 1986, com foco em qualidade, confiança e responsabilidade ambiental.",
+  keywords: 'ANK, ILUMER, higiene, cuidados pessoais, produtos sustentáveis, White Label, matéria-prima, ECO VIDA, Babyfral, LadySec, PetSec, AdultSec, LIMPDENT',
   robots: {
     index: true,
     follow: true
   },
   openGraph: {
     type: "website",
-    url: "https://ilumer.com",
-    title: "ilumer, Construindo relações duradouras.",
-    description: "Desde 1986, construindo relações duradouras, baseadas na confiança, com eficiência e transparência.",
-    siteName: "ilumer",
+    url: "https://ankilumer.com",
+    title: "ANK&ILUMER - Soluções Inovadoras e Sustentáveis.",
+    description: "A ANK&ILUMER oferece uma ampla gama de produtos de higiene e cuidados pessoais, destacando-se pela qualidade e compromisso com o meio ambiente.",
+    siteName: "ANK&ILUMER",
     images: [{
-      url: "/images/products-mobile2.png",
-      alt: "Imagem representativa da ilumer"
+      url: "/images/banner-mobile-0-pt.png",
+      alt: "Imagem representativa da ANK&ILUMER"
     }],
     locale: "pt_BR"
   },
   twitter: {
     card: "summary_large_image",
-    site: "@ilumer",
-    creator: "@ilumer",
-    title: "ilumer, Construindo relações duradouras.",
-    description: "Desde 1986, construindo relações duradouras, baseadas na confiança, com eficiência e transparência.",
+    site: "@ankilumer",
+    creator: "@ankilumer",
+    title: "ANK&ILUMER - Fornecendo Qualidade e Inovação.",
+    description: "Desde 1986, a ANK&ILUMER tem sido líder em soluções de higiene e cuidados pessoais, com foco em sustentabilidade e eficiência.",
     images: [{
-      url: "/images/products-mobile2.png",
-      alt: "Imagem representativa da ilumer"
+      url: "/images/banner-mobile-0-pt.png",
+      alt: "Imagem representativa da ANK&ILUMER"
     }]
   }
 };
+
 
 
 
@@ -60,7 +61,7 @@ export default async function LocaleLayout({
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel='icon' href="/favicon.ico" />
+        <link rel='icon' href="/favicon-1.ico" />
         {/*<meta name="google-site-verification" content="0o2UdGHKMas5T31hyhg1W6i_mzoKLRoLRnFM_ZrbHw8" />*/}
       </head>
       <SpeedInsights/>

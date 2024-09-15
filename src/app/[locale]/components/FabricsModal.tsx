@@ -38,8 +38,8 @@ const FabricsModal = ({ isVisible, onClose, content }: Props) => {
             <div className="bg-white pt-8 rounded-3xl relative w-[94%] h-[96%] md:px-2 md:h-[100%] lg:h-[80%] lg:w-[85%] lg:pt-0 lg:p-8">
                 <button className="absolute top-2 right-4 text-3xl text-laranja" onClick={onClose}>X</button>
                 <div className="flex justify-center items-center w-full h-full flex-col lg:flex-row">
-                    <div className='w-full h-[80%] text-base text-black px-2 lg:text-lg lg:w-[60%] lg:px-6'>
-                        <h1 className='text-black text-xl lg:text-3xl'>{content.factory}</h1>
+                    <div className='w-full h-[80%] text-base text-bluedark px-2 lg:text-lg lg:w-[60%] lg:px-6'>
+                        <h1 className='text-xl text-laranja  font-bold lg:text-3xl'>{content.factory}</h1>
                         {content.text &&
                         <p className='mt-4'>{content.text}</p>
                         }

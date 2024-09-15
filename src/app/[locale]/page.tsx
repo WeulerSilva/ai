@@ -7,7 +7,7 @@ import { useTranslations } from 'use-intl';
 
 
 export default function HomePage() {
-  const t = useTranslations('products');
+  const t = useTranslations('HomePage');
 
 
   return (

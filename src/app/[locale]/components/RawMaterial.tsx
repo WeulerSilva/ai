@@ -10,7 +10,7 @@ export default function RawMaterial() {
             <div className="w-full h-[900px] flex justify-center items-center flex-col mb-10 md:h-[800px] lg:h-[400px] xl:h-[530px]">
                 <h2 id="Raw-Material" className="text-2xl text-laranja font-bold mb-8 xl:text-4xl">{t('raw-1')}<span className="text-bluedark">{t('raw-2')}</span></h2>
 
-                <div className="w-full h-full flex flex-col border-y-[12px] border-laranja lg:w-[90%] lg:flex-row">
+                <div id="raw" className="w-full h-full flex flex-col border-y-[12px] border-laranja lg:w-[90%] lg:flex-row">
                     <div className="w-full h-full bg-raw-material bg-contain bg-center bg-no-repeat lg:bg-cover lg:bg-left lg:w-[40%]">
 
                     </div>
@@ -63,7 +63,7 @@ export default function RawMaterial() {
             </div>
 
             <div className="w-full h-full flex flex-col items-center justify-center text-bluedark font-bold text-2xl xl:text-4xl">
-                <div className="w-full h-full flex justify-center items-center mb-10 px-6">
+                <div id="cert" className="w-full h-full flex justify-center items-center mb-10 px-6">
                     <h2>
                         {t('our-1')} <span className="text-laranja">{t('our-2')}</span>
 

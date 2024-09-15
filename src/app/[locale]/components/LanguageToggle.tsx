@@ -1,8 +1,8 @@
 "use client";
 
-import { Link } from '@/app/navigation';
 import Image from 'next/image';
-import { usePathname} from 'next/navigation';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 
 export default function LanguageToggle() {
@@ -14,6 +14,17 @@ export default function LanguageToggle() {
 
     const toggleDropdown = () => {
         setIsOpen(!isOpen);
+    };
+
+    // Construir a nova URL, garantindo que o idioma seja substituído corretamente
+    const buildNewPath = (locale: string) => {
+        // Se o caminho já contiver um idioma, substituí-lo
+        if (['pt', 'en', 'es'].includes(currentLocale)) {
+            return pathName.replace(`/${currentLocale}`, `/${locale}`);
+        } else {
+            // Se o idioma não estiver presente, adicionar no início
+            return `/${locale}${pathName}`;
+        }
     };
 
     return (
@@ -37,7 +48,7 @@ export default function LanguageToggle() {
                     md:top-[35px] md:left-0 transition-all duration-300 ease-in-out overflow-hidden ${isOpen ? 'max-h-48' : 'max-h-0'}`}
                 style={{ transitionProperty: 'max-height' }}
             >
-                <Link href="/" locale='pt' onClick={() => setIsOpen(false)}>
+                <Link href={buildNewPath('pt')} locale='pt' onClick={() => setIsOpen(false)}>
                     <div className={`flex items-center justify-center py-2 hover:bg-laranja rounded-md ${currentLocale === 'pt' ? 'bg-laranja/70' : ''}`}>
                         <Image
                             alt="pt"
@@ -48,7 +59,7 @@ export default function LanguageToggle() {
                         />
                     </div>
                 </Link>
-                <Link href="/" locale='en' onClick={() => setIsOpen(false)}>
+                <Link href={buildNewPath('en')} locale='en' onClick={() => setIsOpen(false)}>
                     <div className={`flex items-center justify-center py-2 hover:bg-laranja/70 rounded-md ${currentLocale === 'en' ? 'bg-laranja/70' : ''}`}>
                         <Image
                             alt="en"
@@ -59,7 +70,7 @@ export default function LanguageToggle() {
                         />
                     </div>
                 </Link>
-                <Link href="/" locale='es' onClick={() => setIsOpen(false)}>
+                <Link href={buildNewPath('es')} locale='es' onClick={() => setIsOpen(false)}>
                     <div className={`flex items-center justify-center py-2 hover:bg-laranja/70 rounded-md ${currentLocale === 'es' ? 'bg-laranja/70' : ''}`}>
                         <Image
                             alt="es"

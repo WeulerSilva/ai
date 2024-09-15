@@ -8,6 +8,7 @@ import FabricsModal from "../components/FabricsModal";
 
 export default function Pages() {
     const t = useTranslations('journey');
+    const h = useTranslations('modal');
 
     const [isVisible, setIsVisible] = useState(false);
     const [modalContent, setModalContent] = useState<{ factory: string; title: string; text: string; textTwo: string; imgOne: string; imgTwo: string; imgThree: string; imgFour: string; li1: string; li2: string; li3: string; li4: string; li5: string; li6: string; li7: string; li8: string; li9: string; li10: string; li11: string; li12: string; li13: string }>({
@@ -41,7 +42,7 @@ export default function Pages() {
     };
 
     return (
-        <section className='w-screen h-full flex justify-center items-center flex-col mt-16 lg:mt-24 xl:mt-24'>
+        <section className='w-screen h-full flex justify-center items-center flex-col mt-16 lg:mt-14 xl:mt-24'>
             <FabricsModal
                 isVisible={isVisible}
                 onClose={() => setIsVisible(false)}
@@ -112,17 +113,17 @@ export default function Pages() {
                 <div className="w-full h-full flex justify-between items-center mb-8 flex-col space-y-6 md:space-y-0 md:flex-row">
                     <FabricsDivs onClick={() =>
                         openModal(
-                            'Fabrica 1',
+                            h('f1-name'),
                             'Máquinas',
-                            '• Máquinas de última geração. Contamos com equipes de trabalho dedicadas à pesquisa e desenvolvimento contínuo: fraldas/pull up para bebês, fraldas/pull up para adultos, produtos para incontinência, toalhas e protetores femininos. • Contamos com uma equipe técnica sofisticada. Possuímos ampla experiência na indústria.',
-                            '• Insumos da melhor qualidade. Importamos matérias-primas das marcas mais conhecidas do mercado, como:',
+                            h('f1-l1'),
+                            h('f1-l2'),
                             'bg-fachada1',
                             'bg-machine1',
                             'bg-prod1',
                             'bg-emb1',
-                            'Mitsubishi do Japão, Omron do Japão,',
-                            'Schneider da França, Gates da América do Norte,',
-                            'Like de Taiwan, Sick da Alemanha.',
+                            h('f1-l3'),
+                            h('f1-l4'),
+                            h('f1-l5'),
                             '',
                             '',
                             '',
@@ -139,7 +140,7 @@ export default function Pages() {
 
                     <FabricsDivs onClick={() =>
                         openModal(
-                            'Fabrica 2',
+                            h('f2-name'),
                             'Máquinas',
                             '',
                             '',
@@ -147,15 +148,15 @@ export default function Pages() {
                             'bg-machine2',
                             'bg-prod2',
                             'bg-emb2',
-                            'Segunda fábrica com 40.000 m²',
-                            'departamento de Pesquisa e Desenvolvimento e produção de matéria-prima',
+                            h('f2-l1'),
+                            h('f2-l2'),
                             '.',
-                            'Filme de fundo',
-                            'Tecidos não tecidos',
-                            'Saco de polietileno',
-                            'Fitas',
-                            'Papel siliconado',
-                            'Filme perfurado',
+                            h('f2-l3'),
+                            h('f2-l4'),
+                            h('f2-l5'),
+                            h('f2-l6'),
+                            h('f2-l7'),
+                            h('f2-l8'),
                             '',
                             '',
                             '',
@@ -166,7 +167,7 @@ export default function Pages() {
 
                     <FabricsDivs onClick={() =>
                         openModal(
-                            'Fabrica 3',
+                            h('f3-name'),
                             'Máquinas',
                             '',
                             '',
@@ -174,13 +175,13 @@ export default function Pages() {
                             'bg-machine3',
                             'bg-prod3',
                             'bg-emb3',
-                            'Terceira fábrica com 100.000 m²',
-                            'Oficina de produção livre de poeira GMP',
-                            'Cinco fábricas na China',
-                            'Toalhas e protetores femininos',
-                            'Toalhas úmidas',
-                            'Almofada para a bexiga masculina',
-                            'Curativos pós-parto',
+                            h('f3-l1'),
+                            h('f3-l2'),
+                            h('f3-l3'),
+                            h('f3-l4'),
+                            h('f3-l5'),
+                            h('f3-l6'),
+                            h('f3-l7'),
                             '',
                             '',
                             '',
@@ -195,7 +196,7 @@ export default function Pages() {
                 <div className="w-full h-full flex justify-between items-center mb-12 flex-col space-y-6 md:space-y-0 md:flex-row">
                     <FabricsDivs onClick={() =>
                         openModal(
-                            'Fabrica 4',
+                            h('f4-name'),
                             'Máquinas',
                             '',
                             '',
@@ -203,26 +204,26 @@ export default function Pages() {
                             'bg-machine4',
                             'bg-prod4',
                             'bg-emb4',
-                            'Quarta fábrica com 65.000 m²',
-                            'Oficina de produção livre de poeira GMP',
-                            'Cuidado do bebê:',
-                            'Fraldas para bebês',
-                            'Roupa íntima para bebês',
-                            'Toalhinhas úmidas para bebês',
-                            'Cuidado do adulto:',
-                            'Fraldas para adultos',
-                            'Roupa íntima para adultos',
-                            'Lençol descartável para adultos',
-                            'Cuidado dos animais de estimação',
-                            'Fraldas para animais de estimação',
-                            'Tapete descartável para animais de estimação'
+                            h('f4-l1'),
+                            h('f4-l2'),
+                            h('f4-l3'),
+                            h('f4-l4'),
+                            h('f4-l5'),
+                            h('f4-l6'),
+                            h('f4-l7'),
+                            h('f4-l8'),
+                            h('f4-l9'),
+                            h('f4-l10'),
+                            h('f4-l11'),
+                            h('f4-l12'),
+                            h('f4-l13')
                         )}
                         text={t('modal-4')}
                         image="bg-fachada3" />
 
                     <FabricsDivs onClick={() =>
                         openModal(
-                            'Fabrica 5',
+                            h('f5-name'),
                             'Máquinas',
                             '',
                             '',
@@ -230,15 +231,15 @@ export default function Pages() {
                             'bg-machine5',
                             'bg-prod5',
                             'bg-emb5',
-                            'Quinta fábrica com 80.000 m²',
-                            'Oficina de produção livre de poeira GMP',
-                            'Produtos descartáveis para bebês:',
-                            'Adesivo de saliva',
-                            'Toalha de saliva',
-                            'Babador para bebê',
-                            'Conjunto de dedo para limpeza oral',
-                            'Limpeza da boca do bebê',
-                            'Escova de dente confinada maternal',
+                            h('f5-l1'),
+                            h('f5-l2'),
+                            h('f5-l3'),
+                            h('f5-l4'),
+                            h('f5-l5'),
+                            h('f5-l6'),
+                            h('f5-l7'),
+                            h('f5-l8'),
+                            h('f5-l9'),
                             '',
                             '',
                             '',
@@ -249,7 +250,7 @@ export default function Pages() {
 
                     <FabricsDivs onClick={() =>
                         openModal(
-                            'Fabrica 6',
+                            h('f6-name'),
                             'Máquinas',
                             '',
                             '',
@@ -257,14 +258,14 @@ export default function Pages() {
                             'bg-machine5',
                             'bg-prod6',
                             'bg-emb6',
-                            'lorem5 iput dhs lkhe tiver',
-                            'loruy tuirp biu tos',
-                            'uty twge dkdo dsdsd',
-                            ' lorem dsa siytuo ouit buie',
-                            'lorem huitjou t fer',
-                            'utiy lorem nuios ',
-                            'lopoio buinous canaitus',
-                            'bistuixos buito cuit oiu',
+                            h('f6-l1'),
+                            h('f6-l2'),
+                            h('f6-l3'),
+                            h('f6-l4'),
+                            h('f6-l5'),
+                            h('f6-l6'),
+                            h('f6-l7'),
+                            h('f6-l8'),
                             '',
                             '',
                             '',
@@ -278,12 +279,12 @@ export default function Pages() {
 
 
             <div className="w-full h-[600px] flex flex-col justify-center bg-[#AAAAA9]/30 lg:w-[100%] lg:flex-row lg:h-[400px] xl:h-[500px] 2xl:h-[450px]">
-                <div className="w-[90%] h-full flex justify-center items-center flex-col lg:w-[80%] lg:flex-row-reverse">
+                <div id="Inovation" className="w-[90%] h-full flex justify-center items-center flex-col lg:w-[80%] lg:flex-row-reverse">
                     <div className="w-full h-full flex justify-center items-start text-2xl font-bold text-bluedark 
                         border-l-[16px] border-laranja md:h-[50%] lg:h-full xl:text-4xl lg:w-[50%]">
                         <div className="w-full pl-10 lg:w-[100%] xl:pl-20">
                             <h1 className="mt-4 text-laranja lg:my-6 xl:my-16">{t('inov')}</h1>
-                            <p className="text-[16px] text-gray-700 text-justify pt-4 lg:pt-0 xl:mt-4 xl:text-[20px]">
+                            <p className="text-[16px] text-gray-700 text-justify pt-4 md:leading-8 lg:pt-0 xl:mt-4 xl:text-[20px]">
                                 <span className="pl-6"></span>
                                 {t('inov-p')}
                             </p>
@@ -298,12 +299,12 @@ export default function Pages() {
             </div>
 
             <div className="w-full h-[600px] flex flex-col justify-center bg-[#93C248]/30 lg:w-[100%] lg:flex-row lg:h-[400px] xl:h-[500px] 2xl:h-[450px]">
-                <div className="w-[90%] h-full flex justify-center items-center flex-col lg:w-[80%] lg:flex-row">
+                <div id="sust" className="w-[90%] h-full flex justify-center items-center flex-col lg:w-[80%] lg:flex-row">
                     <div className="w-full h-full flex justify-start items-start text-2xl font-bold text-bluedark 
                         border-l-[16px] border-laranja  md:h-[50%] lg:border-none lg:h-full xl:text-4xl lg:justify-center lg:w-[50%]">
                         <div className="w-full pl-10 lg:pl-0 lg:pr-10 lg:border-none lg:w-[100%] xl:pr-20">
                             <h1 className="mt-4 text-[#356A2D] lg:my-6 xl:my-16">{t('susten')}</h1>
-                            <p className="text-[16px] text-gray-700 text-justify pt-4 lg:pt-0 xl:mt-4 xl:text-[20px]">
+                            <p className="text-[16px] text-gray-700 text-justify pt-4 md:leading-8  lg:pt-0 xl:mt-4 xl:text-[20px]">
                                 <span className="pl-6"></span>
                                 {t('susten-p')}
                             </p>
@@ -317,7 +318,7 @@ export default function Pages() {
                 </div>
             </div>
 
-            <div className="w-[80%] h-full text-base font-bold text-bluedark text-center py-10 xl:text-xl 2xl:text-3xl">
+            <div className="w-[80%] h-full text-base font-bold text-bluedark text-center py-10 xl:text-xl 2xl:text-[1.7rem]">
                 <h4>
                     {t('end')}
                 </h4>

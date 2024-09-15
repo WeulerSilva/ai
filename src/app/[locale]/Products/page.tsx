@@ -1,17 +1,28 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import RawMaterial from "../components/RawMaterial";
 
 type LogoItem = [string, string];
 
-export default function Pages() {
+export default function Pages({ searchParams }: { searchParams: { product?: string, banner?: number } }) {
   const t = useTranslations('products');
+  const product = searchParams?.product;
+  const banner = searchParams?.banner;
   const [changeBanner, setChangeBanner] = useState(0);
   const [visibleIcons, setVisibleIcons] = useState(0);
   const [productsName, setProductsName] = useState('adult-sec');
   const [selectedType, setSelectedType] = useState("photo-2");
+
+  useEffect(() => {
+    if (product) {
+      setProductsName(product);
+    }
+    if (banner) {
+      setChangeBanner(Number(banner)); // Converte 'banner' para número
+    }
+  }, [product, banner]);
 
   const logos: LogoItem[] = [
     ["bg-logo-1", "adult-sec"],
@@ -43,7 +54,7 @@ export default function Pages() {
   };
 
   return (
-    <section className='w-screen h-full flex justify-center items-center flex-col mt-16 lg:mt-20 xl:mt-20'>
+    <section className='w-screen h-full flex justify-center items-center flex-col mt-16 lg:mt-16 xl:mt-20'>
       <div className='w-[90%] h-full flex justify-start items-start flex-col lg:w-[80%]'>
         <h1 className='text-bluedark text-[20px] font-bold mb-4 lg:text-[24px] md:mb-0 lg:mb-4 xl:text-[30px] 2xl:text-[2.6rem] 2xl:mb-10'>
           {t('h1')} <span className='text-laranja'>{t('h1-2')}</span>

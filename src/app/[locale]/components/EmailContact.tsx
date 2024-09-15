@@ -72,7 +72,6 @@ export const EmailContact = () => {
             email: email,
         };
 
-        console.log(process.env.NEXT_PUBLIC_EMAILJS_USER_ID)
 
         emailjs.send("service_sehnuts", "template_tpoqg2s", templateParams, "b8thRCDhLUkpVcbAB")
             .then(() => {
@@ -96,7 +95,8 @@ export const EmailContact = () => {
                     <div className="hidden w-[30%] h-full bg-atendent bg-cover bg-no-repeat left-0
                     md:bg-left md:block md:absolute"></div>
                 <div className="w-full h-full flex justify-center items-center flex-col mt-7 md:items-start">
-                <h2 className="w-full text-center text-2xl text-bluedark font-bold mb-6 xl:text-4xl">{t('be-1')} <span className="text-laranja">{t('be-2')}</span></h2>
+                <h2 className="w-full text-center text-2xl text-bluedark font-bold mb-6 md:text-right md:pr-[5%] lg:pr-0 lg:text-center xl:text-4xl">
+                    {t('be-1')} <span className="text-laranja">{t('be-2')}</span></h2>
 
                     <form className="w-full h-full font-gothan flex justify-end items-start  flex-col
                             md:text-[12px] md:flex-row lg:text-[15px] md:w-[95%] md:space-x-6 2xl:space-x-1" onSubmit={sendEmail}>

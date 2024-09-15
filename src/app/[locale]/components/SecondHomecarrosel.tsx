@@ -1,12 +1,15 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useState } from "react";
 
 export const SecondHomeCarrosel = () => {
+  const locale = useLocale();
   const t = useTranslations('HomePage');
   const [changeBanner, setChangeBanner] = useState(1);
   const [visibleIcons, setVisibleIcons] = useState(0);
+
+  const array = ['bg-banner-3-pt', 'bg-banner-mobile-3-pt','bg-banner-3-en', 'bg-banner-mobile-3-en','bg-banner-3-es', 'bg-banner-mobile-3-es']
 
   const logos = [
     "bg-logo-1",
@@ -86,12 +89,31 @@ export const SecondHomeCarrosel = () => {
       <div
         className={`w-full h-[430px] mb-4 bg-cover mt-10 bg-center bg-no-repeat relative cursor-pointer md:mt-0 xl:mt-10 md:w-[90%] 
             z-40 md:bg-cover md:bg-top md:h-[225px] lg:h-[300px] xl:h-[420px] 2xl:h-[560px] 2xl:bg-contain
-          ${changeBanner === 0 ? 'bg-banner-mobile-2 md:bg-banner-2' : ''}
-          ${changeBanner === 1 ? 'bg-banner-mobile-3 md:bg-banner-3' : ''}
-          ${changeBanner === 2 ? 'bg-banner-mobile-4 md:bg-banner-4' : ''}
-          ${changeBanner === 3 ? 'bg-banner-mobile-1 md:bg-banner-1' : ''}
-          ${changeBanner === 4 ? 'bg-banner-mobile-5 md:bg-banner-5' : ''}
-          ${changeBanner === 5 ? 'bg-banner-mobile-6 md:bg-banner-6' : ''}`}
+            ${changeBanner === 0 && locale === 'pt' ? 'bg-banner-mobile-2-pt md:bg-banner-2-pt' : ''}
+            ${changeBanner === 0 && locale === 'en' ? 'bg-banner-mobile-2-en md:bg-banner-2-en' : ''}
+            ${changeBanner === 0 && locale === 'es' ? 'bg-banner-mobile-2-es md:bg-banner-2-es' : ''}
+
+
+          ${changeBanner === 1 && locale === 'pt' ? 'bg-banner-mobile-3-pt md:bg-banner-3-pt' : ''}
+          ${changeBanner === 1 && locale === 'en' ? 'bg-banner-mobile-3-en md:bg-banner-3-en' : ''}
+          ${changeBanner === 1 && locale === 'es' ? 'bg-banner-mobile-3-es md:bg-banner-3-es' : ''}
+
+          ${changeBanner === 2 && locale === 'pt' ? 'bg-banner-mobile-4-pt md:bg-banner-4-pt' : ''}
+          ${changeBanner === 2 && locale === 'en' ? 'bg-banner-mobile-4-en md:bg-banner-4-en' : ''}
+          ${changeBanner === 2 && locale === 'es' ? 'bg-banner-mobile-4-es md:bg-banner-4-es' : ''}
+
+          ${changeBanner === 3 && locale === 'pt' ? 'bg-banner-mobile-1-pt md:bg-banner-1-pt' : ''}
+          ${changeBanner === 3 && locale === 'en' ? 'bg-banner-mobile-1-en md:bg-banner-1-en' : ''}
+          ${changeBanner === 3 && locale === 'es' ? 'bg-banner-mobile-1-es md:bg-banner-1-es' : ''}
+
+          ${changeBanner === 4 && locale === 'pt' ? 'bg-banner-mobile-5-pt md:bg-banner-5-pt' : ''}
+          ${changeBanner === 4 && locale === 'en' ? 'bg-banner-mobile-5-en md:bg-banner-5-en' : ''}
+          ${changeBanner === 4 && locale === 'es' ? 'bg-banner-mobile-5-es md:bg-banner-5-es' : ''}
+
+          ${changeBanner === 5 && locale === 'pt' ? 'bg-banner-mobile-6-pt md:bg-banner-6-pt' : ''}
+          ${changeBanner === 5 && locale === 'en' ? 'bg-banner-mobile-6-en md:bg-banner-6-en' : ''}
+          ${changeBanner === 5 && locale === 'es' ? 'bg-banner-mobile-6-es md:bg-banner-6-es' : ''}
+      `}    
       >
       </div>
     </section>

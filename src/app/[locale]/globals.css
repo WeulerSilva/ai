@@ -3,23 +3,54 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'Arial';
-    src: url('/fonts/Arial-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Arial';
+  src: url('/fonts/Arial-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gothan';
+  src: url('/fonts/GOTHAM-BOOK.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Renogare';
+  src: url('/fonts/Renogare-Regular.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.custom-scrollbar {
+  overflow-y: scroll;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 20px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #e0e0e0;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #fab21a;
+  border-radius: 10px;
+  /* Arredonda os cantos do polegar */
+
+  /* Cria um espaço entre o polegar e a borda da barra */
+  border: 4px solid #e0e0e0;
+  /* Combina com o fundo da faixa */
+}
+
+@media (max-width: 640px) {
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 10px; /* Diminui a largura da barra de rolagem */
   }
 
-  @font-face {
-    font-family: 'Gothan';
-    src: url('/fonts/GOTHAM-BOOK.otf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    border: 2px solid #e0e0e0; /* Diminui a borda no polegar */
   }
-
-  @font-face {
-    font-family: 'Renogare';
-    src: url('/fonts/Renogare-Regular.otf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
+}
