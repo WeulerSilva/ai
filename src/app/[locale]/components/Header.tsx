@@ -26,7 +26,7 @@ export default function Header() {
     return (
         <header className="w-screen h-[70px] bg-laranja border-b-[6px] border-[#BD8A14] flex justify-center items-center">
             <div className="w-[80%] h-full flex justify-between items-center relative">
-                <Link href={'/'} className="flex w-[120px] h-full justify-items-center items-center relative" title="ilumer">
+                <Link href={'/'} className="flex w-[120px] h-full justify-items-center items-center relative" title="ANK & ILUMER">
                     <div className="w-[100px] h-[100px] absolute top-[10px] z-30 bg-logo bg-contain bg-no-repeat bg-top xl:w-[120px] xl:h-[120px]"></div>
                 </Link>
 
