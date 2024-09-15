@@ -1,6 +1,8 @@
 "use client"
 
 import { useLocale } from "next-intl";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 
 
@@ -23,6 +25,7 @@ export const FirstHomeCarrosel = () => {
     return (
         <section>
             <div className='w-screen h-[500px] flex justify-center mt-12 md:mb-4 md:mt-14 xl:mt-20 md:h-[200px] lg:h-[300px] xl:h-[400px] 2xl:h-[500px]'>
+                <Link href={`${locale}/Products`} className="w-full h-full flex justify-center items-center">
                 <div className={`w-full h-full flex justify-end flex-col items-center mb-4 bg-cover bg-center bg-no-repeat relative
                          ${locale === 'pt' ? 'bg-banner-mobile-0-pt md:bg-banner-0-pt' : ''} 
                          ${locale === 'en' ? 'bg-banner-mobile-0-en md:bg-banner-0-en' : ''}
@@ -48,6 +51,7 @@ export const FirstHomeCarrosel = () => {
                     */}
 
                 </div>
+                </Link>
             </div>
 
         </section>

@@ -1,5 +1,6 @@
 "use client";
 
+import { Link } from "@/i18n/routing";
 import { useLocale, useTranslations } from "next-intl";
 import { useState } from "react";
 
@@ -18,6 +19,8 @@ export const SecondHomeCarrosel = () => {
     "bg-logo-4",
     "bg-logo-6",
   ];
+
+  const marca = ['adult-sec','lady-sec','babyfral','limpdent','petsec','ecovida']
 
   const nextIcons = () => {
     setVisibleIcons((prev) =>
@@ -85,8 +88,9 @@ export const SecondHomeCarrosel = () => {
       </div>
 
       {/* Exibição do banner */}
-      <div
-        className={`w-full h-[430px] mb-4 bg-cover mt-10 bg-center bg-no-repeat relative cursor-pointer md:mt-0 xl:mt-10 md:w-[90%] 
+      <Link className="w-full h-full flex justify-center items-center" href={`${locale}/Products?product=${marca[changeBanner]}&banner=${changeBanner}`}>
+        <div
+          className={`w-full h-[430px] mb-4 bg-cover mt-10 bg-center bg-no-repeat relative cursor-pointer md:mt-0 xl:mt-10 md:w-[90%] 
             z-40 md:bg-cover md:bg-top md:h-[225px] lg:h-[300px] xl:h-[420px] 2xl:h-[560px] 2xl:bg-contain
             ${changeBanner === 0 && locale === 'pt' ? 'bg-banner-mobile-2-pt md:bg-banner-2-pt' : ''}
             ${changeBanner === 0 && locale === 'en' ? 'bg-banner-mobile-2-en md:bg-banner-2-en' : ''}
@@ -112,9 +116,10 @@ export const SecondHomeCarrosel = () => {
           ${changeBanner === 5 && locale === 'pt' ? 'bg-banner-mobile-6-pt md:bg-banner-6-pt' : ''}
           ${changeBanner === 5 && locale === 'en' ? 'bg-banner-mobile-6-en md:bg-banner-6-en' : ''}
           ${changeBanner === 5 && locale === 'es' ? 'bg-banner-mobile-6-es md:bg-banner-6-es' : ''}
-      `}    
-      >
-      </div>
+      `}
+        >
+        </div>
+      </Link>
     </section>
   );
 };

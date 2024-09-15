@@ -229,7 +229,7 @@ export const Footer = () => {
                         <div className={`overflow-hidden transition-all duration-500 ${expandedSections[3] ? "h-[46px]" : "h-[0px]"}
                             border-b-2 border-bluedark`}>
                             <ul className="text-white text-[13px]">
-                                <li
+                                <li className="cursor-pointer"
                                     onClick={() =>
                                         openModal(
                                             p('p1-name-1'),
@@ -252,7 +252,7 @@ export const Footer = () => {
                                         )}
                                 >{h('l4-1')}</li>
 
-                                <li
+                                <li className="cursor-pointer"
                                     onClick={() =>
                                         openModal(
                                             p('t1-name-1'),
