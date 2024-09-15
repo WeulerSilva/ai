@@ -225,7 +225,7 @@ export default function Pages({ searchParams }: { searchParams: { product?: stri
               </div>
 
               <div className="w-full h-full flex flex-col justify-start items-start mb-16">
-                <ul className="space-y-4">
+                <ul className="space-y-4 text-justify">
                   <div className={`${productsName === '.' ? 'text-white' : 'text-bluedark'} text-lg font-semibold md:text-xl xl:text-2xl`}>
                     <li className="uppercase">{t(`${productsName}.li-1`)}</li>
                     <p className="text-base xl:text-xl">{t(`${productsName}.li-1-p`)}</p>

@@ -53,10 +53,11 @@ export default function Pages() {
                 <video src="https://cdn.pixabay.com/video/2022/12/01/141192-777517647_tiny.mp4"
                     controls
                     className="w-full h-full object-cover"
+                    playsInline
                 ></video>
             </div>
 
-            <div className="w-[90%] h-full flex justify-center items-center flex-col mt-4 mb-12 text-[18px] md:w-[80%] xl:text-xl">
+            <div className="w-[90%] h-full text-justify flex justify-center items-center flex-col mt-4 mb-12 text-[18px] md:w-[80%] xl:text-xl">
                 <p><span className="pl-8"></span>
                     {t('p1')}
                 </p>
@@ -91,7 +92,7 @@ export default function Pages() {
 
             </div>
 
-            <div className="w-[90%] h-full flex justify-center items-center flex-col mt-4 mb-12 text-[18px] md:w-[80%] xl:text-xl">
+            <div className="w-[90%] h-full flex justify-center items-center text-justify flex-col mt-4 mb-12 text-[18px] md:w-[80%] xl:text-xl">
                 <h2 className="text-2xl text-bluedark font-bold mt-10 mb-8 xl:text-4xl">{t('our-3')} <span className="text-laranja">{t('our-4')}</span></h2>
 
                 <p className="mb-6"><span className="pl-8"></span>
