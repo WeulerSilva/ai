@@ -9,7 +9,6 @@ export const SecondHomeCarrosel = () => {
   const [changeBanner, setChangeBanner] = useState(1);
   const [visibleIcons, setVisibleIcons] = useState(0);
 
-  const array = ['bg-banner-3-pt', 'bg-banner-mobile-3-pt','bg-banner-3-en', 'bg-banner-mobile-3-en','bg-banner-3-es', 'bg-banner-mobile-3-es']
 
   const logos = [
     "bg-logo-1",

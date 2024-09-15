@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 import emailjs from '@emailjs/browser';
 import { useState } from "react";
 import { FormSend } from "./FormSend";
-import { MdEmail, MdMarkEmailRead } from "react-icons/md";
+import { MdEmail} from "react-icons/md";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { RiLinkedinFill } from "react-icons/ri";
 import { AiFillYoutube } from "react-icons/ai";
