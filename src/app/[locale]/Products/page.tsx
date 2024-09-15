@@ -125,7 +125,7 @@ export default function Pages({ searchParams }: { searchParams: { product?: stri
       {/* Exibição do "Modal" */}
 
       <div className="w-full h-full flex flex-col justify-start items-center mb-10 lg:w-[90%]">
-        <div className="w-full h-[60px] bg-[#00679a3d] flex justify-start items-center uppercase text-[12px] font-bold
+        <div className="w-full h-[60px] bg-[#00679a3d] flex justify-start items-center uppercase text-[11px] font-bold
                text-bluedark md:text-[16px] lg:text-xl">
           <div className="flex w-full h-full justify-around items-center space-x-2 md:space-x-8 md:justify-start md:w-full md:ml-[5%]">
             <span onClick={() => handleTypeClick('photo-1')} className={`${selectedType === 'photo-1' ? 
