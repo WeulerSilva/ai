@@ -106,7 +106,7 @@ export const Footer = () => {
                         <div className="flex flex-col text-white">
                             <span>{h('l4')}</span>
                             <ul className="text-bluedark text-[12px] xl:text-[14px]">
-                                <li
+                                <li className="cursor-pointer"
                                     onClick={() =>
                                         openModal(
                                             p('p1-name-1'),
@@ -129,7 +129,7 @@ export const Footer = () => {
                                         )}
                                 >{h('l4-1')}</li>
 
-                                <li
+                                <li className="cursor-pointer"
                                     onClick={() =>
                                         openModal(
                                             p('t1-name-1'),
