@@ -51,7 +51,7 @@ export const Footer = () => {
     };
 
     return (
-        <footer className="w-screen h-full bg-laranja flex justify-center items-center flex-col lg:h-[300px] xl:h-[250px]" id="contact">
+        <footer className="w-screen h-full bg-laranja flex justify-center items-center flex-col lg:h-[300px] xl:h-[190px]" id="contact">
             <JuridicModal
                 isVisible={isVisible}
                 onClose={() => setIsVisible(false)}

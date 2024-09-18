@@ -104,6 +104,8 @@ const config: Config = {
         "adult-1": "url('/images/adult-img.png')",
         "adult-2": "url('/images/bag.png')",
         "adult-3": "url('/images/box-brand.png')",
+        "al-1": "url('/images/al-1.png')",
+        "al-2": "url('/images/al-2.png')",
         "fachada1": "url('/images/fachada1.jpg')",
         "fachada2": "url('/images/fachada2.jpg')",
         "fachada3": "url('/images/fachada3.jpg')",
@@ -184,7 +186,9 @@ const config: Config = {
     "bg-banner-mobile-3-es",
     "bg-banner-3-es",
     "bg-banner-mobile-3-en",
-    "bg-banner-3-en"
+    "bg-banner-3-en",
+    "bg-al-1",
+    "bg-al-2"
     
     // Adicione outras classes que você deseja preservar
   ],

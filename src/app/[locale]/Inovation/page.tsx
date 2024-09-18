@@ -62,7 +62,7 @@ export default function Pages() {
                     {t('p1')}
                 </p>
 
-                <h2 className="text-2xl text-bluedark font-bold mt-10 mb-8 xl:text-4xl">{t('our-1')} <span className="text-laranja">{t('our-2')}</span></h2>
+                <h2 className="text-2xl text-bluedark font-bold mt-10 mb-8 xl:text-3xl">{t('our-1')} <span className="text-laranja">{t('our-2')}</span></h2>
 
                 <p className="mb-6"><span className="pl-8"></span>{t('p2')}
                 </p>
@@ -93,7 +93,7 @@ export default function Pages() {
             </div>
 
             <div className="w-[90%] h-full flex justify-center items-center text-justify flex-col mt-4 mb-12 text-[18px] md:w-[80%] xl:text-xl">
-                <h2 className="text-2xl text-bluedark font-bold mt-10 mb-8 xl:text-4xl">{t('our-3')} <span className="text-laranja">{t('our-4')}</span></h2>
+                <h2 className="text-2xl text-bluedark font-bold mt-10 mb-8 xl:text-3xl">{t('our-3')} <span className="text-laranja">{t('our-4')}</span></h2>
 
                 <p className="mb-6"><span className="pl-8"></span>
                     {t('p5')}
@@ -282,10 +282,10 @@ export default function Pages() {
             <div className="w-full h-[600px] flex flex-col justify-center bg-[#AAAAA9]/30 lg:w-[100%] lg:flex-row lg:h-[400px] xl:h-[500px] 2xl:h-[450px]">
                 <div id="Inovation" className="w-[90%] h-full flex justify-center items-center flex-col lg:w-[80%] lg:flex-row-reverse">
                     <div className="w-full h-full flex justify-center items-start text-2xl font-bold text-bluedark 
-                        border-l-[16px] border-laranja md:h-[50%] lg:h-full xl:text-4xl lg:w-[50%]">
+                        border-l-[16px] border-laranja md:h-[50%] lg:h-full xl:text-3xl lg:w-[50%]">
                         <div className="w-full pl-10 lg:w-[100%] xl:pl-20">
                             <h1 className="mt-4 text-laranja lg:my-6 xl:my-16">{t('inov')}</h1>
-                            <p className="text-[16px] text-gray-700 text-justify pt-4 md:leading-8 lg:pt-0 xl:mt-4 xl:text-[20px]">
+                            <p className="text-[16px] text-gray-700 text-justify pt-4 md:leading-8 lg:pt-0 xl:mt-4 xl:text-lg">
                                 <span className="pl-6"></span>
                                 {t('inov-p')}
                             </p>
@@ -302,10 +302,10 @@ export default function Pages() {
             <div className="w-full h-[600px] flex flex-col justify-center bg-[#93C248]/30 lg:w-[100%] lg:flex-row lg:h-[400px] xl:h-[500px] 2xl:h-[450px]">
                 <div id="sust" className="w-[90%] h-full flex justify-center items-center flex-col lg:w-[80%] lg:flex-row">
                     <div className="w-full h-full flex justify-start items-start text-2xl font-bold text-bluedark 
-                        border-l-[16px] border-laranja  md:h-[50%] lg:border-none lg:h-full xl:text-4xl lg:justify-center lg:w-[50%]">
+                        border-l-[16px] border-laranja  md:h-[50%] lg:border-none lg:h-full xl:text-3xl lg:justify-center lg:w-[50%]">
                         <div className="w-full pl-10 lg:pl-0 lg:pr-10 lg:border-none lg:w-[100%] xl:pr-20">
                             <h1 className="mt-4 text-[#356A2D] lg:my-6 xl:my-16">{t('susten')}</h1>
-                            <p className="text-[16px] text-gray-700 text-justify pt-4 md:leading-8  lg:pt-0 xl:mt-4 xl:text-[20px]">
+                            <p className="text-[16px] text-gray-700 text-justify pt-4 md:leading-8  lg:pt-0 xl:mt-4 xl:text-lg">
                                 <span className="pl-6"></span>
                                 {t('susten-p')}
                             </p>

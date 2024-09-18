@@ -56,7 +56,7 @@ export default function Pages({ searchParams }: { searchParams: { product?: stri
   return (
     <section className='w-screen h-full flex justify-center items-center flex-col mt-16 lg:mt-16 xl:mt-20'>
       <div className='w-[90%] h-full flex justify-start items-start flex-col lg:w-[80%]'>
-        <h1 className='text-bluedark text-[20px] font-bold mb-4 lg:text-[24px] md:mb-0 lg:mb-4 xl:text-[30px] 2xl:text-[2.6rem] 2xl:mb-10'>
+        <h1 className='text-bluedark text-[20px] font-bold mb-4 lg:text-[24px] md:mb-0 lg:mb-4 xl:text-3xl 2xl:mb-10'>
           {t('h1')} <span className='text-laranja'>{t('h1-2')}</span>
         </h1>
 
@@ -126,7 +126,7 @@ export default function Pages({ searchParams }: { searchParams: { product?: stri
 
       <div className="w-full h-full flex flex-col justify-start items-center mb-10 lg:w-[90%]">
         <div className="w-full h-[60px] bg-[#00679a3d] flex justify-start items-center uppercase text-[11px] font-bold
-               text-bluedark md:text-[16px] lg:text-xl">
+               text-bluedark md:text-[16px] lg:text-base">
           <div className="flex w-full h-full justify-around items-center space-x-2 md:space-x-8 md:justify-start md:w-full md:ml-[5%]">
             <span onClick={() => handleTypeClick('photo-1')} className={`${selectedType === 'photo-1' ? 
                 'border-b-4 border-bluelight text-bluelight' : 'border-b-4 border-transparent'} cursor-pointer`}>
@@ -151,7 +151,7 @@ export default function Pages({ searchParams }: { searchParams: { product?: stri
 
             {(productsName === "adult-sec" || productsName === 'babyfral') && (
               <div className="w-full h-full flex justify-start items-center flex-col mt-4 text-sm font-bold text-bluedark
-              md:text-lg lg:text-[12px] lg:w-[90%] lg:leading-4 xl:leading-5 xl:text-lg 2xl:leading-6 2xl:text-xl">
+              md:text-lg lg:text-[12px] lg:w-[90%] lg:leading-4 xl:leading-5 xl:text-base 2xl:leading-6 2xl:text-xl">
                 <div className="w-full flex items-center lg:w-[90%]">
                   <div className="w-full flex items-center flex-col">
                     <span>Tamaños</span>
@@ -177,7 +177,7 @@ export default function Pages({ searchParams }: { searchParams: { product?: stri
                 <div className="w-full h-full flex justify-start items-center flex-col mt-4">
                   <div className="w-[90%] flex justify-around items-center bg-white border-2 border-bluedark rounded-3xl py-1 mb-4
                   text-sm 2xl:text-lg">
-                    <span className="px-4 w-[116px] 2xl:w-[200px]"><span className="text-lg md:text-2xl 2xl:text-3xl">M</span> Mediana</span>
+                    <span className="px-4 w-[116px] 2xl:w-[200px]"><span className="text-lg md:text-xl 2xl:text-2xl">M</span> Mediana</span>
                     <span className="border-x-2 border-bluedark px-2">{t(`${productsName}.size-m`)}</span>
                     <span className="px-8 w-[117px] 2xl:w-[200px] 2xl:text-right">{t(`${productsName}.cint-m`)}</span>
                   </div>
@@ -219,46 +219,46 @@ export default function Pages({ searchParams }: { searchParams: { product?: stri
           <div className="w-full h-full bg-[#00679a27] flex justify-start items-center py-8 lg:w-[60%] lg:h-[880px]">
             <div className="w-full h-[90%] bg-white rounded-[40px] flex flex-col justify-start items-center px-6 2xl:h-full lg:w-[90%]">
               <div className="flex items-start justify-between w-full mt-6 mb-3">
-                <h6 className="text-xl font-bold text-bluelight md:text-2xl xl:text-3xl">{t(`${productsName}.h1`)}</h6>
+                <h6 className="text-xl font-bold text-bluelight md:text-2xl xl:text-2xl">{t(`${productsName}.h1`)}</h6>
                 <span className={`w-[120px] h-[60px] bg-contain bg-center bg-no-repeat
                   ${productsName === 'babyfral' || productsName === 'adult-sec' ? 'bg-unisex' : ''}`}></span>
               </div>
 
               <div className="w-full h-full flex flex-col justify-start items-start mb-16">
                 <ul className="space-y-4 text-justify">
-                  <div className={`${productsName === '.' ? 'text-white' : 'text-bluedark'} text-lg font-semibold md:text-xl xl:text-2xl`}>
+                  <div className={`${productsName === '.' ? 'text-white' : 'text-bluedark'} text-lg font-semibold md:text-xl xl:text-xl`}>
                     <li className="uppercase">{t(`${productsName}.li-1`)}</li>
-                    <p className="text-base xl:text-xl">{t(`${productsName}.li-1-p`)}</p>
+                    <p className="text-base xl:text-lg">{t(`${productsName}.li-1-p`)}</p>
                   </div>
 
-                  <div className="text-bluedark text-lg font-semibold md:text-xl xl:text-2xl">
+                  <div className="text-bluedark text-lg font-semibold md:text-xl xl:text-xl">
                     <li className="uppercase">{t(`${productsName}.li-2`)}</li>
-                    <p className="text-base xl:text-xl">{t(`${productsName}.li-2-p`)}</p>
+                    <p className="text-base xl:text-lg">{t(`${productsName}.li-2-p`)}</p>
                   </div>
 
-                  <div className="text-bluedark text-lg font-semibold md:text-xl xl:text-2xl">
+                  <div className="text-bluedark text-lg font-semibold md:text-xl xl:text-xl">
                     <li className="uppercase">{t(`${productsName}.li-3`)}</li>
-                    <p className="text-base xl:text-xl">{t(`${productsName}.li-3-p`)}</p>
+                    <p className="text-base xl:text-lg">{t(`${productsName}.li-3-p`)}</p>
                   </div>
 
-                  <div className="text-bluedark text-lg font-semibold md:text-xl xl:text-2xl">
+                  <div className="text-bluedark text-lg font-semibold md:text-xl xl:text-xl">
                     <li className="uppercase">{t(`${productsName}.li-4`)}</li>
-                    <p className="text-base xl:text-xl">{t(`${productsName}.li-4-p`)}</p>
+                    <p className="text-base xl:text-lg">{t(`${productsName}.li-4-p`)}</p>
                   </div>
 
-                  <div className="text-bluedark text-lg font-semibold md:text-xl xl:text-2xl">
+                  <div className="text-bluedark text-lg font-semibold md:text-xl xl:text-xl">
                     <li className="uppercase">{t(`${productsName}.li-5`)}</li>
-                    <p className="text-base xl:text-xl">{t(`${productsName}.li-5-p`)}</p>
+                    <p className="text-base xl:text-lg">{t(`${productsName}.li-5-p`)}</p>
                   </div>
 
-                  <div className="text-bluedark text-lg font-semibold md:text-xl xl:text-2xl">
+                  <div className="text-bluedark text-lg font-semibold md:text-xl xl:text-xl">
                     <li className="uppercase">{t(`${productsName}.li-6`)}</li>
-                    <p className="text-base xl:text-xl">{t(`${productsName}.li-6-p`)}</p>
+                    <p className="text-base xl:text-lg">{t(`${productsName}.li-6-p`)}</p>
                   </div>
 
-                  <div className={`${productsName === '.' ? 'text-white' : 'text-bluedark'} text-lg font-semibold md:text-xl xl:text-2xl`}>
+                  <div className={`${productsName === '.' ? 'text-white' : 'text-bluedark'} text-lg font-semibold md:text-xl xl:text-xl`}>
                     <li className="uppercase">{t(`${productsName}.li-7`)}</li>
-                    <p className="text-base xl:text-xl">{t(`${productsName}.li-7-p`)}</p>
+                    <p className="text-base xl:text-lg">{t(`${productsName}.li-7-p`)}</p>
                   </div>
                 </ul>
               </div>
