@@ -103,25 +103,29 @@ export const EmailPhone = () => {
                     <form className="w-full h-full font-gothan flex justify-end items-center flex-col space-y-4 md:justify-end md:items-end
                             md:text-[12px] lg:text-[15px] md:space-x-6 2xl:space-x-1 md:w-[95%] lg:w-[88%]" onSubmit={sendEmail}>
                         <div className="w-[90%] text-bluedark/60 flex items-center justify-between mb-6 md:mb-0 md:w-[63%] md:h-[60%] lg:w-[45%] xl:w-[20%]">
-                            <div className="w-[40px] h-[40px] flex justify-center items-center cursor-pointer rounded-full bg-laranja 
+                            <a href="mailto:info@ank-ilumer.com" className="w-[40px] h-[40px] flex justify-center items-center cursor-pointer rounded-full bg-laranja 
                                 lg:w-[30px] lg:h-[30px] xl:w-[40px] xl:h-[40px]">
                                 <MdEmail className="w-[85%] h-[85%]" />
-                            </div>
-                            <div className="w-[40px] h-[40px] cursor-pointer rounded-full bg-laranja lg:w-[30px] lg:h-[30px] xl:w-[40px] xl:h-[40px]">
+                            </a>
+                            <a href="https://www.facebook.com/people/ANK-Ilumer/61561552288144/" target="_blank"
+                                className="w-[40px] h-[40px] cursor-pointer rounded-full bg-laranja lg:w-[30px] lg:h-[30px] xl:w-[40px] xl:h-[40px]">
                                 <FaFacebook className="w-full h-full" />
-                            </div>
-                            <div className="w-[40px] h-[40px] cursor-pointer rounded-full bg-laranja flex justify-center items-center
+                            </a>
+                            <a href="https://www.instagram.com/ank.ilumer/" target="_blank"
+                                className="w-[40px] h-[40px] cursor-pointer rounded-full bg-laranja flex justify-center items-center
                                 lg:w-[30px] lg:h-[30px] xl:w-[40px] xl:h-[40px]">
                                 <FaInstagram className="w-[70%] h-[70%]" />
-                            </div>
-                            <div className="w-[40px] h-[40px] cursor-pointer rounded-full bg-laranja flex justify-center items-center
+                            </a>
+                            <a href="https://www.linkedin.com/company/ank-ilumer/about/?viewAsMember=true" target="_blank"
+                                className="w-[40px] h-[40px] cursor-pointer rounded-full bg-laranja flex justify-center items-center
                                 lg:w-[30px] lg:h-[30px] xl:w-[40px] xl:h-[40px]">
                                 <RiLinkedinFill className="w-[70%] h-[70%]" />
-                            </div>
-                            <div className="w-[40px] h-[40px] cursor-pointer rounded-full bg-laranja flex justify-center items-center
+                            </a>
+                            <a href="https://www.youtube.com/@ANK-Ilumer" target="_blank"
+                                className="w-[40px] h-[40px] cursor-pointer rounded-full bg-laranja flex justify-center items-center
                                 lg:w-[30px] lg:h-[30px] xl:w-[40px] xl:h-[40px]">
                                 <AiFillYoutube className="w-[70%] h-[70%]" />
-                            </div>
+                            </a>
                         </div>
 
                         <div className="w-full flex items-end justify-center flex-col md:space-y-4 md:w-[63%] md:h-[60%] lg:w-[45%] xl:w-[25%]">
