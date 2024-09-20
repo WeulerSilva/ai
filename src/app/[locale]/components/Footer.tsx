@@ -116,7 +116,6 @@ export const Footer = () => {
                                             p('p1-3'),
                                             p('p1-4'),
                                             p('p1-5'),
-                                            p('p1-name-3'),
                                             p('p1-6'),
                                             p('p1-7'),
                                             p('p1-name-4'),
@@ -125,7 +124,8 @@ export const Footer = () => {
                                             p('p1-10'),
                                             p('p1-11'),
                                             p('p1-12'),
-                                            p('')
+                                            p('p1-13'),
+                                            p(''),
                                         )}
                                 >{h('l4-1')}</li>
 
@@ -148,7 +148,7 @@ export const Footer = () => {
                                             p(''),
                                             p(''),
                                             p(''),
-                                            p('t1-name-3'),
+                                            p(''),
                                         )}
                                 >{h('l4-2')}</li>
                             </ul>

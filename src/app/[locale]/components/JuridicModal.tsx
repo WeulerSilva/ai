@@ -16,7 +16,7 @@ type Content = {
     li12: string;
     li13: string;
     li14: string;
-    li15: string; 
+    li15: string;
     li16: string;
 };
 
@@ -46,40 +46,43 @@ const JuridicModal = ({ isVisible, onClose, content }: Props) => {
                         <p>{content.li5}</p>
 
                         <p>{content.li6}</p>
-                        {content.li10 &&
-                            <>
-                                <h2 className='text-3xl font-bold'>{content.li1} <span className='text-laranja'>{content.li7}</span></h2>
+                        <h2>{content.li7}</h2>
 
-                                <p>{content.li8}</p>
+                        <p>{content.li8}</p>
 
-                                <p>
-                                    <span className='pl-8'></span>
-                                    {content.li9}
-                                </p>
+                        <p>
+                            {content.li9}
+                        </p>
 
-                                <h2 className='text-2xl font-bold'>{content.li10}</h2>
+                        <h2>{content.li10}</h2>
 
-                                <p>
-                                    {content.li11}
-                                </p>
+                        <p>
+                            {content.li11}
+                        </p>
 
-                                <p>
-                                    {content.li12}
-                                </p>
+                        <p>
+                            {content.li12}
+                        </p>
 
-                                <p>
-                                    {content.li13}
-                                </p>
+                        <p>
+                            {content.li13}
+                        </p>
 
-                                <p>
-                                    {content.li14}
-                                </p>
+                        <p>
+                            {content.li14}
+                        </p>
 
-                                <p>
-                                    {content.li15}
-                                </p>
-                            </>
-                        }
+                        <p>
+                            {content.li15}
+                        </p>
+                        
+                        <p>
+                            {content.li16}
+                        </p>
+
+                        <p>
+                            {content.li16}
+                        </p>
                     </div>
                 </div>
             </div>
