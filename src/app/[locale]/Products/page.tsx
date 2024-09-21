@@ -144,7 +144,7 @@ export default function Pages({ searchParams }: { searchParams: { product?: stri
 
         </div>
 
-        <div className="w-full h-full bg-white flex-col flex lg:flex-row lg:h-[880px]">
+        <div className="w-full h-full bg-white flex-col flex lg:flex-row lg:h-[930px] 2xl:h-[880px]">
           <div className="w-full bg-[#00679a27] h-full flex justify-center items-center flex-col lg:w-[40%]">
             <div className={`${t(`${productsName}.${selectedType}`)} w-[90%] h-[260px] mt-12 bg-contain bg-center bg-no-repeat md:h-[320px] lg:h-[340px] md:w-[70%] xl:w-[90%] 2xl:h-[530px]`}>
             </div>
@@ -154,21 +154,15 @@ export default function Pages({ searchParams }: { searchParams: { product?: stri
               md:text-lg lg:text-[12px] lg:w-[90%] lg:leading-4 xl:leading-5 xl:text-base 2xl:leading-6 2xl:text-xl">
                 <div className="w-full flex items-center lg:w-[90%]">
                   <div className="w-full flex items-center flex-col">
-                    <span>Tamaños</span>
-                    <span>Sizes</span>
-                    <span>Tamanhos</span>
+                    <span>{t('size')}</span>
                   </div>
 
                   <div className="w-full flex items-center flex-col">
-                    <span></span>
-                    <span>Peso</span>
-                    <span>Weight</span>
+                    <span>{t('weight')}</span>
                   </div>
 
                   <div className="w-full flex items-center flex-col">
-                    <span></span>
-                    <span>Cintura {"( cm )"}</span>
-                    <span>Waistline {"( cm )"}</span>
+                    <span>{t('waistline')}</span>
                   </div>
                 </div>
 
@@ -177,21 +171,21 @@ export default function Pages({ searchParams }: { searchParams: { product?: stri
                 <div className="w-full h-full flex justify-start items-center flex-col mt-4">
                   <div className="w-[90%] flex justify-around items-center bg-white border-2 border-bluedark rounded-3xl py-1 mb-4
                   text-sm 2xl:text-lg">
-                    <span className="px-4 w-[116px] 2xl:w-[200px]"><span className="text-lg md:text-xl 2xl:text-2xl">M</span> Mediana</span>
+                    <span className="px-4 w-[116px] 2xl:w-[200px]"><span className="text-lg md:text-xl 2xl:text-2xl">M</span> {t('size-1')}</span>
                     <span className="border-x-2 border-bluedark px-2">{t(`${productsName}.size-m`)}</span>
                     <span className="px-8 w-[117px] 2xl:w-[200px] 2xl:text-right">{t(`${productsName}.cint-m`)}</span>
                   </div>
 
                   <div className="w-[90%] flex justify-around items-center bg-white border-2 border-bluedark rounded-3xl py-1 mb-4
                   text-sm 2xl:text-lg">
-                    <span className="px-4 w-[116px] 2xl:w-[200px]"><span className="text-lg md:text-2xl 2xl:text-3xl">L</span> Grande</span>
+                    <span className="px-4 w-[116px] 2xl:w-[200px]"><span className="text-lg md:text-2xl 2xl:text-3xl">L</span> {t('size-2')}</span>
                     <span className="border-x-2 border-bluedark px-2">{t(`${productsName}.size-l`)}</span>
                     <span className="px-8 w-[118px] 2xl:w-[200px] 2xl:text-right">{t(`${productsName}.cint-l`)}</span>
                   </div>
 
                   <div className="w-[90%] flex justify-around items-center bg-white border-2 border-bluedark rounded-3xl py-1 mb-4
                   text-sm 2xl:text-lg">
-                    <span className="px-4 w-[116px] 2xl:w-[200px]"><span className="text-lg md:text-2xl 2xl:text-3xl">XL</span> Extra Grande</span>
+                    <span className="px-4 w-[116px] 2xl:w-[200px]"><span className="text-lg md:text-2xl 2xl:text-3xl">XL</span> {t('size-3')}</span>
                     <span className="border-x-2 border-bluedark px-2">{t(`${productsName}.size-xl`)}</span>
                     <span className="px-8 w-[118px] 2xl:w-[200px] 2xl:text-right">{t(`${productsName}.cint-xl`)}</span>
                   </div>
@@ -216,7 +210,7 @@ export default function Pages({ searchParams }: { searchParams: { product?: stri
 
 
           {/* Infors about the products */}
-          <div className="w-full h-full bg-[#00679a27] flex justify-start items-center py-8 lg:w-[60%] lg:h-[880px]">
+          <div className="w-full h-full bg-[#00679a27] flex justify-start items-center py-8 lg:w-[60%] lg:h-[930px] 2xl:h-[880px]">
             <div className="w-full h-[90%] bg-white rounded-[40px] flex flex-col justify-start items-center px-6 2xl:h-full lg:w-[90%]">
               <div className="flex items-start justify-between w-full mt-6 mb-3">
                 <h6 className="text-xl font-bold text-bluelight md:text-2xl xl:text-2xl">{t(`${productsName}.h1`)}</h6>
@@ -259,6 +253,15 @@ export default function Pages({ searchParams }: { searchParams: { product?: stri
                   <div className={`${productsName === '.' ? 'text-white' : 'text-bluedark'} text-lg font-semibold md:text-xl xl:text-xl`}>
                     <li className="uppercase">{t(`${productsName}.li-7`)}</li>
                     <p className="text-base xl:text-lg">{t(`${productsName}.li-7-p`)}</p>
+                  </div>
+
+                  <div className={`${productsName === '.' ? 'text-white' : 'text-bluedark'} text-lg font-semibold md:text-xl xl:text-xl`}>
+                    <li className="uppercase">{t(`${productsName}.li-8`)}</li>
+                    <p className="text-base xl:text-lg">{t(`${productsName}.li-8-p`)}</p>
+                  </div>
+
+                  <div className={`${productsName === '.' ? 'text-white' : 'text-bluedark'} text-lg font-semibold md:text-xl xl:text-xl`}>
+                    <li className="uppercase">{t(`${productsName}.li-9`)}</li>
                   </div>
                 </ul>
               </div>

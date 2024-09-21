@@ -57,14 +57,17 @@ export default function Pages() {
                 ></video>
             </div>
 
-            <div className="w-[90%] h-full text-justify flex justify-center items-center flex-col mt-4 mb-12 text-[18px] md:w-[80%] xl:text-xl">
+            <div className="w-[90%] h-full text-justify flex justify-center items-start flex-col mt-4 mb-12 text-[18px] md:w-[80%] xl:text-xl">
                 <p><span className="pl-8"></span>
                     {t('p1')}
                 </p>
 
-                <h2 className="text-2xl text-bluedark font-bold mt-10 mb-8 xl:text-3xl">{t('our-1')} <span className="text-laranja">{t('our-2')}</span></h2>
+                <h2 className="w-full text-center text-2xl text-bluedark font-bold mt-10 mb-8 xl:text-3xl">{t('our-1')} <span className="text-laranja">{t('our-2')}</span></h2>
 
                 <p className="mb-6"><span className="pl-8"></span>{t('p2')}
+                </p>
+
+                <p className="mb-6"><span className="pl-8"></span>{t('p2-1')}
                 </p>
 
                 <p className="mb-6"><span className="pl-8"></span>
@@ -137,7 +140,7 @@ export default function Pages() {
                             ''
                         )}
                         text={t('modal-1')}
-                        image="bg-prod4" />
+                        image="bg-fachada1" />
 
                     <FabricsDivs onClick={() =>
                         openModal(
@@ -151,20 +154,20 @@ export default function Pages() {
                             'bg-emb2',
                             h('f2-l1'),
                             h('f2-l2'),
-                            '.',
+                            '',
                             h('f2-l3'),
                             h('f2-l4'),
                             h('f2-l5'),
                             h('f2-l6'),
                             h('f2-l7'),
                             h('f2-l8'),
-                            '',
+                            h('f2-l9'),
                             '',
                             '',
                             ''
                         )}
                         text={t('modal-2')}
-                        image="bg-machine3" />
+                        image="bg-fachada2" />
 
                     <FabricsDivs onClick={() =>
                         openModal(
@@ -183,7 +186,7 @@ export default function Pages() {
                             h('f3-l5'),
                             h('f3-l6'),
                             h('f3-l7'),
-                            '',
+                            h('f3-l8'),
                             '',
                             '',
                             '',
@@ -191,7 +194,7 @@ export default function Pages() {
                             ''
                         )}
                         text={t('modal-3')}
-                        image="bg-fachada1" />
+                        image="bg-fachada3" />
                 </div>
 
                 <div className="w-full h-full flex justify-between items-center mb-12 flex-col space-y-6 md:space-y-0 md:flex-row">
@@ -207,8 +210,8 @@ export default function Pages() {
                             'bg-emb4',
                             h('f4-l1'),
                             h('f4-l2'),
+                            h('f4-l14'),
                             h('f4-l3'),
-                            h('f4-l4'),
                             h('f4-l5'),
                             h('f4-l6'),
                             h('f4-l7'),
@@ -220,7 +223,7 @@ export default function Pages() {
                             h('f4-l13')
                         )}
                         text={t('modal-4')}
-                        image="bg-fachada3" />
+                        image="bg-fachada4" />
 
                     <FabricsDivs onClick={() =>
                         openModal(
@@ -241,7 +244,7 @@ export default function Pages() {
                             h('f5-l7'),
                             h('f5-l8'),
                             h('f5-l9'),
-                            '',
+                            h('f5-l10'),
                             '',
                             '',
                             ''
@@ -267,7 +270,7 @@ export default function Pages() {
                             h('f6-l6'),
                             h('f6-l7'),
                             h('f6-l8'),
-                            '',
+                            h('f6-l9'),
                             '',
                             '',
                             '',
@@ -294,7 +297,7 @@ export default function Pages() {
                     </div>
 
                     <div className="w-full h-[50%] flex flex-col space-y-2 md:space-y-0 md:space-x-2 md:flex-row lg:h-full lg:w-[50%]">
-                        <div className="w-full h-full bg-inovation bg-cover bg-center bg-no-repeat md:bg-cover lg:bg-left bg-green-200"></div>
+                        <div className="w-full h-full bg-inovation bg-cover bg-center bg-no-repeat md:bg-cover lg:bg-left bg-green-200 xl:bg-left"></div>
                     </div>
                 </div>
             </div>
