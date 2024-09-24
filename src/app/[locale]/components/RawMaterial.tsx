@@ -11,8 +11,15 @@ export default function RawMaterial() {
                 <h2 id="Raw-Material" className="text-2xl text-laranja font-bold mb-8 xl:text-3xl">{t('raw-1')}<span className="text-bluedark">{t('raw-2')}</span></h2>
 
                 <div  className="w-full h-full flex flex-col border-y-[12px] border-laranja lg:w-[90%] lg:flex-row">
-                    <div className="w-full h-full bg-raw-material bg-contain bg-center bg-no-repeat lg:bg-cover lg:bg-left lg:w-[40%]">
-
+                    <div className="w-full h-full flex flex-col bg-contain bg-center bg-no-repeat lg:bg-cover lg:bg-left lg:w-[40%]">
+                        <div className="w-full h-full flex">
+                            <div className="w-full h-full bg-green-200 bg-w-1 bg-cover bg-center bg-no-repeat"></div>
+                            <div className="w-full h-full bg-black bg-w-2 bg-cover bg-center bg-no-repeat"></div>
+                        </div>
+                        <div className="w-full h-full flex">
+                            <div className="w-full h-full bg-blue-400 bg-w-3 bg-cover bg-center bg-no-repeat"></div>
+                            <div className="w-full h-full bg-pink-300 bg-w-4 bg-cover bg-center bg-no-repeat"></div>
+                        </div>
                     </div>
                     <div className="w-full h-full flex lg:w-[60%]">
                         <div className="w-full h-full px-6 lg:px-0 lg:pl-6 lg:w-[90%]">
