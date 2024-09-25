@@ -144,7 +144,7 @@ export default function Pages({ searchParams }: { searchParams: { product?: stri
 
         </div>
 
-        <div className="w-full h-full bg-white flex-col flex lg:flex-row lg:h-[930px] 2xl:h-[880px]">
+        <div className="w-full h-full bg-white flex-col flex lg:flex-row lg:h-[1070px] 2xl:h-[980px]">
           <div className="w-full bg-[#00679a27] h-full flex justify-center items-center flex-col lg:w-[40%]">
             <div className={`${t(`${productsName}.${selectedType}`)} w-[90%] h-[260px] mt-12 bg-contain bg-center bg-no-repeat md:h-[320px] lg:h-[340px] md:w-[70%] xl:w-[90%] 2xl:h-[530px]`}>
             </div>
@@ -210,7 +210,7 @@ export default function Pages({ searchParams }: { searchParams: { product?: stri
 
 
           {/* Infors about the products */}
-          <div className="w-full h-full bg-[#00679a27] flex justify-start items-center py-8 lg:w-[60%] lg:h-[930px] 2xl:h-[880px]">
+          <div className="w-full h-full bg-[#00679a27] flex justify-start items-center py-8 lg:w-[60%] lg:h-[1070px] 2xl:h-[980px]">
             <div className="w-full h-[90%] bg-white rounded-[40px] flex flex-col justify-start items-center px-6 2xl:h-full lg:w-[90%]">
               <div className="flex items-start justify-between w-full mt-6 mb-3">
                 <h6 className="text-xl font-bold text-bluelight md:text-2xl xl:text-2xl">{t(`${productsName}.h1`)}</h6>
@@ -222,47 +222,42 @@ export default function Pages({ searchParams }: { searchParams: { product?: stri
                 <ul className="space-y-4 text-justify">
                   <div className={`${productsName === '.' ? 'text-white' : 'text-bluedark'} text-lg font-semibold md:text-xl xl:text-xl`}>
                     <li className="uppercase">{t(`${productsName}.li-1`)}</li>
-                    <p className="text-base xl:text-lg">{t(`${productsName}.li-1-p`)}</p>
+                    <p className="text-base xl:text-lg">{t(`${productsName}.li-11-p`)}</p>
+                    <p className="text-base xl:text-lg">{t(`${productsName}.li-12-p`)}</p>
+                    <p className="text-base xl:text-lg">{t(`${productsName}.li-13-p`)}</p>
+                    <p className="text-base xl:text-lg">{t(`${productsName}.li-14-p`)}</p>
+                    <p className="text-base xl:text-lg">{t(`${productsName}.li-15-p`)}</p>
+                    <p className="text-base xl:text-lg">{t(`${productsName}.li-16-p`)}</p>
+                    <p className="text-base xl:text-lg">{t(`${productsName}.li-17-p`)}</p>
+                    <p className="text-base xl:text-lg">{t(`${productsName}.li-18-p`)}</p>
                   </div>
 
-                  <div className="text-bluedark text-lg font-semibold md:text-xl xl:text-xl">
+                  <div className={`${productsName === '.' ? 'text-white' : 'text-bluedark'} text-lg font-semibold md:text-xl xl:text-xl`}>
                     <li className="uppercase">{t(`${productsName}.li-2`)}</li>
-                    <p className="text-base xl:text-lg">{t(`${productsName}.li-2-p`)}</p>
+                    <p className="text-base xl:text-lg">{t(`${productsName}.li-21-p`)}</p>
+                    <p className="text-base xl:text-lg">{t(`${productsName}.li-22-p`)}</p>
+                    <p className="text-base xl:text-lg">{t(`${productsName}.li-23-p`)}</p>
+                    <p className="text-base xl:text-lg">{t(`${productsName}.li-24-p`)}</p>
+                    <p className="text-base xl:text-lg">{t(`${productsName}.li-25-p`)}</p>
+                    <p className="text-base xl:text-lg">{t(`${productsName}.li-26-p`)}</p>
+                    <p className="text-base xl:text-lg">{t(`${productsName}.li-27-p`)}</p>
+                    <p className="text-base xl:text-lg">{t(`${productsName}.li-28-p`)}</p>
                   </div>
 
-                  <div className="text-bluedark text-lg font-semibold md:text-xl xl:text-xl">
+                  <div className={`${productsName === '.' ? 'text-white' : 'text-bluedark'} text-lg font-semibold md:text-xl xl:text-xl`}>
                     <li className="uppercase">{t(`${productsName}.li-3`)}</li>
-                    <p className="text-base xl:text-lg">{t(`${productsName}.li-3-p`)}</p>
+                    <p className="text-base xl:text-lg">{t(`${productsName}.li-31-p`)}</p>
+                    <p className="text-base xl:text-lg">{t(`${productsName}.li-32-p`)}</p>
+                    <p className="text-base xl:text-lg">{t(`${productsName}.li-33-p`)}</p>
+                    <p className="text-base xl:text-lg">{t(`${productsName}.li-34-p`)}</p>
+                    <p className="text-base xl:text-lg">{t(`${productsName}.li-35-p`)}</p>
+                    <p className="text-base xl:text-lg">{t(`${productsName}.li-36-p`)}</p>
+                    <p className="text-base xl:text-lg">{t(`${productsName}.li-37-p`)}</p>
+                    <p className="text-base xl:text-lg">{t(`${productsName}.li-38-p`)}</p>
                   </div>
 
-                  <div className="text-bluedark text-lg font-semibold md:text-xl xl:text-xl">
-                    <li className="uppercase">{t(`${productsName}.li-4`)}</li>
-                    <p className="text-base xl:text-lg">{t(`${productsName}.li-4-p`)}</p>
-                  </div>
 
-                  <div className="text-bluedark text-lg font-semibold md:text-xl xl:text-xl">
-                    <li className="uppercase">{t(`${productsName}.li-5`)}</li>
-                    <p className="text-base xl:text-lg">{t(`${productsName}.li-5-p`)}</p>
-                  </div>
-
-                  <div className="text-bluedark text-lg font-semibold md:text-xl xl:text-xl">
-                    <li className="uppercase">{t(`${productsName}.li-6`)}</li>
-                    <p className="text-base xl:text-lg">{t(`${productsName}.li-6-p`)}</p>
-                  </div>
-
-                  <div className={`${productsName === '.' ? 'text-white' : 'text-bluedark'} text-lg font-semibold md:text-xl xl:text-xl`}>
-                    <li className="uppercase">{t(`${productsName}.li-7`)}</li>
-                    <p className="text-base xl:text-lg">{t(`${productsName}.li-7-p`)}</p>
-                  </div>
-
-                  <div className={`${productsName === '.' ? 'text-white' : 'text-bluedark'} text-lg font-semibold md:text-xl xl:text-xl`}>
-                    <li className="uppercase">{t(`${productsName}.li-8`)}</li>
-                    <p className="text-base xl:text-lg">{t(`${productsName}.li-8-p`)}</p>
-                  </div>
-
-                  <div className={`${productsName === '.' ? 'text-white' : 'text-bluedark'} text-lg font-semibold md:text-xl xl:text-xl`}>
-                    <li className="uppercase">{t(`${productsName}.li-9`)}</li>
-                  </div>
+                  
                 </ul>
               </div>
             </div>

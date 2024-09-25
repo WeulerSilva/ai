@@ -129,7 +129,7 @@ export const Footer = () => {
                                         )}
                                 >{h('l4-1')}</li>
 
-                                <li className="cursor-pointer"
+                                {/*<li className="cursor-pointer"
                                     onClick={() =>
                                         openModal(
                                             p('t1-name-1'),
@@ -150,7 +150,7 @@ export const Footer = () => {
                                             p(''),
                                             p(''),
                                         )}
-                                >{h('l4-2')}</li>
+                                >{h('l4-2')}</li>*/}
                             </ul>
                         </div>
                     </div>
@@ -252,7 +252,7 @@ export const Footer = () => {
                                         )}
                                 >{h('l4-1')}</li>
 
-                                <li className="cursor-pointer"
+                                {/*<li className="cursor-pointer"
                                     onClick={() =>
                                         openModal(
                                             p('t1-name-1'),
@@ -273,7 +273,7 @@ export const Footer = () => {
                                             p(''),
                                             p('t1-name-3'),
                                         )}
-                                >{h('l4-2')}</li>
+                                >{h('l4-2')}</li>*/}
                             </ul>
                         </div>
                     </div>
