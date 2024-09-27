@@ -106,7 +106,7 @@ export default function Pages() {
                     {t('p6')}
                 </p>
 
-                <p id="test" className="w-full">
+                <p id="test" className="pl-8 text-left w-full">
                     {t('p7')}
                 </p>
 
