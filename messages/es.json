@@ -354,11 +354,11 @@
             "li-37-p": "- Limpieza delicada y segura",
             "li-38-p": "Cuida la piel mientras protege el medio ambiente."
         },
-        "a&l-mp": {
+        "al-mp": {
             "h1": "Fabricación y distribución de materias primas de excelente calidad y alto rendimiento",
-            "photo-1": "bg-wp-1",
-            "photo-2": "bg-wp-2",
-            "photo-3": "bg-wp-3",
+            "photo-1": "bg-wp-4",
+            "photo-2": "bg-w-2",
+            "photo-3": "bg-w-1",
             "type-1": "Spandex",
             "type-2": "SAP",
             "type-3": "Polietileno",
@@ -394,7 +394,7 @@
             "li-37-p": "",
             "li-38-p": ""
         },
-        "a&l-wl": {
+        "al-wl": {
             "h1": "a&l white label íntima desechable para adultos",
             "photo-1": "bg-adult-1",
             "photo-2": "bg-adult-2",
@@ -439,6 +439,14 @@
         "t-y-7": "2022",
         "t-8": "Inauguración de la sexta fábrica",
         "t-y-8": "2025",
+        "inf-1": "Presencia Global:",
+        "inf-1-1": "30 países",
+        "inf-2": "Fábricas:",
+        "inf-2-1": "6",
+        "inf-3": "Infraestructura:",
+        "inf-3-1": "300.000 m²",
+        "inf-4": "Diversidad de Productos:",
+        "inf-4-1": "40",
         "p1": "En un mundo cada vez más interconectado y dinámico, los valores de ética, responsabilidad y sustentabilidad tornasen esenciales para el éxito de cualquier negocio. La ética orienta nuestras acciones, garantizando que nuestras decisiones sean justas y transparentes. La responsabilidad nos recuerda de la importancia de responder por nuestras acciones, siendo conscientes de los impactos que generamos en el medio ambiente y en la sociedad.",
         "our-1": "Nuestra",
         "our-2": "trayectoria",
@@ -446,6 +454,7 @@
         "p3": "Enraizada en la industria de higiene personal desde 2011, con seis bases de producción en China, el holding ANK HYGIENE es referencia internacional en productos higiénicos descartables, materias primas y maquinarias para la industria de higiénicos descartables.",
         "p4": "Uno de los principales mercados de interés es América Latina. Con ese objetivo en mente, y luego de años de trabajo continuo, formamos el joint venture ANK ILUMER (A&I).",
         "p2-1": "A&I, se dedica a mejorar la calidad de vida de las personas a través de productos innovadores y responsables.",
+        "p5-1": "A&I, se dedica a mejorar la calidad de vida de las personas a través de productos innovadores y responsables.",
         "our-3": "Conoce",
         "our-4": "nuestras fábricas",
         "p5": "Nuestro principal diferencial reside en nuestro equipo de profesionales. La excelencia en la calidad de los productos que ofrecemos es el resultado de un compromiso continuo con el crecimiento personal; marcado por la seriedad y dedicación. ",

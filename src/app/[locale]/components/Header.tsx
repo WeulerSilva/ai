@@ -12,7 +12,7 @@ export default function Header() {
 
     const menuItems = [
         { key: 'Home', href: '/' },
-        { key: 'Journey', href: '/Inovation#test' },
+        { key: 'Journey', href: '/Journey' },
         { key: 'Inovation', href: '/Inovation' },
         { key: 'Products', href: '/Products' },
         { key: 'Contact', href: '/Contact' }

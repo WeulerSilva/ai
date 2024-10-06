@@ -4,10 +4,14 @@ import { FirstHomeCarrosel } from './components/FirstHomeCarrosel';
 import { AboutSpan } from './components/AboutSpan';
 import { SecondHomeCarrosel } from './components/SecondHomecarrosel';
 import { useTranslations } from 'use-intl';
+import { useLocale } from 'next-intl';
+import Link from 'next/link';
 
 
 export default function HomePage() {
   const t = useTranslations('HomePage');
+  const r = useLocale();
+
 
 
   return (
@@ -54,16 +58,19 @@ export default function HomePage() {
                 {t('raw-1')} <br /> <span className='text-laranja flex items-end'>{t('raw-2')}  <div className='w-[1px] h-[1px] bg-black relative'>
                   <div className='absolute left-4 bottom-[6px] w-[80px] bg-black h-[4px] md:w-[50vw]'></div></div></span>
               </h6>
-              <AboutSpan link='/Products#Raw-Material' 
-                style='bg-bluedark text-laranja mr-6 md:mr-0 text-[12px] lg:text-[16px] xl:text-lg' />
+
+              <Link href={`/${r}/Products?product=al-mp&banner=6`}
+                className='bg-bluedark text-laranja font-conthrax px-3 h-fit text-[12px] font-semibold rounded-xl uppercase cursor-pointer
+                  lg:text-[16px] xl:text-lg'
+              >{t('more')}</Link>
             </div>
 
             <p className='w-full mt-4 px-6 text-bluedark text-justify font-nexa md:text-[16px] md:w-[90%] md:px-0 md:mt-6 xl:text-[20px]'>
               <span className='md:pr-4 lg:pr-6 xl:pr-12'></span>
-              {t('raw-p1')} 
+              {t('raw-p1')}
               <br />
               <span className='md:pr-4 lg:pr-6 xl:pr-12'></span>
-              {t('raw-p2')} 
+              {t('raw-p2')}
             </p>
           </div>
 
@@ -90,7 +97,10 @@ export default function HomePage() {
                   <h6 className='text-[22px] font-semibold text-bluedark pl-6 font-conthrax md:pl-0 md:text-md lg:text-2xl xl:text-4xl'>
                     {t('white-1')} <span className='text-laranja'>{t('white-2')}</span>
                   </h6>
-                  <AboutSpan link='/Products#White' style='bg-bluedark text-laranja mr-6 md:mr-0 text-[12px] lg:text-[16px] xl:text-lg' />
+                  <Link href={`/${r}/Products?product=al-wl&banner=7`}
+                    className='bg-bluedark text-laranja font-conthrax px-3 h-fit text-[12px] font-semibold rounded-xl uppercase cursor-pointer
+                  lg:text-[16px] xl:text-lg'
+                  >{t('more')}</Link>
                 </div>
 
                 <p className='w-full mt-4 px-6 text-bluedark text-justify font-nexa font-medium md:px-0 md:mt-6 

@@ -1,5 +1,4 @@
 import { useTranslations } from "next-intl";
-import { CertificationsLogos } from "./CertificationsLogos";
 
 
 export default function RawMaterial() {
@@ -7,8 +6,19 @@ export default function RawMaterial() {
 
     return (
         <>
-            <div id="raw" className="w-full h-[900px] flex justify-center items-center flex-col mb-10 md:h-[800px] lg:h-[400px] xl:h-[530px]">
-                <h2 id="Raw-Material" className="text-2xl text-laranja font-bold mb-8 xl:text-3xl">{t('raw-1')}<span className="text-bluedark">{t('raw-2')}</span></h2>
+            <div id="raw" className="w-full h-[350px] flex justify-center items-center flex-col mb-10 md:h-[530px] lg:h-[650px] xl:h-[730px] 
+                2xl:h-[1000px]">
+            <div className="w-full h-full lg:w-[90%]">
+                <video src="/images/product.mp4"
+                    autoPlay
+                    loop
+                    controls
+                    muted
+                    className="w-full h-full object-contain"
+                    playsInline
+                ></video>
+            </div>
+                {/*<h2 id="Raw-Material" className="text-2xl text-laranja font-bold mb-8 xl:text-3xl">{t('raw-1')}<span className="text-bluedark">{t('raw-2')}</span></h2>
 
                 <div  className="w-full h-full flex flex-col border-y-[12px] border-laranja lg:w-[90%] lg:flex-row">
                     <div className="w-full h-full flex flex-col bg-contain bg-center bg-no-repeat lg:bg-cover lg:bg-left lg:w-[40%]">
@@ -91,6 +101,7 @@ export default function RawMaterial() {
                         <CertificationsLogos style='bg-cert-9'/>
                     </div>
                 </div>
+                */}
             </div>
         </>
 

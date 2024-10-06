@@ -354,11 +354,11 @@
             "li-37-p": "- Limpeza delicada e segura",
             "li-38-p": "Cuida da pele enquanto protege o meio ambiente."
         },
-        "a&l-mp": {
+        "al-mp": {
             "h1": "Fabricação e distribuição de Matérias-primas de excelente qualidade e alta performance",
-            "photo-1": "bg-wp-1",
-            "photo-2": "bg-wp-2",
-            "photo-3": "bg-wp-3",
+            "photo-1": "bg-wp-4",
+            "photo-2": "bg-w-2",
+            "photo-3": "bg-w-1",
             "type-1": "Spandex",
             "type-2": "SAP",
             "type-3": "Polietileno",
@@ -394,7 +394,7 @@
             "li-37-p": "",
             "li-38-p": ""
         },
-        "a&l-wl": {
+        "al-wl": {
             "h1": "a&l white label íntima descartável para adultos",
             "photo-1": "bg-adult-1",
             "photo-2": "bg-adult-2",
@@ -439,6 +439,14 @@
         "t-y-7": "2022",
         "t-8": "Inauguração da sexta fábrica",
         "t-y-8": "2025",
+        "inf-1": "Presença Global:",
+        "inf-1-1": "30 países",
+        "inf-2": "Fábricas:",
+        "inf-2-1": "6",
+        "inf-3": "Infraestrutura:",
+        "inf-3-1": "300.000 m²",
+        "inf-4": "Diversidade de Produtos:",
+        "inf-4-1": "40",
         "p1": "Em um mundo cada vez mais interconectado e dinâmico, os valores de ética, responsabilidade e sustentabilidade se tornam essenciais para nosso sucesso. A ética orienta nossas ações, garantindo que todas as nossas decisões sejam justas e transparentes. A responsabilidade nos lembra da importância de respondermos pelas nossas ações, sendo conscientes dos impactos que geramos no meio ambiente e na sociedade.",
         "our-1": "Nossa",
         "our-2": "trajetória",
@@ -446,6 +454,7 @@
         "p3": "Enraizada na indústria de higiene pessoal desde 2011, com seis bases de produção na China, a holding ANK HYGIENE tornou-se uma referência internacional em produtos higiênicos descartáveis, matérias primas e maquinas para a indústria de higiênicos descartáveis.",
         "p4": "Um dos nossos principais focos de mercado sempre foi a América Latina. Com esse objetivo em mente, e após anos de trabalho contínuo, estabelecemos a joint venture ANK ILUMER (A&I.",
         "p2-1": "A&I, se dedica a melhorar a qualidade de vida das pessoas através de produtos inovadores e responsáveis. ",
+        "p5-1": "A&I, se dedica a melhorar a qualidade de vida das pessoas através de produtos inovadores e responsáveis.",
         "our-3": "Conheça",
         "our-4": "nossas fábricas",
         "p5": "Nosso principal diferencial reside em nossa equipe de profissionais. A excelência na qualidade dos produtos oferecidos é o resultado de um compromisso contínuo com o aprimoramento pessoal; marcado pela seriedade e dedicação.",

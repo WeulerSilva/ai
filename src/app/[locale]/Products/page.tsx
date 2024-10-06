@@ -31,8 +31,8 @@ export default function Pages({ searchParams }: { searchParams: { product?: stri
     ["bg-logo-2", "limpdent"],
     ["bg-logo-4", "petsec"],
     ["bg-logo-6", "ecovida"],
-    ["bg-logo-7", "a&l-mp"],
-    ["bg-logo-8", "a&l-wl"]
+    ["bg-logo-7", "al-mp"],
+    ["bg-logo-8", "al-wl"]
   ];
 
   
@@ -211,7 +211,7 @@ export default function Pages({ searchParams }: { searchParams: { product?: stri
 
 
           {/* Infors about the products */}
-          <div className="w-full h-full bg-[#00679a27] flex justify-start items-center py-8 lg:w-[60%] lg:h-[1070px] 2xl:h-[980px]">
+          <div className="w-full h-full bg-[#00679a27] flex justify-start items-center py-2 md:py-8 lg:w-[60%] lg:h-[1070px] 2xl:h-[980px]">
             <div className="w-full h-[90%] bg-white rounded-[40px] flex flex-col justify-start items-center px-6 2xl:h-full lg:w-[90%]">
               <div className="flex items-start justify-between w-full mt-6 mb-3">
                 <h6 className="text-xl font-bold text-bluelight md:text-2xl xl:text-2xl">{t(`${productsName}.h1`)}</h6>

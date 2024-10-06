@@ -107,8 +107,8 @@ const config: Config = {
         "al-1": "url('/images/al-1.png')",
         "w-1": "url('/images/w-1.jpg')",
         "w-2": "url('/images/w-2.jpg')",
-        "w-3": "url('/images/w-3.png')",
-        "w-4": "url('/images/w-4.png')",
+        "w-3": "url('/images/w-3.jpg')",
+        "w-4": "url('/images/w-4.jpg')",
         "fachada1": "url('/images/fab-1.jpg')",
         "fachada2": "url('/images/fab-2.jpg')",
         "fachada3": "url('/images/fab-3.jpg')",
@@ -150,7 +150,8 @@ const config: Config = {
         "eco-fralda": "url('/images/eco-fralda.png')",
         "wp-1": "url('/images/wp-1.png')",
         "wp-2": "url('/images/wp-2.png')",
-        "wp-3": "url('/images/wp-3.png')"
+        "wp-3": "url('/images/wp-3.png')",
+        "wp-4": "url('/images/spandex.png')"
       },
       colors: {
         "laranja": "#FAB21A",
@@ -197,7 +198,8 @@ const config: Config = {
     "bg-al-2",
     "bg-wp-1",
     "bg-wp-2",
-    "bg-wp-3"
+    "bg-wp-3",
+    "bg-wp-4"
     
     // Adicione outras classes que você deseja preservar
   ],
