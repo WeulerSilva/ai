@@ -1,52 +1,12 @@
 "use client"
 
 import { useTranslations } from "next-intl";
-import { useState } from "react";
-import FabricsModal from "../components/FabricsModal";
 
 export default function Pages() {
     const t = useTranslations('journey');
-    const h = useTranslations('modal');
-
-    const [isVisible, setIsVisible] = useState(false);
-    const [modalContent, setModalContent] = useState<{ factory: string; title: string; text: string; textTwo: string; imgOne: string; imgTwo: string; imgThree: string; imgFour: string; li1: string; li2: string; li3: string; li4: string; li5: string; li6: string; li7: string; li8: string; li9: string; li10: string; li11: string; li12: string; li13: string }>({
-        factory: '',
-        title: '',
-        text: '',
-        textTwo: '',
-        imgOne: '',
-        imgTwo: '',
-        imgThree: '',
-        imgFour: '',
-        li1: '',
-        li2: '',
-        li3: '',
-        li4: '',
-        li5: '',
-        li6: '',
-        li7: '',
-        li8: '',
-        li9: '',
-        li10: '',
-        li11: '',
-        li12: '',
-        li13: '',
-    });
-
-    // Função para abrir o modal
-    const openModal = (factory: string, title: string, text: string, textTwo: string, imgOne: string, imgTwo: string, imgThree: string, imgFour: string, li1: string, li2: string, li3: string, li4: string, li5: string, li6: string, li7: string, li8: string, li9: string, li10: string, li11: string, li12: string, li13: string) => {
-        setModalContent({ factory, title, text, textTwo, imgOne, imgTwo, imgThree, imgFour, li1, li2, li3, li4, li5, li6, li7, li8, li9, li10, li11, li12, li13 });
-        setIsVisible(true);
-    };
 
     return (
         <section className='w-screen h-full flex justify-center items-center flex-col mt-16 lg:mt-14 xl:mt-24'>
-            <FabricsModal
-                isVisible={isVisible}
-                onClose={() => setIsVisible(false)}
-                content={modalContent}
-            />
-
             <div className="w-full h-[60vh] bg-green-200 md:w-[90%] lg:h-[80%]">
                 <video src="/images/inov.mp4"
                     controls

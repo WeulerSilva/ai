@@ -1,9 +1,4 @@
-import { useTranslations } from "next-intl";
-
-
 export default function RawMaterial() {
-    const t = useTranslations('products');
-
     return (
         <>
             <div id="raw" className="w-full h-[350px] flex justify-center items-center flex-col mb-10 md:h-[530px] lg:h-[650px] xl:h-[730px] 
