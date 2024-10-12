@@ -53,9 +53,9 @@ export default function HomePage() {
       <section className='w-screen h-full flex justify-start items-center flex-col relative mt-14 mb-10'>
         <div className='w-full h-full flex justify-center items-start flex-col md:w-[80%] md:flex-row z-20'>
           <div className='w-full h-full flex justify-start flex-col md:w-[70%]'>
-            <div className='w-full h-[56px] flex justify-between items-start md:w-[90%]'>
-              <h6 className='text-[22px] font-bold text-bluedark pl-6 uppercase font-conthrax md:pl-0 md:text-md lg:text-2xl xl:text-3xl'>
-                {t('raw-1')} <br /> <span className='text-laranja flex items-end'>{t('raw-2')}  <div className='w-[1px] h-[1px] bg-black relative'>
+            <div className='w-full h-[36px] flex justify-between items-start lg:h-[56px] md:w-[90%]'>
+              <h6 className='flex text-[22px] font-bold text-bluedark pl-6 uppercase font-conthrax md:mt-2 md:pl-0 md:text-md lg:text-2xl xl:text-3xl'>
+                {/*{t('raw-1')} <br />*/}{t("raw-3")}<span className='text-laranja flex items-end'>{t('raw-2')}  <div className='hidden w-[1px] h-[1px] bg-black relative md:block'>
                   <div className='absolute left-4 bottom-[6px] w-[80px] bg-black h-[4px] md:w-[50vw]'></div></div></span>
               </h6>
 
@@ -99,15 +99,22 @@ export default function HomePage() {
                   </h6>
                   <Link href={`/${r}/Products?product=al-wl&banner=7`}
                     className='bg-bluedark text-laranja font-conthrax px-3 h-fit text-[12px] font-semibold rounded-xl uppercase cursor-pointer
-                  lg:text-[16px] xl:text-lg'
+                  mr-6 md:mr-0 lg:text-[16px] xl:text-lg'
                   >{t('more')}</Link>
                 </div>
 
-                <p className='w-full mt-4 px-6 text-bluedark text-justify font-nexa font-medium md:px-0 md:mt-6 
+                <p id='wl' className='w-full mt-4 px-6 text-bluedark text-justify font-nexa font-medium md:px-0 md:mt-6 
                   md:text-[16px] md:w-[90%] md:mb-[30px] xl:text-[20px]'>
                   <span className='md:pr-4 lg:pr-6 xl:pr-12'></span>
                   {t('white-p')}
                 </p>
+
+                <div className='w-full flex items-center justify-center md:justify-end md:items-end'>
+                  <AboutSpan text={t('more-sec')}
+                  style='bg-bluedark text-laranja mt-4 md:mt-0 md:mb-6 text-[10px] lg:text-[12px] xl:text-[15px]'
+                  link='/Contact'/>
+                </div>
+                
               </div>
 
 

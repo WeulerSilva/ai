@@ -3,10 +3,12 @@
 import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import RawMaterial from "../components/RawMaterial";
+import { AboutSpan } from "../components/AboutSpan";
 
 type LogoItem = [string, string];
 
 export default function Pages({ searchParams }: { searchParams: { product?: string, banner?: number } }) {
+  const h = useTranslations('HomePage');
   const t = useTranslations('products');
   const product = searchParams?.product;
   const banner = searchParams?.banner;
@@ -31,10 +33,9 @@ export default function Pages({ searchParams }: { searchParams: { product?: stri
     ["bg-logo-2", "limpdent"],
     ["bg-logo-4", "petsec"],
     ["bg-logo-6", "ecovida"],
-    ["bg-logo-7", "al-mp"],
-    ["bg-logo-8", "al-wl"]
+    ["bg-logo-7", "al-mp"]
   ];
-
+{/*["bg-logo-8", "al-wl"]*/}
   
 
   const nextIcons = () => {
@@ -75,7 +76,7 @@ export default function Pages({ searchParams }: { searchParams: { product?: stri
             {logos[visibleIcons] && logos[visibleIcons][0] && (
               <div
                 className={`w-[100px] h-[100px] bg-contain bg-no-repeat bg-center cursor-pointer
-      ${logos[visibleIcons][0]} ${changeBanner === visibleIcons ? '' : 'opacity-40'} hover:opacity-90`}
+      ${logos[visibleIcons][0]} ${changeBanner === visibleIcons ? '' : 'opacity-60'} hover:opacity-90`}
                 onClick={() => {
                   setChangeBanner(visibleIcons);
                   setProductsName(logos[visibleIcons] ? logos[visibleIcons][1] : '');
@@ -87,7 +88,7 @@ export default function Pages({ searchParams }: { searchParams: { product?: stri
             {logos[visibleIcons + 1] && logos[visibleIcons + 1][0] && (
               <div
                 className={`w-[100px] h-[100px] bg-contain bg-no-repeat bg-center cursor-pointer
-      ${logos[visibleIcons + 1][0]} ${changeBanner === visibleIcons + 1 ? '' : 'opacity-40'} hover:opacity-90`}
+      ${logos[visibleIcons + 1][0]} ${changeBanner === visibleIcons + 1 ? '' : 'opacity-60'} hover:opacity-90`}
                 onClick={() => {
                   setChangeBanner(visibleIcons + 1);
                   setProductsName(logos[visibleIcons + 1] ? logos[visibleIcons + 1][1] : '');
@@ -112,7 +113,7 @@ export default function Pages({ searchParams }: { searchParams: { product?: stri
             <div
               key={index}
               className={`w-full h-full cursor-pointer bg-contain bg-no-repeat bg-center ${logo ? logo[0] : ''}
-        ${changeBanner === index ? "" : "opacity-40"} hover:opacity-90`}
+        ${changeBanner === index ? "" : "opacity-50"} hover:opacity-90`}
               onClick={() => {
                 setChangeBanner(index);
                 setProductsName(logo ? logo[1] : '');
@@ -145,7 +146,7 @@ export default function Pages({ searchParams }: { searchParams: { product?: stri
 
         </div>
 
-        <div className="w-full h-full bg-white flex-col flex lg:flex-row lg:h-[1070px] 2xl:h-[980px]">
+        <div className="w-full h-full bg-white flex-col flex lg:flex-row lg:h-[1100px] 2xl:h-[1000px]">
           <div className="w-full bg-[#00679a27] h-full flex justify-center items-center flex-col lg:w-[40%]">
             <div className={`${t(`${productsName}.${selectedType}`)} w-[90%] h-[260px] mt-12 bg-contain bg-center bg-no-repeat md:h-[320px] lg:h-[340px] md:w-[70%] xl:w-[90%] 2xl:h-[530px]`}>
             </div>
@@ -211,7 +212,7 @@ export default function Pages({ searchParams }: { searchParams: { product?: stri
 
 
           {/* Infors about the products */}
-          <div className="w-full h-full bg-[#00679a27] flex justify-start items-center py-2 md:py-8 lg:w-[60%] lg:h-[1070px] 2xl:h-[980px]">
+          <div className="w-full h-full bg-[#00679a27] flex justify-start items-center py-2 md:py-8 lg:w-[60%] lg:h-[1100px] 2xl:h-[1000px]">
             <div className="w-full h-[90%] bg-white rounded-[40px] flex flex-col justify-start items-center px-6 2xl:h-full lg:w-[90%]">
               <div className="flex items-start justify-between w-full mt-6 mb-3">
                 <h6 className="text-xl font-bold text-bluelight md:text-2xl xl:text-2xl">{t(`${productsName}.h1`)}</h6>
@@ -257,7 +258,11 @@ export default function Pages({ searchParams }: { searchParams: { product?: stri
                     <p className="text-base xl:text-lg">{t(`${productsName}.li-38-p`)}</p>
                   </div>
 
-
+                  <div className='w-full flex items-center justify-center md:justify-start md:items-center'>
+                  <AboutSpan text={h('more-sec')}
+                  style='bg-bluedark text-laranja mt-12 md:mt-0 text-[10px] lg:text-[12px] xl:text-[15px]'
+                  link='/Contact'/>
+                </div>
                   
                 </ul>
               </div>

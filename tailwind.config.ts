@@ -23,6 +23,7 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "logo": "url('/images/logo.webp')",
         "contact-social": "url('/images/contact-social.png')",
+        "a&l": "url('/images/a&l.png')",
         "illumer": "url('/images/illumer-logo.webp')",
         "banner-0-pt": "url('/images/banner-0-pt.png')",
         "banner-0-es": "url('/images/banner-0-es.png')",

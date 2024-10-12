@@ -3,16 +3,45 @@
 import { useTranslations } from "next-intl";
 import YearDiv from "../components/YearDiv";
 import FabricsDivs from "../components/FabricsDivs";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import FabricsModal from "../components/FabricsModal";
 import { GiWorld } from "react-icons/gi";
 import { LiaIndustrySolid } from "react-icons/lia";
 import { IoBusinessSharp } from "react-icons/io5";
 import { IoMdCart } from "react-icons/io";
+import CountUp from "react-countup";
 
 export default function Pages() {
     const t = useTranslations('journey');
     const h = useTranslations('modal');
+
+    const [startCount, setStartCount] = useState(false);
+    const sectionRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        const currentSection = sectionRef.current; // Guardar a referência atual em uma variável
+    
+        if (currentSection) { // Verificar se não é null
+          const observer = new IntersectionObserver(
+            ([entry]) => {
+              if (entry.isIntersecting) {
+                setStartCount(true); // Inicia a contagem quando o elemento estiver visível
+                observer.unobserve(currentSection); // Desativa o observador para não repetir a animação
+              }
+            },
+            { threshold: 0.9 } // A contagem inicia quando 50% da seção estiver visível
+          );
+    
+          observer.observe(currentSection); // Observar a seção
+    
+          return () => {
+            if (currentSection) {
+              observer.unobserve(currentSection); // Certificar-se de limpar o observador
+            }
+          };
+        }
+      }, []);
+
 
     const [isVisible, setIsVisible] = useState(false);
     const [modalContent, setModalContent] = useState<{ factory: string; title: string; text: string; textTwo: string; imgOne: string; imgTwo: string; imgThree: string; imgFour: string; li1: string; li2: string; li3: string; li4: string; li5: string; li6: string; li7: string; li8: string; li9: string; li10: string; li11: string; li12: string; li13: string }>({
@@ -88,42 +117,61 @@ export default function Pages() {
 
             </div>
 
-            <div className="w-screen bg-laranja border-y-4 border-bluedark flex justify-center py-10 lg:h-[200px]">
+            <div className="w-screen bg-laranja border-y-4 border-bluedark flex justify-center py-10 lg:h-[200px]" ref={sectionRef}>
                 <div className="w-[90%] h-full text-white flex justify-between items-start flex-col 
-                   space-y-10 lg:items-center lg:space-y-0 lg:flex-row mg:w-[80%] lg:w-[90%]">
+           space-y-10 lg:items-center lg:space-y-0 lg:flex-row mg:w-[80%] lg:w-[90%]">
+
                     <div className="flex justify-start items-start">
-                        <div className="w-11 h-11 bg-laranja mr-3"><GiWorld className="w-full h-full text-bluedark"/></div>
+                        <div className="w-11 h-11 bg-laranja mr-3">
+                            <GiWorld className="w-full h-full text-bluedark" />
+                        </div>
                         <div className="flex flex-col">
                             <h4 className="text-lg font-medium">{t('inf-1')}</h4>
-                            <span className="text-3xl font-bold text-bluedark">{t('inf-1-1')}</span>
+                            <span className="text-3xl font-bold text-bluedark">
+                                {startCount && <CountUp start={0} end={parseInt(t('inf-1-1'))} duration={4.75} />}
+                                <span> {t("inf-1-1-span")}</span>
+                            </span>
                         </div>
                     </div>
 
                     <div className="flex justify-start items-start">
-                        <div className="w-12 h-12 bg-laranja mr-3"><LiaIndustrySolid className="w-full h-full text-bluedark"/></div>
+                        <div className="w-12 h-12 bg-laranja mr-3">
+                            <LiaIndustrySolid className="w-full h-full text-bluedark" />
+                        </div>
                         <div className="flex flex-col">
                             <h4 className="text-lg font-medium">{t('inf-2')}</h4>
-                            <span className="text-3xl font-bold text-bluedark">{t('inf-2-1')}</span>
+                            <span className="text-3xl font-bold text-bluedark">
+                                {startCount && <CountUp start={0} end={parseInt(t('inf-2-1'))} duration={4.75} />}
+                            </span>
                         </div>
                     </div>
 
                     <div className="flex justify-start items-start">
-                        <div className="w-11 h-11 bg-laranja mr-3"><IoBusinessSharp className="w-full h-full text-bluedark"/></div>
+                        <div className="w-11 h-11 bg-laranja mr-3">
+                            <IoBusinessSharp className="w-full h-full text-bluedark" />
+                        </div>
                         <div className="flex flex-col">
                             <h4 className="text-lg font-medium">{t('inf-3')}</h4>
-                            <span className="text-3xl font-bold text-bluedark">{t('inf-3-1')}</span>
+                            <span className="text-3xl font-bold text-bluedark">
+                                {startCount && <CountUp start={0} end={parseInt(t('inf-3-1'))} duration={4.75} />}
+                                <span> {t("inf-3-1-span")}</span>
+                            </span>
                         </div>
                     </div>
 
                     <div className="flex justify-start items-start">
-                        <div className="w-11 h-11 bg-laranja mr-3"><IoMdCart className="w-full h-full text-bluedark"/></div>
+                        <div className="w-11 h-11 bg-laranja mr-3">
+                            <IoMdCart className="w-full h-full text-bluedark" />
+                        </div>
                         <div className="flex flex-col">
                             <h4 className="text-lg font-medium">{t('inf-4')}</h4>
-                            <span className="text-3xl font-bold text-bluedark">{t('inf-4-1')}</span>
+                            <span className="text-3xl font-bold text-bluedark">
+                                {startCount && <CountUp start={0} end={parseInt(t('inf-4-1'))} duration={4.75} />}
+                            </span>
                         </div>
                     </div>
-                </div>
 
+                </div>
             </div>
 
             <div className="w-[90%] h-full flex justify-center items-center text-justify flex-col mt-4 mb-12 text-[18px] md:w-[80%] xl:text-xl">
@@ -157,8 +205,8 @@ export default function Pages() {
                             'bg-prod1',
                             'bg-emb1',
                             h('f1-l3'),
-                            h('f1-l4'),
-                            h('f1-l5'),
+                            "",
+                            "",
                             '',
                             '',
                             '',
@@ -184,15 +232,15 @@ export default function Pages() {
                             'bg-prod2',
                             'bg-emb2',
                             h('f2-l1'),
-                            h('f2-l2'),
+                            "",
                             '',
-                            h('f2-l3'),
-                            h('f2-l4'),
-                            h('f2-l5'),
-                            h('f2-l6'),
-                            h('f2-l7'),
-                            h('f2-l8'),
-                            h('f2-l9'),
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
                             '',
                             '',
                             ''
@@ -211,13 +259,13 @@ export default function Pages() {
                             'bg-prod3',
                             'bg-emb3',
                             h('f3-l1'),
-                            h('f3-l2'),
-                            h('f3-l3'),
-                            h('f3-l4'),
-                            h('f3-l5'),
-                            h('f3-l6'),
-                            h('f3-l7'),
-                            h('f3-l8'),
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
                             '',
                             '',
                             '',
@@ -240,18 +288,18 @@ export default function Pages() {
                             'bg-prod4',
                             'bg-emb4',
                             h('f4-l1'),
-                            h('f4-l2'),
-                            h('f4-l14'),
-                            h('f4-l3'),
-                            h('f4-l5'),
-                            h('f4-l6'),
-                            h('f4-l7'),
-                            h('f4-l8'),
-                            h('f4-l9'),
-                            h('f4-l10'),
-                            h('f4-l11'),
-                            h('f4-l12'),
-                            h('f4-l13')
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
                         )}
                         text={t('modal-4')}
                         image="bg-fachada4" />
@@ -267,15 +315,15 @@ export default function Pages() {
                             'bg-prod5',
                             'bg-emb5',
                             h('f5-l1'),
-                            h('f5-l2'),
-                            h('f5-l3'),
-                            h('f5-l4'),
-                            h('f5-l5'),
-                            h('f5-l6'),
-                            h('f5-l7'),
-                            h('f5-l8'),
-                            h('f5-l9'),
-                            h('f5-l10'),
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
                             '',
                             '',
                             ''
@@ -294,14 +342,14 @@ export default function Pages() {
                             'bg-prod6',
                             'bg-emb6',
                             h('f6-l1'),
-                            h('f6-l2'),
-                            h('f6-l3'),
-                            h('f6-l4'),
-                            h('f6-l5'),
-                            h('f6-l6'),
-                            h('f6-l7'),
-                            h('f6-l8'),
-                            h('f6-l9'),
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
+                            "",
                             '',
                             '',
                             '',

@@ -4,11 +4,13 @@ import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
 import { useState } from "react";
 import JuridicModal from "./JuridicModal";
+import { MdOutlineArrowDropDown, MdOutlineArrowDropUp } from "react-icons/md";
 
 
 
 export const Footer = () => {
     const [expandedSections, setExpandedSections] = useState([false, false, false, false]);
+    const [isOpen, setIsOpen] = useState(false);
     const t = useTranslations('HomePage');
     const h = useTranslations('footer');
     const p = useTranslations('politics');
@@ -21,6 +23,10 @@ export const Footer = () => {
             newState[index] = !newState[index]; // Alterna a seção com base no índice
             return newState;
         });
+    };
+
+    const toggleDropdown = () => {
+        setIsOpen(!isOpen);
     };
 
     const [isVisible, setIsVisible] = useState(false);
@@ -51,14 +57,14 @@ export const Footer = () => {
     };
 
     return (
-        <footer className="w-screen h-full bg-laranja flex justify-center items-center flex-col lg:h-[300px] xl:h-[190px]" id="contact">
+        <footer className="w-screen h-full bg-laranja flex justify-center items-center flex-col lg:h-[300px] xl:h-[290px]" id="contact">
             <JuridicModal
                 isVisible={isVisible}
                 onClose={() => setIsVisible(false)}
                 content={modalContent}
             />
 
-            <div className="w-full h-full flex justify-center items-center flex-col mb-6 md:w-[80%] md:mb-0 lg:justify-between lg:flex-row">
+            <div className="w-full h-full flex justify-center items-center flex-col mb-6 lg:w-[90%] xl:w-[80%] md:mb-0 lg:justify-between lg:flex-row">
                 <Link href={'/'} className="flex justify-items-center items-center mt-6 lg:mt-0 md:pr-10" title="Home">
                     <div className="w-[80px] h-[80px] bg-logo bg-contain bg-no-repeat bg-top lg:w-[150px] lg:h-[150px]"></div>
                 </Link>
@@ -85,20 +91,69 @@ export const Footer = () => {
                         </div>
 
                         <div className="flex flex-col text-white">
-                            <span>{h('l3')}</span>
+                            <span onClick={toggleDropdown} className="cursor-pointer flex items-center">
+                                {h('l3')} {/* Clique ou hover para abrir */}
+                                {isOpen &&
+                                    <span className="pl-1 text-bluedark">
+                                        <MdOutlineArrowDropUp className="text-xl" />
+                                    </span>
+                                }
+                                {!isOpen &&
+                                    <span className="pl-1 text-bluedark font-bold">
+                                        <MdOutlineArrowDropDown className="text-xl" />
+                                    </span>
+                                }
+                            </span>
                             <div className="flex justify-center items-start text-bluedark text-[12px] flex-col 
-                                xl:text-[14px] xl:space-x-8 xl:flex-row">
-                                <ul>
-                                    <Link href={`/${r}/Products?product=limpdent&banner=3`}><li>{h('l3-1')}</li></Link>
-                                    <Link href={`/${r}/Products?product=babyfral&banner=2`}><li>{h('l3-2')}</li></Link>
-                                    <Link href={`/${r}/Products?product=lady-sec&banner=1`}><li>{h('l3-3')}</li></Link>
-                                    <Link href={`/${r}/Products?product=adult-sec&banner=0`}><li>{h('l3-4')}</li></Link>
+                                xl:text-[14px]">
+                                {/* Primeiro UL com dropdown */}
+                                <ul className="relative">
+                                    <li>
+                                        <Link href={`/${r}/Products?product=limpdent&banner=3`}>
+                                            {h('l3-1')}
+                                        </Link>
+                                    </li>
+
+                                    {/* Dropdown Content */}
+                                    {isOpen && (
+                                        <ul className="absolute mt-0 bg-white text-bluedark shadow-lg rounded-md">
+                                            <li>
+                                                <Link href={`/${r}/Products?product=babyfral&banner=2`}>
+                                                    {h('l3-2')}
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link href={`/${r}/Products?product=lady-sec&banner=1`}>
+                                                    {h('l3-3')}
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link href={`/${r}/Products?product=adult-sec&banner=0`}>
+                                                    {h('l3-4')}
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link href={`/${r}/Products?product=petsec&banner=4`}>
+                                                    {h('l3-5')}
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link href={`/${r}/Products?product=ecovida&banner=5`}>
+                                                    {h('l3-6')}
+                                                </Link>
+                                            </li>
+                                        </ul>
+                                    )}
                                 </ul>
+
+                                {/* Segundo UL */}
                                 <ul>
-                                    <Link href={`/${r}/Products?product=petsec&banner=4`}><li>{h('l3-5')}</li></Link>
-                                    <Link href={`/${r}/Products?product=ecovida&banner=5`}><li>{h('l3-6')}</li></Link>
-                                    <Link href={`/${r}/Products#raw`}><li>{h('l3-7')}</li></Link>
-                                    <Link href={`/${r}/Products`}><li>White Label</li></Link>
+                                    <li>
+                                        <Link href={`/${r}/Products#raw`}>{h('l3-7')}</Link>
+                                    </li>
+                                    <li>
+                                        <Link href={`/${r}/#wl`}>White Label</Link>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
