@@ -97,10 +97,10 @@ export default function HomePage() {
                   <h6 className='text-[22px] font-semibold text-bluedark pl-6 font-conthrax md:pl-0 md:text-md lg:text-2xl xl:text-4xl'>
                     {t('white-1')} <span className='text-laranja'>{t('white-2')}</span>
                   </h6>
-                  <Link href={`/${r}/Products?product=al-wl&banner=7`}
+                  {/*<Link href={`/${r}/Products?product=al-wl&banner=7`}
                     className='bg-bluedark text-laranja font-conthrax px-3 h-fit text-[12px] font-semibold rounded-xl uppercase cursor-pointer
                   mr-6 md:mr-0 lg:text-[16px] xl:text-lg'
-                  >{t('more')}</Link>
+                  >{t('more')}</Link>*/}
                 </div>
 
                 <p id='wl' className='w-full mt-4 px-6 text-bluedark text-justify font-nexa font-medium md:px-0 md:mt-6 
