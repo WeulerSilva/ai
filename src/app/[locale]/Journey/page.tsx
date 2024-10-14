@@ -154,6 +154,7 @@ export default function Pages() {
                             <h4 className="text-lg font-medium">{t('inf-3')}</h4>
                             <span className="text-3xl font-bold text-bluedark">
                                 {startCount && <CountUp start={0} end={parseInt(t('inf-3-1'))} duration={4.75} />}
+                                .000
                                 <span> {t("inf-3-1-span")}</span>
                             </span>
                         </div>
