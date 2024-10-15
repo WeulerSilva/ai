@@ -32,7 +32,6 @@ export const FirstHomeCarrosel = () => {
                     <div className={`w-full h-full flex justify-end flex-col items-center mb-4 bg-cover bg-center bg-no-repeat relative
                          cursor-pointer md:w-[90%]  md:h-[210px] lg:h-[300px] xl:h-[400px] 2xl:h-[520px] 2xl:bg-contain`}>
                         <video src={`/images/home-${locale}.mp4`}
-                            controls
                             autoPlay
                             loop
                             playsInline
@@ -40,7 +39,6 @@ export const FirstHomeCarrosel = () => {
                         ></video>
 
                         <video src={`/images/home-mobile-${locale}.mp4`}
-                            controls
                             autoPlay
                             loop
                             playsInline
