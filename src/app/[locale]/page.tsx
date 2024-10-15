@@ -18,7 +18,7 @@ export default function HomePage() {
     <>
       <FirstHomeCarrosel />
 
-      <section className='w-screen h-full flex justify-start items-center flex-col relative mt-14 mb-10'>
+      <section className='w-screen h-full flex justify-start items-center flex-col relative mt-4 mb-10 md:mt-14'>
         <div className='w-full flex justify-center items-start flex-col md:w-[80%] md:flex-row z-20'>
           <div className='w-full h-full flex justify-start flex-col md:w-[70%]'>
             <div className='w-full h-[56px] flex justify-between items-center md:w-[90%]'>

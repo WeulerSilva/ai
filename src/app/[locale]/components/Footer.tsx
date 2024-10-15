@@ -86,7 +86,7 @@ export const Footer = () => {
                                 <Link href={`/${r}/Inovation`}><li>{h('l2-1')}</li></Link>
                                 <Link href={`/${r}/Inovation#Inovation`}><li>{h('l2-2')}</li></Link>
                                 <Link href={`/${r}/Inovation#sust`}><li>{h('l2-3')}</li></Link>
-                                <Link href={`/${r}/Products#cert`}><li>{h('l2-4')}</li></Link>
+                                {/*<Link href={`/${r}/Products#cert`}><li>{h('l2-4')}</li></Link>*/}
                             </ul>
                         </div>
 
