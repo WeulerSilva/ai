@@ -33,6 +33,7 @@ export const FirstHomeCarrosel = () => {
                          cursor-pointer md:w-[90%]  md:h-[210px] lg:h-[300px] xl:h-[400px] 2xl:h-[520px] 2xl:bg-contain`}>
                         <video src={`/images/home-${locale}.mp4`}
                             autoPlay
+                            muted
                             loop
                             playsInline
                             className="hidden md:block w-full h-full object-cover 2xl:object-contain"
@@ -41,6 +42,7 @@ export const FirstHomeCarrosel = () => {
                         <video src={`/images/home-mobile-${locale}.mp4`}
                             autoPlay
                             loop
+                            muted
                             playsInline
                             className="w-full h-full object-contain md:hidden"
                         ></video>
