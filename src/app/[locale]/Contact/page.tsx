@@ -24,30 +24,36 @@ export default function Pages() {
             </div>
             <EmailContact />
 
-            <div className="w-full flex flex-col justify-center items-center md:items-start md:justify-start md:w-[80%]">
-                <h2 className=" text-2xl text-bluedark font-bold mt-12 mb-6 xl:text-4xl">E <span className="text-laranja">-mail</span></h2>
-                <a href="mailto:info@ank-ilumer.com" className="w-[40px] h-[40px] flex justify-center items-center cursor-pointer rounded-full 
+            <div className="w-full flex flex-col justify-center items-center md:flex-row md:items-start md:justify-start md:w-[80%]">
+                <div className="w-full flex flex-col justify-center items-center md:items-start">
+                    <h2 className=" text-2xl text-bluedark font-bold mt-12 mb-6 xl:text-4xl">E<span className="text-laranja">-mail</span></h2>
+                    <a href="mailto:info@ank-ilumer.com" className="w-[40px] h-[40px] flex justify-center items-center cursor-pointer rounded-full 
                                bg-bluedark text-laranja lg:w-[30px] lg:h-[30px] xl:w-[40px] xl:h-[40px]">
-                    <MdEmail className="w-[85%] h-[85%]" />
-                </a>
-                <h2 className=" text-2xl text-bluedark font-bold mt-12 mb-6 xl:text-4xl">{t('social-1')} <span className="text-laranja">{t('social-2')}</span></h2>
-                <div className="w-[60%] text-bluedark/60 flex items-center justify-between mb-6 md:w-[63%] md:h-[60%] lg:w-[45%] xl:w-[30%]">
-                    <a href="https://www.instagram.com/ank.ilumer/" target="_blank"
-                        className="w-[40px] h-[40px] cursor-pointer rounded-full bg-bluedark text-laranja flex justify-center items-center
-                                lg:w-[30px] lg:h-[30px] xl:w-[40px] xl:h-[40px]">
-                        <FaInstagram className="w-[70%] h-[70%]" />
-                    </a>
-                    <a href="https://www.linkedin.com/company/ank-ilumer/about/?viewAsMember=true" target="_blank"
-                        className="w-[40px] h-[40px] cursor-pointer rounded-full bg-bluedark text-laranja flex justify-center items-center
-                                lg:w-[30px] lg:h-[30px] xl:w-[40px] xl:h-[40px]">
-                        <RiLinkedinFill className="w-[70%] h-[70%]" />
-                    </a>
-                    <a href="https://www.youtube.com/@ANK-Ilumer" target="_blank"
-                        className="w-[40px] h-[40px] cursor-pointer rounded-full bg-bluedark text-laranja flex justify-center items-center
-                                lg:w-[30px] lg:h-[30px] xl:w-[40px] xl:h-[40px]">
-                        <AiFillYoutube className="w-[70%] h-[70%]" />
+                        <MdEmail className="w-[85%] h-[85%]" />
                     </a>
                 </div>
+
+                <div className="w-full flex justify-center flex-col items-center md:items-start">
+                    <h2 className=" text-2xl text-bluedark font-bold mt-12 mb-6 xl:text-4xl">{t('social-1')} <span className="text-laranja">{t('social-2')}</span></h2>
+                    <div className="w-[40%] text-bluedark/60 flex items-center justify-between mb-6 md:h-[60%] md:w-full md:justify-start md:space-x-6">
+                        <a href="https://www.instagram.com/ank.ilumer/" target="_blank"
+                            className="w-[40px] h-[40px] cursor-pointer rounded-full bg-bluedark text-laranja flex justify-center items-center
+                                lg:w-[30px] lg:h-[30px] xl:w-[40px] xl:h-[40px]">
+                            <FaInstagram className="w-[70%] h-[70%]" />
+                        </a>
+                        <a href="https://www.linkedin.com/company/ank-ilumer/about/?viewAsMember=true" target="_blank"
+                            className="w-[40px] h-[40px] cursor-pointer rounded-full bg-bluedark text-laranja flex justify-center items-center
+                                lg:w-[30px] lg:h-[30px] xl:w-[40px] xl:h-[40px]">
+                            <RiLinkedinFill className="w-[70%] h-[70%]" />
+                        </a>
+                        <a href="https://www.youtube.com/@ANK-Ilumer" target="_blank"
+                            className="w-[40px] h-[40px] cursor-pointer rounded-full bg-bluedark text-laranja flex justify-center items-center
+                                lg:w-[30px] lg:h-[30px] xl:w-[40px] xl:h-[40px]">
+                            <AiFillYoutube className="w-[70%] h-[70%]" />
+                        </a>
+                    </div>
+                </div>
+
             </div>
         </section>
     );
