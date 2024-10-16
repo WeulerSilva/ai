@@ -82,7 +82,9 @@
         "social": "Official Website:",
         "back": "Back to homepage:",
         "ok-back": "Go back",
-        "name-2": "Name"
+        "name-2": "Name",
+        "social-1": "Social",
+        "social-2": "Media"
     },
     "products": {
         "h1": "Product",

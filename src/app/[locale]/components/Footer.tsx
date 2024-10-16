@@ -83,7 +83,7 @@ export const Footer = () => {
                         <div className="flex flex-col text-white">
                             <span>{h('l2')}</span>
                             <ul className="text-bluedark text-[12px] xl:text-[14px]">
-                                <Link href={`/${r}/Inovation`}><li>{h('l2-1')}</li></Link>
+                                <Link href={`/${r}/Journey`}><li>{h('l2-1')}</li></Link>
                                 <Link href={`/${r}/Inovation#Inovation`}><li>{h('l2-2')}</li></Link>
                                 <Link href={`/${r}/Inovation#sust`}><li>{h('l2-3')}</li></Link>
                                 {/*<Link href={`/${r}/Products#cert`}><li>{h('l2-4')}</li></Link>*/}
@@ -150,9 +150,6 @@ export const Footer = () => {
                                 <ul>
                                     <li>
                                         <Link href={`/${r}/Products#raw`}>{h('l3-7')}</Link>
-                                    </li>
-                                    <li>
-                                        <Link href={`/${r}/#wl`}>White Label</Link>
                                     </li>
                                 </ul>
                             </div>
@@ -242,10 +239,9 @@ export const Footer = () => {
                         <div className={`overflow-hidden transition-all duration-500 ${expandedSections[1] ? "h-[83px]" : "h-[0px]"}
                             border-b-2 border-bluedark`}>
                             <ul className="text-white text-[13px]">
-                                <Link href={`/${r}/Inovation`}><li>{h('l2-1')}</li></Link>
+                                <Link href={`/${r}/Journey`}><li>{h('l2-1')}</li></Link>
                                 <Link href={`/${r}/Inovation#Inovation`}><li>{h('l2-2')}</li></Link>
                                 <Link href={`/${r}/Inovation#sust`}><li>{h('l2-3')}</li></Link>
-                                <Link href={`/${r}/Products#cert`}><li>{h('l2-4')}</li></Link>
                             </ul>
                         </div>
                     </div>
@@ -269,7 +265,6 @@ export const Footer = () => {
                                     <Link href={`/${r}/Products?product=petsec&banner=4`}><li>{h('l3-5')}</li></Link>
                                     <Link href={`/${r}/Products?product=ecovida&banner=5`}><li>{h('l3-6')}</li></Link>
                                     <Link href={`/${r}/Products#raw`}><li>{h('l3-7')}</li></Link>
-                                    <Link href={`/${r}/Products`}><li>White Label</li></Link>
                                 </ul>
                             </div>
                         </div>
