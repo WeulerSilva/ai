@@ -151,6 +151,12 @@ export default function Pages({ searchParams }: { searchParams: { product?: stri
             <div className={`${t(`${productsName}.${selectedType}`)} w-[90%] h-[260px] mt-12 bg-contain bg-center bg-no-repeat md:h-[320px] lg:h-[340px] md:w-[70%] xl:w-[90%] 2xl:h-[530px]`}>
             </div>
 
+              <a href="https://drive.google.com/file/d/1YszhuZbtaraoSHemM5u5VhalooS83ThJ/view?usp=sharing" target="_blank"
+                className="bg-bluedark text-laranja my-2 text-[10px] uppercase font-semibold rounded-3xl px-3
+                lg:text-[12px] xl:text-[15px]">
+              {t('folder')}
+              </a>
+
             {(productsName === "adult-sec" || productsName === 'babyfral') && (
               <div className="w-full h-full flex justify-start items-center flex-col mt-4 text-sm font-bold text-bluedark
               md:text-lg lg:text-[12px] lg:w-[90%] lg:leading-4 xl:leading-5 xl:text-base 2xl:leading-6 2xl:text-xl">
