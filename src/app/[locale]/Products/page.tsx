@@ -35,8 +35,8 @@ export default function Pages({ searchParams }: { searchParams: { product?: stri
     ["bg-logo-6", "ecovida"],
     ["bg-logo-7", "al-mp"]
   ];
-{/*["bg-logo-8", "al-wl"]*/}
-  
+  {/*["bg-logo-8", "al-wl"]*/ }
+
 
   const nextIcons = () => {
     setVisibleIcons((prev) =>
@@ -130,35 +130,29 @@ export default function Pages({ searchParams }: { searchParams: { product?: stri
                text-bluedark md:h-[60px] md:text-[16px] lg:text-base">
           <div className="flex w-full h-full justify-around items-center space-x-2 py-1 flex-col 
            md:flex-row md:space-y-0 md:py-0 md:space-x-8 md:justify-start md:w-full md:ml-[5%]">
-            <span onClick={() => handleTypeClick('photo-1')} className={`${selectedType === 'photo-1' ? 
-                'border-b-4 border-bluelight text-bluelight' : 'border-b-4 border-transparent'} cursor-pointer`}>
+            <span onClick={() => handleTypeClick('photo-1')} className={`${selectedType === 'photo-1' ?
+              'border-b-4 border-bluelight text-bluelight' : 'border-b-4 border-transparent'} cursor-pointer`}>
               {t(`${productsName}.type-1`)}
             </span>
-            <span onClick={() => handleTypeClick('photo-2')} className={`${selectedType === 'photo-2' ? 
-                'border-b-4 border-bluelight text-bluelight' : 'border-b-4 border-transparent'} cursor-pointer`}>
+            <span onClick={() => handleTypeClick('photo-2')} className={`${selectedType === 'photo-2' ?
+              'border-b-4 border-bluelight text-bluelight' : 'border-b-4 border-transparent'} cursor-pointer`}>
               {t(`${productsName}.type-2`)}
             </span>
-            <span onClick={() => handleTypeClick('photo-3')} className={`${selectedType === 'photo-3' 
+            <span onClick={() => handleTypeClick('photo-3')} className={`${selectedType === 'photo-3'
               ? 'border-b-4 border-bluelight text-bluelight' : 'border-b-4 border-transparent'} cursor-pointer`}>
               {t(`${productsName}.type-3`)}
             </span>
           </div>
 
         </div>
-                                                                  {/*lg:flex-row lg:h-[1100px] 2xl:h-[1000px]*/}
+        {/*lg:flex-row lg:h-[1100px] 2xl:h-[1000px]*/}
         <div className="w-full h-full bg-white flex-col flex ">                                      {/*lg:w-[40%]*/}
           <div className="w-full bg-[#00679a27] h-full flex justify-center items-center flex-col">                                              {/* mt-12 md:w-[70%] xl:w-[90%] md:h-[320px] lg:h-[340px]  2xl:h-[530px]*/}
             <div className={`${t(`${productsName}.${selectedType}`)} w-full h-[190px] bg-cover bg-center bg-no-repeat md:w-full md:h-[380px] lg:h-[440px] xl:h-[530px]  2xl:h-[700px]`}>
             </div>
 
-              <a href="https://drive.google.com/file/d/1YszhuZbtaraoSHemM5u5VhalooS83ThJ/view?usp=sharing" target="_blank"
-                className="bg-bluedark text-laranja my-2 text-[10px] uppercase font-semibold rounded-3xl px-3
-                lg:text-[12px] xl:text-[15px]">
-              {t('folder')}
-              </a>
-
             {(productsName === "adult-sec" || productsName === 'babyfral') && (
-              <div className="w-full h-full flex justify-start items-center flex-col mt-4 text-sm font-bold text-bluedark
+              <div className="w-full h-full flex justify-start items-center flex-col mt-4 text-[12px] font-bold text-bluedark
               md:text-lg lg:text-[12px] lg:w-[90%] lg:leading-4 xl:leading-5 xl:text-base 2xl:leading-6 2xl:text-xl">
                 <div className="w-full flex items-center lg:w-[90%]">
                   <div className="w-full flex items-center flex-col">
@@ -177,23 +171,23 @@ export default function Pages({ searchParams }: { searchParams: { product?: stri
 
 
                 <div className="w-full h-full flex justify-start items-center flex-col mt-4">
-                  <div className="w-[90%] flex justify-around items-center bg-white border-2 border-bluedark rounded-3xl py-1 mb-4
-                  text-sm 2xl:text-lg">
-                    <span className="px-4 w-[116px] 2xl:w-[200px]"><span className="text-lg md:text-xl 2xl:text-2xl">M</span> {t('size-1')}</span>
+                  <div className="w-[90%] flex justify-around items-center bg-white border-2 border-bluedark rounded-3xl mb-4
+                  text-[12px] 2xl:text-lg">
+                    <span className="px-4 w-[116px] 2xl:w-[200px]"><span className="text-base md:text-xl 2xl:text-2xl">M</span> {t('size-1')}</span>
                     <span className="border-x-2 border-bluedark px-2">{t(`${productsName}.size-m`)}</span>
                     <span className="px-8 w-[117px] 2xl:w-[200px] 2xl:text-right">{t(`${productsName}.cint-m`)}</span>
                   </div>
 
-                  <div className="w-[90%] flex justify-around items-center bg-white border-2 border-bluedark rounded-3xl py-1 mb-4
-                  text-sm 2xl:text-lg">
-                    <span className="px-4 w-[116px] 2xl:w-[200px]"><span className="text-lg md:text-2xl 2xl:text-3xl">L</span> {t('size-2')}</span>
+                  <div className="w-[90%] flex justify-around items-center bg-white border-2 border-bluedark rounded-3xl mb-4
+                  text-[12px] 2xl:text-lg">
+                    <span className="px-4 w-[116px] 2xl:w-[200px]"><span className="text-base md:text-2xl 2xl:text-3xl">L</span> {t('size-2')}</span>
                     <span className="border-x-2 border-bluedark px-2">{t(`${productsName}.size-l`)}</span>
                     <span className="px-8 w-[118px] 2xl:w-[200px] 2xl:text-right">{t(`${productsName}.cint-l`)}</span>
                   </div>
 
-                  <div className="w-[90%] flex justify-around items-center bg-white border-2 border-bluedark rounded-3xl py-1 mb-4
-                  text-sm 2xl:text-lg">
-                    <span className="px-4 w-[116px] 2xl:w-[200px]"><span className="text-lg md:text-2xl 2xl:text-3xl">XL</span> {t('size-3')}</span>
+                  <div className="w-[90%] flex justify-around items-center bg-white border-2 border-bluedark rounded-3xl mb-4
+                  text-[12px] 2xl:text-lg">
+                    <span className="px-4 w-[116px] 2xl:w-[200px]"><span className="text-base md:text-2xl 2xl:text-3xl">XL</span> {t('size-3')}</span>
                     <span className="border-x-2 border-bluedark px-2">{t(`${productsName}.size-xl`)}</span>
                     <span className="px-8 w-[118px] 2xl:w-[200px] 2xl:text-right">{t(`${productsName}.cint-xl`)}</span>
                   </div>
@@ -213,12 +207,18 @@ export default function Pages({ searchParams }: { searchParams: { product?: stri
               </div>
             )}
 
+            <a href="https://drive.google.com/file/d/1YszhuZbtaraoSHemM5u5VhalooS83ThJ/view?usp=sharing" target="_blank"
+              className="bg-bluedark text-laranja my-2 mb-4 text-[10px] uppercase font-semibold rounded-3xl px-3
+                lg:text-[12px] xl:text-[15px]">
+              {t('folder')}
+            </a>
+
           </div>
 
 
 
           {/* Infors about the products */}                                                 {/*justify-start md:py-8 lg:w-[60%] lg:h-[1100px] 2xl:h-[1000px] */}
-          <div className="w-full h-full bg-[#00679a27] flex justify-center items-center py-2 ">
+          <div className="hidden w-full h-full bg-[#00679a27]  justify-center items-center py-2 ">
             <div className="w-full h-[90%] bg-white rounded-[40px] flex flex-col justify-start items-center px-6 2xl:h-full lg:w-[90%]">
               <div className="flex items-start justify-between w-full mt-6 mb-3">
                 <h6 className="text-xl font-bold text-bluelight md:text-2xl xl:text-2xl">{t(`${productsName}.h1`)}</h6>
@@ -265,11 +265,11 @@ export default function Pages({ searchParams }: { searchParams: { product?: stri
                   </div>
 
                   <div className='w-full flex items-center justify-center md:justify-start md:items-center'>
-                  <AboutSpan text={h('more-sec')}
-                  style='bg-bluedark text-laranja mt-12 md:mt-0 text-[10px] lg:text-[12px] xl:text-[15px]'
-                  link='/Contact'/>
-                </div>
-                  
+                    <AboutSpan text={h('more-sec')}
+                      style='bg-bluedark text-laranja mt-12 md:mt-0 text-[10px] lg:text-[12px] xl:text-[15px]'
+                      link='/Contact' />
+                  </div>
+
                 </ul>
               </div>
             </div>
@@ -279,7 +279,7 @@ export default function Pages({ searchParams }: { searchParams: { product?: stri
 
       </div>
 
-      <RawMaterial/>
+      <RawMaterial />
     </section>
   );
 };
