@@ -85,18 +85,18 @@ export default function Pages() {
             <div className="w-[90%] h-full text-justify flex justify-center items-start flex-col mb-12 text-[18px] md:w-[80%] xl:text-xl">
                 <h2 className="w-full text-center text-2xl text-bluedark font-bold mt-10 mb-8 xl:text-3xl">{t('our-1')} <span className="text-laranja">{t('our-2')}</span></h2>
 
-                <p className="mb-6"><span className="pl-8"></span>{t('p2')}
+                <p className=""><span className="pl-8"></span>{t('p2')}
                 </p>
 
-                <p className="mb-6"><span className="pl-8"></span>
+                <p className=""><span className="pl-8"></span>
                     {t('p3')}
                 </p>
 
-                <p id="test" className="mb-6"><span className="pl-8"></span>
+                <p id="test" className=""><span className="pl-8"></span>
                     {t('p4')}
                 </p>
 
-                <p className="mb-6"><span className="pl-8"></span>
+                <p className=""><span className="pl-8"></span>
                     {t('p2-1')}
                 </p>
             </div>
@@ -190,7 +190,7 @@ export default function Pages() {
                     {t('p7')}
                 </p>
 
-                <h2 className="text-2xl text-bluedark font-bold mt-10 mb-12 xl:text-4xl">
+                <h2 className="text-lg text-center text-bluedark font-bold mt-10 mb-12 xl:text-2xl">
                     {t('modal-h1')}
                 </h2>
 
@@ -311,10 +311,10 @@ export default function Pages() {
                             'Máquinas',
                             '',
                             '',
-                            'bg-fachada5',
-                            'bg-machine5',
-                            'bg-prod5',
-                            'bg-emb5',
+                            'bg-placeholder',
+                            'bg-placeholder',
+                            'bg-placeholder',
+                            'bg-placeholder',
                             h('f5-l1'),
                             "",
                             "",
@@ -338,10 +338,10 @@ export default function Pages() {
                             'Máquinas',
                             '',
                             '',
-                            'bg-fachada6',
-                            'bg-machine5',
-                            'bg-prod6',
-                            'bg-emb6',
+                            'bg-placeholder',
+                            'bg-placeholder',
+                            'bg-placeholder',
+                            'bg-placeholder',
                             h('f6-l1'),
                             "",
                             "",

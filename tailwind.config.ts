@@ -152,7 +152,8 @@ const config: Config = {
         "wp-1": "url('/images/wp-1.png')",
         "wp-2": "url('/images/wp-2.png')",
         "wp-3": "url('/images/wp-3.png')",
-        "wp-4": "url('/images/spandex.png')"
+        "wp-4": "url('/images/spandex.png')",
+        "placeholder": "url('/images/placeholder.jpeg')",
       },
       colors: {
         "laranja": "#FAB21A",
@@ -200,7 +201,8 @@ const config: Config = {
     "bg-wp-1",
     "bg-wp-2",
     "bg-wp-3",
-    "bg-wp-4"
+    "bg-wp-4",
+    "bg-placeholder"
     
     // Adicione outras classes que você deseja preservar
   ],
