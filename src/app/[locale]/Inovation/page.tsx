@@ -1,73 +1,52 @@
-"use client"
+import { getTranslations } from "next-intl/server";
 
-import { useTranslations } from "next-intl";
+interface MetadataParams {
+    params: {
+        locale: string;
+    };
+}
 
-export default function Pages() {
-    const t = useTranslations('journey');
+export async function generateMetadata({ params: { locale } }: MetadataParams) {
+    const t = await getTranslations({ locale, namespace: 'meta' });
 
-    return (
-        <section className='w-screen h-full flex justify-center items-center flex-col mt-16 lg:mt-14 xl:mt-24'>
-            <div className="w-full h-[60vh] bg-green-200 md:w-[90%] lg:h-[80%]">
-                <video src="/images/inov.mp4"
-                    controls
-                    autoPlay
-                    loop
-                    playsInline
-                    className="w-full h-full object-cover"
-                ></video>
-            </div>
+    return {
+        title: t('inovation'),
+        description: t('inovation-desc'),
+        keywords: t('key').split(','),
+        robots: {
+            index: true,
+            follow: true,
+        },
+        openGraph: {
+            siteName: "ANK&ILUMER",
+            title: t('inovation'),
+            description: t('inovation-desc'),
+            url: 'https://ank&ilumer.com.br',
+            images: [
+                {
+                    url: '/images/products-mobile2.png',
+                    alt: "produtos Ank e Ilummer",
+                },
+            ],
+            type: 'website',
+        },
+        twitter: {
+            card: 'summary_large_image',
+            site: '',
+            title: t('inovation'),
+            description: t('inovation-desc'),
+            images: [
+                {
+                    url: '/images/products-mobile2.png',
+                    alt: "produtos ank e  ilummer",
+                },
+            ],
+        },
+    };
+}
 
-            <div className="w-[90%] h-full text-justify flex justify-center items-start flex-col mt-4 mb-12 text-[18px] md:w-[80%] xl:text-xl">
-                <p><span className="pl-8"></span>
-                    {t('p1')}
-                </p>
-            </div>
+import InovationPage from "../components/InovationPage";
 
-            <div className="w-full h-[600px] flex flex-col justify-center bg-[#AAAAA9]/30 lg:w-[100%] lg:flex-row lg:h-[400px] xl:h-[500px] 2xl:h-[450px]">
-                <div id="Inovation" className="w-[90%] h-full flex justify-center items-center flex-col lg:w-[80%] lg:flex-row-reverse">
-                    <div className="w-full h-full flex justify-center items-start text-2xl text-bluedark 
-                        border-l-[16px] border-laranja md:h-[50%] lg:h-full xl:text-2xl lg:w-[50%] 2xl:text-3xl">
-                        <div className="w-full pl-10 lg:w-[100%] xl:pl-20">
-                            <h1 className="mt-4 text-laranja lg:my-6 xl:my-16">{t('inov')}</h1>
-                            <p className="text-[16px] text-gray-700 text-justify pt-4 md:leading-8 lg:pt-0 xl:mt-4 xl:text-base 2xl:text-lg">
-                                <span className="pl-6"></span>
-                                {t('inov-p')}
-                            </p>
-                        </div>
-
-                    </div>
-
-                    <div className="w-full h-[50%] flex flex-col space-y-2 md:space-y-0 md:space-x-2 md:flex-row lg:h-full lg:w-[50%]">
-                        <div className="w-full h-full bg-inovation bg-cover bg-center bg-no-repeat md:bg-cover lg:bg-left bg-green-200 xl:bg-left"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div className="w-full h-[600px] flex flex-col justify-center bg-[#93C248]/30 lg:w-[100%] lg:flex-row lg:h-[400px] xl:h-[500px] 2xl:h-[450px]">
-                <div id="sust" className="w-[90%] h-full flex justify-center items-center flex-col lg:w-[80%] lg:flex-row">
-                    <div className="w-full h-full flex justify-start items-start text-2xl text-bluedark 
-                        border-l-[16px] border-laranja  md:h-[50%] lg:border-none lg:h-full lg:justify-center lg:w-[50%] xl:text-2xl 2xl:text-3xl">
-                        <div className="w-full pl-10 lg:pl-0 lg:pr-10 lg:border-none lg:w-[100%] xl:pr-20">
-                            <h1 className="mt-4 text-[#356A2D] lg:my-6 xl:my-16">{t('susten')}</h1>
-                            <p className="text-[16px] text-gray-700 text-justify pt-4 md:leading-8  lg:pt-0 xl:mt-4 xl:text-base 2xl:text-lg">
-                                <span className="pl-6"></span>
-                                {t('susten-p')}
-                            </p>
-                        </div>
-
-                    </div>
-
-                    <div className="w-full h-[50%] flex flex-col space-y-2 lg:border-l-[16px] border-laranja md:space-y-0 md:space-x-2 md:flex-row lg:h-full lg:w-[50%]">
-                        <div className="w-full h-full bg-sustentability bg-cover bg-center bg-no-repeat md:bg-cover lg:bg-center bg-green-200"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div className="w-[80%] h-full text-base text-bluedark text-center py-10 xl:text-lg 2xl:text-xl">
-                <h4>
-                    {t('end')}
-                </h4>
-            </div>
-        </section>
-    );
-};
+export default function Page() {
+    return <InovationPage />;
+}

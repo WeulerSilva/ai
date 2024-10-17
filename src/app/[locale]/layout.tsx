@@ -1,19 +1,15 @@
-import { NextIntlClientProvider} from 'next-intl';
-import { getMessages } from 'next-intl/server';
+import { NextIntlClientProvider, useTranslations } from 'next-intl';
+import { getMessages, getTranslations } from 'next-intl/server';
 import Header from './components/Header';
 import "./globals.css";
 import { Footer } from './components/Footer';
 import { SpeedInsights } from "@vercel/speed-insights/next"
-import { Metadata } from 'next';
 
 export const viewport = {
   viewport: "width=device-width, initial-scale=1.0"
 };
 
-export const metadata: Metadata = {
-  title: "ANK&ILUMER, Fornecendo Qualidade e Inovação.",
-  description: "Na ANK&ILUMER, oferecemos soluções inovadoras desde 1986, com foco em qualidade, confiança e responsabilidade ambiental.",
-  keywords: 'ANK, ILUMER, higiene, cuidados pessoais, produtos sustentáveis, White Label, matéria-prima, ECO VIDA, Babyfral, LadySec, PetSec, AdultSec, LIMPDENT',
+export const m = {
   robots: {
     index: true,
     follow: true
@@ -43,8 +39,51 @@ export const metadata: Metadata = {
   }
 };
 
+interface MetadataParams {
+  params: {
+    locale: string;
+  };
+}
 
 
+export async function generateMetadata({ params: { locale } }: MetadataParams) {
+  const t = await getTranslations({ locale, namespace: 'meta' });
+
+  return {
+    title: t('title'),
+    description: t('desc'),
+    keywords: t('key').split(','),
+    robots: {
+      index: true,
+      follow: true,
+    },
+    openGraph: {
+      siteName: "ANK&ILUMER",
+      title: t('title'),
+      description: t('desc'),
+      url: 'https://ank&ilumer.com.br',
+      images: [
+        {
+          url: '/images/products-mobile2.png',
+          alt: "produtos Ank e Ilummer",
+        },
+      ],
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      site: '',
+      title: t('title'),
+      description: t('desc'),
+      images: [
+        {
+          url: '/images/products-mobile2.png',
+          alt: "produtos ank e  ilummer",
+        },
+      ],
+    },
+  };
+}
 
 export default async function LocaleLayout({
   children,
@@ -64,12 +103,12 @@ export default async function LocaleLayout({
         <link rel='icon' href="/favicon-1.ico" />
         {/*<meta name="google-site-verification" content="0o2UdGHKMas5T31hyhg1W6i_mzoKLRoLRnFM_ZrbHw8" />*/}
       </head>
-      <SpeedInsights/>
+      <SpeedInsights />
       <body className='overflow-x-hidden'>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Header />
           {children}
-          <Footer/>
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>

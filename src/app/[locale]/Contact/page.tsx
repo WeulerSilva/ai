@@ -4,6 +4,53 @@ import { MdEmail } from "react-icons/md";
 import { FaInstagram } from "react-icons/fa";
 import { RiLinkedinFill } from "react-icons/ri";
 import { AiFillYoutube } from "react-icons/ai";
+import { getTranslations } from "next-intl/server";
+
+interface MetadataParams {
+    params: {
+      locale: string;
+    };
+  }
+  
+  
+  export async function generateMetadata({ params: { locale } }: MetadataParams) {
+    const t = await getTranslations({ locale, namespace: 'meta' });
+  
+    return {
+      title: t('contact'),
+      description: t('contact-desc'),
+      keywords: t('contact-key').split(','),
+      robots: {
+        index: true,
+        follow: true,
+      },
+      openGraph: {
+        siteName: "ANK&ILUMER",
+        title: t('contact'),
+        description: t('contact-desc'),
+        url: 'https://ank&ilumer.com.br',
+        images: [
+          {
+            url: '/images/products-mobile2.png',
+            alt: "produtos Ank e Ilummer",
+          },
+        ],
+        type: 'website',
+      },
+      twitter: {
+        card: 'summary_large_image',
+        site: '',
+        title: t('contact'),
+        description: t('contact-desc'),
+        images: [
+          {
+            url: '/images/products-mobile2.png',
+            alt: "produtos ank e  ilummer",
+          },
+        ],
+      },
+    };
+  }
 
 
 export default function Pages() {
