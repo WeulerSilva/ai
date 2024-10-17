@@ -1,4 +1,4 @@
-import { NextIntlClientProvider, useTranslations } from 'next-intl';
+import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
 import Header from './components/Header';
 import "./globals.css";
@@ -7,36 +7,6 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const viewport = {
   viewport: "width=device-width, initial-scale=1.0"
-};
-
-export const m = {
-  robots: {
-    index: true,
-    follow: true
-  },
-  openGraph: {
-    type: "website",
-    url: "https://ankilumer.com",
-    title: "ANK&ILUMER - Soluções Inovadoras e Sustentáveis.",
-    description: "A ANK&ILUMER oferece uma ampla gama de produtos de higiene e cuidados pessoais, destacando-se pela qualidade e compromisso com o meio ambiente.",
-    siteName: "ANK&ILUMER",
-    images: [{
-      url: "/images/banner-mobile-0-pt.png",
-      alt: "Imagem representativa da ANK&ILUMER"
-    }],
-    locale: "pt_BR"
-  },
-  twitter: {
-    card: "summary_large_image",
-    site: "@ankilumer",
-    creator: "@ankilumer",
-    title: "ANK&ILUMER - Fornecendo Qualidade e Inovação.",
-    description: "Desde 1986, a ANK&ILUMER tem sido líder em soluções de higiene e cuidados pessoais, com foco em sustentabilidade e eficiência.",
-    images: [{
-      url: "/images/banner-mobile-0-pt.png",
-      alt: "Imagem representativa da ANK&ILUMER"
-    }]
-  }
 };
 
 interface MetadataParams {
