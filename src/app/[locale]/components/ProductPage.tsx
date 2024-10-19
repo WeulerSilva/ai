@@ -207,7 +207,26 @@ export default function ProductPage({ searchParams }: { searchParams: { product?
               </div>
             )}
 
-            <a href="https://drive.google.com/file/d/1YszhuZbtaraoSHemM5u5VhalooS83ThJ/view?usp=sharing" target="_blank"
+            <a href={`
+              ${changeBanner === 0 &&
+              "https://online.fliphtml5.com/rhkre/pebv/"
+              ||
+              changeBanner === 1 &&
+              "https://online.fliphtml5.com/gqmqw/mlyt/"
+              ||
+              changeBanner === 2 &&
+              "https://online.fliphtml5.com/rhkre/dvlo/"
+              ||
+              changeBanner === 3 &&
+              "https://online.fliphtml5.com/gqmqw/prhs/"
+              ||
+              changeBanner === 4 &&
+              "https://online.fliphtml5.com/gqmqw/lnju/"
+              ||
+              changeBanner === 5 &&
+              "https://online.fliphtml5.com/rhkre/arbu/"
+              }
+            `} target="_blank"
               className="bg-bluedark text-laranja my-2 mb-4 text-[10px] uppercase font-semibold rounded-3xl px-3
                 lg:text-[12px] xl:text-[15px]">
               {t('folder')}

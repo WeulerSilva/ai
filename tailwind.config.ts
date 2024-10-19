@@ -151,8 +151,11 @@ const config: Config = {
         "eco-fralda": "url('/images/eco-fralda.png')",
         "wp-1": "url('/images/wp-1.png')",
         "wp-2": "url('/images/wp-2.png')",
+        "w-1-mp": "url('/images/w-1-mp.png')",
+        "w-2-mp": "url('/images/w-2-mp.png')",
         "wp-3": "url('/images/wp-3.png')",
         "wp-4": "url('/images/spandex.png')",
+        "wp-4-mp": "url('/images/spandex-mp.png')",
         "placeholder": "url('/images/placeholder.jpeg')",
       },
       colors: {
@@ -202,6 +205,9 @@ const config: Config = {
     "bg-wp-2",
     "bg-wp-3",
     "bg-wp-4",
+    "bg-w-1-mp",
+    "bg-w-2-mp",
+    "bg-wp-4-mp",
     "bg-placeholder"
     
     // Adicione outras classes que você deseja preservar
