@@ -13,7 +13,6 @@ export default function HomePage() {
   const r = useLocale();
 
 
-
   return (
     <>
       <FirstHomeCarrosel />
