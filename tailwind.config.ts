@@ -155,7 +155,7 @@ const config: Config = {
         "w-2-mp": "url('/images/w-2-mp.png')",
         "wp-3": "url('/images/wp-3.png')",
         "wp-4": "url('/images/spandex.png')",
-        "wp-4-mp": "url('/images/spandex-mp.png')",
+        "wp-4-mp": "url('/images/spandex-mp2.png')",
         "placeholder": "url('/images/placeholder.jpeg')",
       },
       colors: {
