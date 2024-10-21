@@ -148,7 +148,7 @@ export default function ProductPage({ searchParams }: { searchParams: { product?
         {/*lg:flex-row lg:h-[1100px] 2xl:h-[1000px]*/}
         <div className="w-full h-full bg-white flex-col flex ">                                      {/*lg:w-[40%]*/}
           <div className="w-full bg-[#00679a27] h-full flex justify-center items-center flex-col">                                              {/* mt-12 md:w-[70%] xl:w-[90%] md:h-[320px] lg:h-[340px]  2xl:h-[530px]*/}
-            <div className={`${t(`${productsName}.${selectedType}`)} w-full h-[190px] bg-cover bg-center bg-no-repeat md:w-full md:h-[380px] lg:h-[440px] xl:h-[530px]  2xl:h-[700px]`}>
+            <div className={`${t(`${productsName}.${selectedType}`)} w-full h-[165px] bg-cover bg-center bg-no-repeat md:w-full md:h-[350px] lg:h-[420px] xl:h-[530px]  2xl:h-[600px]`}>
             </div>
 
             {(productsName === "adult-sec" || productsName === 'babyfral') && (
