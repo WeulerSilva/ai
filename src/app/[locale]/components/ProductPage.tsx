@@ -225,6 +225,9 @@ export default function ProductPage({ searchParams }: { searchParams: { product?
               ||
               changeBanner === 5 &&
               "https://online.fliphtml5.com/rhkre/arbu/"
+              ||
+              changeBanner === 6 &&
+              "https://drive.google.com/file/d/1H3h6e5be_evLCN2vT087Kbe3GrfKFXDV/view?usp=drivesdk"
               }
             `} target="_blank"
               className="bg-bluedark text-laranja my-2 mb-4 text-[10px] uppercase font-semibold rounded-3xl px-3
