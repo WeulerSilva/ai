@@ -155,7 +155,7 @@ const config: Config = {
         "wp-1": "url('/images/wp-1.png')",
         "wp-2": "url('/images/wp-2.png')",
         "w-1-mp": "url('/images/w-1-mp.png')",
-        "w-2-mp": "url('/images/w-3-mp.png')",
+        "w-2-mp": "url('/images/w-2-mp.png')",
         "w-4-mp": "url('/images/w-4-mp.png')",
         "w-5-mp": "url('/images/w-5-mp.png')",
         "w-6-mp": "url('/images/w-6-mp.png')",
