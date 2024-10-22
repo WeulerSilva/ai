@@ -91,27 +91,27 @@ export const Footer = () => {
                         </div>
 
                         <div className="flex flex-col text-white">
-                            <span onClick={toggleDropdown} className="cursor-pointer flex items-center">
+                            <span className="flex items-center">
                                 {h('l3')} {/* Clique ou hover para abrir */}
-                                {isOpen &&
-                                    <span className="pl-1 text-bluedark">
-                                        <MdOutlineArrowDropUp className="text-xl" />
-                                    </span>
-                                }
-                                {!isOpen &&
-                                    <span className="pl-1 text-bluedark font-bold">
-                                        <MdOutlineArrowDropDown className="text-xl" />
-                                    </span>
-                                }
                             </span>
                             <div className="flex justify-center items-start text-bluedark text-[12px] flex-col 
                                 xl:text-[14px]">
                                 {/* Primeiro UL com dropdown */}
                                 <ul className="relative">
                                     <li>
-                                        <Link href={`/${r}/Products?product=limpdent&banner=3`}>
+                                        <span className="flex items-center cursor-pointer" onClick={toggleDropdown}>
                                             {h('l3-1')}
-                                        </Link>
+                                            {isOpen &&
+                                                <span className="pl-1 text-bluedark">
+                                                    <MdOutlineArrowDropUp className="text-xl" />
+                                                </span>
+                                            }
+                                            {!isOpen &&
+                                                <span className="pl-1 text-bluedark font-bold">
+                                                    <MdOutlineArrowDropDown className="text-xl" />
+                                                </span>
+                                            }
+                                        </span>
                                     </li>
 
                                     {/* Dropdown Content */}
