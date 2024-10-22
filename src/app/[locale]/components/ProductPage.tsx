@@ -142,6 +142,28 @@ export default function ProductPage({ searchParams }: { searchParams: { product?
               ? 'border-b-4 border-bluelight text-bluelight' : 'border-b-4 border-transparent'} cursor-pointer`}>
               {t(`${productsName}.type-3`)}
             </span>
+            {`${productsName}.type-4` &&
+              <span onClick={() => handleTypeClick('photo-4')} className={`${selectedType === 'photo-4'
+                ? 'border-b-4 border-bluelight text-bluelight' : 'border-b-4 border-transparent'} cursor-pointer`}>
+                {t(`${productsName}.type-4`)}
+              </span>
+            }
+            <span onClick={() => handleTypeClick('photo-5')} className={`${selectedType === 'photo-5'
+              ? 'border-b-4 border-bluelight text-bluelight' : 'border-b-4 border-transparent'} cursor-pointer`}>
+              {t(`${productsName}.type-5`)}
+            </span>
+            <span onClick={() => handleTypeClick('photo-6')} className={`${selectedType === 'photo-6'
+              ? 'border-b-4 border-bluelight text-bluelight' : 'border-b-4 border-transparent'} cursor-pointer`}>
+              {t(`${productsName}.type-6`)}
+            </span>
+            <span onClick={() => handleTypeClick('photo-7')} className={`${selectedType === 'photo-7'
+              ? 'border-b-4 border-bluelight text-bluelight' : 'border-b-4 border-transparent'} cursor-pointer`}>
+              {t(`${productsName}.type-7`)}
+            </span>
+            <span onClick={() => handleTypeClick('photo-8')} className={`${selectedType === 'photo-8'
+              ? 'border-b-4 border-bluelight text-bluelight' : 'border-b-4 border-transparent'} cursor-pointer`}>
+              {t(`${productsName}.type-8`)}
+            </span>
           </div>
 
         </div>
