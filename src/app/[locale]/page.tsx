@@ -59,8 +59,8 @@ export default function HomePage() {
               </h6>
 
               <Link href={`/${r}/Products?product=al-mp&banner=6`}
-                className='bg-bluedark text-laranja font-conthrax px-3 h-fit text-[12px] font-semibold rounded-xl uppercase cursor-pointer
-                  lg:text-[16px] xl:text-lg'
+                className='mr-6 bg-bluedark text-laranja font-conthrax px-3 h-fit text-[12px] font-semibold rounded-xl uppercase cursor-pointer
+                  md:mr-0 lg:text-[16px] xl:text-lg'
               >{t('more')}</Link>
             </div>
 
