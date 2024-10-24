@@ -12,7 +12,7 @@ export const FirstHomeCarrosel = () => {
     const firstVideoSource = `/images/home-${locale}.mp4`;
     const secondVideoSource = `/images/ank-home.mp4`;
     const firstMobileVideoSource = `/images/home-mobile-${locale}.mp4`;
-    const secondMobileVideoSource = `/images/ank-home.mp4`;
+    const secondMobileVideoSource = `/images/ank-home-mobile.mp4`;
 
     // Função chamada quando o primeiro vídeo termina
     const handleFirstVideoEnd = () => {
@@ -72,7 +72,7 @@ export const FirstHomeCarrosel = () => {
                                 muted
                                 loop={false} // Não faz loop automático
                                 playsInline
-                                className="w-full h-full object-contain md:hidden"
+                                className="w-full h-full object-cover md:hidden"
                                 onEnded={handleSecondVideoEnd} // Reinicia o ciclo
                             ></video>
                         )}

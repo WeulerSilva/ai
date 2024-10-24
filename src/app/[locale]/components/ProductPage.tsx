@@ -112,8 +112,9 @@ export default function ProductPage({ searchParams }: { searchParams: { product?
           {logos.map((logo, index) => (
             <div
               key={index}
-              className={`w-full h-full cursor-pointer bg-contain bg-no-repeat bg-center ${logo ? logo[0] : ''}
-        ${changeBanner === index ? "" : "opacity-50"} hover:opacity-90`}
+              className={`w-full h-full cursor-pointer bg-contain bg-no-repeat bg-center 
+              ${logo ? logo[0] : ''}
+              ${changeBanner === index ? "" : "opacity-50"} hover:opacity-90`}
               onClick={() => {
                 setChangeBanner(index);
                 setProductsName(logo ? logo[1] : '');
