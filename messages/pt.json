@@ -627,5 +627,78 @@
         "t1-4": "Os sites podem conter links para sites externos geridos por terceiros. ANK & ILUMER não controla esses sites e não é responsável por suas práticas de privacidade ou conteúdo. A utilização desses links é por conta e risco do usuário.",
         "t1-5": "A ANK & ILUMER não oferece garantias sobre a precisão ou integridade do conteúdo dos sites. O site e os materiais são fornecidos 'no estado em que se encontram' e sem garantias expressas ou implícitas. A responsabilidade da ANK & ILUMER por quaisquer danos decorrentes do uso dos sites é limitada na máxima extensão permitida pela lei.",
         "": ""
+    },
+    "product-caracter": {
+        "adult-sec": {
+            "photo-1":{
+                "l1": "Tamanhos: Médio, Grande, Extra Grande",
+                "l2": "Características:",
+                "l3": "● Super absorvente",
+                "l4": "● Proteção contra vazamentos",
+                "l5": "● Tecido hipoalergênico",
+                "l6": "● Tecnologia anti-odor",
+                "l7": "● Zonas respiráveis",
+                "l8": "● Indicador de umidade",
+                "l9": "● Fitas reposicionáveis"
+            },
+            "photo-2":{
+                "l1": "Tamanhos: Médio, Grande, Extra Grande",
+                "l2": "Características:",
+                "l3": "● Super absorvente",
+                "l4": "● Proteção contra vazamentos",
+                "l5": "● Tecido hipoalergênico",
+                "l6": "● Tecnologia anti-odor",
+                "l7": "● Zonas respiráveis",
+                "l8": "● Indicador de umidade",
+                "l9": "● Cintura elástica de 360°"
+            },
+            "photo-3":{
+                "l1": "Tamanhos: Médio, Grande, Extra Grande",
+                "l2": "Características:",
+                "l3": "● Neutraliza odores",
+                "l4": "● Sem perfume",
+                "l5": "● Sensação de frescura",
+                "l6": "● Fácil de trocar e descartar",
+                "l7": "● 100% impermeável",
+                "l8": "● Uso para idosos e bebês",
+                "l9": ""
+            }
+        },
+        "lady-sec": {
+            "photo-1":{
+                "l1": "Uso: Biodegradável (Bambu)",
+                "l2": "Características:",
+                "l3": "● Regular 24 cm / Longa 29 cm",
+                "l4": "● Pulpa de celulose",
+                "l5": "● SAP",
+                "l6": "● 100% viscose de bambu",
+                "l7": "● Sem perfume",
+                "l8": "● Com abas",
+                "l9": ""
+            },
+            "photo-2":{
+                "l1": "Absorvente Noturno - Características: Tecido extra suave, núcleo super absorvente, 290 mm, Sem perfume, com abas.",
+                "l2": "Protetor Diário - Características: Tecido extra suave, canais para distribuição, anatômico, Sem perfume, com abas.",
+                "l3": "Absorvente Noturno para Uso Intenso - Características: Tecido extra suave, Base mais larga 350 mm, Sem perfume, com abas.",
+                "l4": "Absorvente Biodegradável - Características: Pulpa FCS + SAP, 100% viscose de bambu, PLA biodegradável, certificado FSC, Sem perfume, anatômico, sem abas.",
+                "l5": "Absorvente para Incontinência, Noite e Pós-Parto",
+                "l6": "Tamanhos: Médio, Grande, Extra Grande",
+                "l7": "Características: Prática e discreta, leve e refrescante, tecnologia antiodor, tecido suave e transpirável, barreira protetora antivazamentos.",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-3":{
+                "l1": "Tamanhos: Médio, Grande, Extra Grande",
+                "l2": "Características:",
+                "l3": "● Neutraliza odores",
+                "l4": "● Leve e refrescante",
+                "l5": "● Sensação de frescura",
+                "l6": "● Fácil de trocar e descartar",
+                "l7": "● 100% impermeável",
+                "l8": "● Prática e Discreta",
+                "l9": ""
+            }
+        }
     }
 }
+

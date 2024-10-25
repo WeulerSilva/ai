@@ -10,6 +10,7 @@ type LogoItem = [string, string];
 export default function ProductPage({ searchParams }: { searchParams: { product?: string, banner?: number } }) {
   const h = useTranslations('HomePage');
   const t = useTranslations('products');
+  const p = useTranslations('product-caracter');
   const product = searchParams?.product;
   const banner = searchParams?.banner;
   const [changeBanner, setChangeBanner] = useState(0);
@@ -173,7 +174,8 @@ export default function ProductPage({ searchParams }: { searchParams: { product?
           <div className="w-full bg-[#00679a27] h-full flex justify-center items-center flex-col">                                              {/* mt-12 md:w-[70%] xl:w-[90%] md:h-[320px] lg:h-[340px]  2xl:h-[530px]*/}
             <div className={`${t(`${productsName}.${selectedType}`)} w-full h-[165px] bg-cover bg-center bg-no-repeat md:w-full md:h-[350px] lg:h-[420px] xl:h-[530px]  2xl:h-[600px]`}>
             </div>
-
+            
+            {/*
             {(productsName === "adult-sec" || productsName === 'babyfral') && (
               <div className="w-full h-full flex justify-start items-center flex-col mt-4 text-[12px] font-bold text-bluedark
               md:text-lg lg:text-[12px] lg:w-[90%] lg:leading-4 xl:leading-5 xl:text-base 2xl:leading-6 2xl:text-xl">
@@ -218,15 +220,27 @@ export default function ProductPage({ searchParams }: { searchParams: { product?
               </div>
             )}
 
-            {(productsName != "adult-sec" && productsName != 'babyfral') && (
+            */}
+            {(productsName) && (
               <div className="w-[85%] h-full flex flex-col justify-start items-start pt-8 md:w-[85%] lg:w-[70%]">
                 <h6 className="text-xl mb-4 font-bold text-bluedark md:text-3xl 2xl:text-4xl">{t('carac-1')} <span className="text-laranja">{t('carac-2')}</span></h6>
-                <ul className="text-base font-bold text-bluedark md:text-xl xl:text-2xl">
+                {/*<ul className="text-base font-bold text-bluedark md:text-xl xl:text-2xl">
                   <li className="list-disc border-b-4 border-white mb-2">{t(`${productsName}.caract1`)}</li>
                   <li className="list-disc border-b-4 border-white mb-2">{t(`${productsName}.caract2`)}</li>
                   <li className="list-disc border-b-4 border-white mb-2">{t(`${productsName}.caract3`)}</li>
                   <li className="list-disc border-b-4 border-white mb-2">{t(`${productsName}.caract4`)}</li>
-                </ul>
+                </ul>*/}
+
+                <span className="text-bluedark font-bold text-base md:text-lg">{p(`${productsName}.${selectedType}.l1`)}</span>
+                <span className="text-bluedark font-bold text-base md:text-lg">{p(`${productsName}.${selectedType}.l2`)}</span>
+                <span className="text-bluedark font-bold text-base md:text-lg">{p(`${productsName}.${selectedType}.l3`)}</span>
+                <span className="text-bluedark font-bold text-base md:text-lg">{p(`${productsName}.${selectedType}.l4`)}</span>
+                <span className="text-bluedark font-bold text-base md:text-lg">{p(`${productsName}.${selectedType}.l5`)}</span>
+                <span className="text-bluedark font-bold text-base md:text-lg">{p(`${productsName}.${selectedType}.l6`)}</span>
+                <span className="text-bluedark font-bold text-base md:text-lg">{p(`${productsName}.${selectedType}.l7`)}</span>
+                <span className="text-bluedark font-bold text-base md:text-lg">{p(`${productsName}.${selectedType}.l8`)}</span>
+                <span className="text-bluedark font-bold text-base md:text-lg">{p(`${productsName}.${selectedType}.l9`)}</span>
+                
               </div>
             )}
 
