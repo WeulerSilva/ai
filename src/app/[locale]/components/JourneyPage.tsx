@@ -1,6 +1,6 @@
 "use client"
 
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import YearDiv from "../components/YearDiv";
 import FabricsDivs from "../components/FabricsDivs";
 import { useEffect, useRef, useState } from "react";
@@ -20,27 +20,27 @@ export default function JourneyPage() {
 
     useEffect(() => {
         const currentSection = sectionRef.current; // Guardar a referência atual em uma variável
-    
+
         if (currentSection) { // Verificar se não é null
-          const observer = new IntersectionObserver(
-            ([entry]) => {
-              if (entry.isIntersecting) {
-                setStartCount(true); // Inicia a contagem quando o elemento estiver visível
-                observer.unobserve(currentSection); // Desativa o observador para não repetir a animação
-              }
-            },
-            { threshold: 0.9 } // A contagem inicia quando 50% da seção estiver visível
-          );
-    
-          observer.observe(currentSection); // Observar a seção
-    
-          return () => {
-            if (currentSection) {
-              observer.unobserve(currentSection); // Certificar-se de limpar o observador
-            }
-          };
+            const observer = new IntersectionObserver(
+                ([entry]) => {
+                    if (entry.isIntersecting) {
+                        setStartCount(true); // Inicia a contagem quando o elemento estiver visível
+                        observer.unobserve(currentSection); // Desativa o observador para não repetir a animação
+                    }
+                },
+                { threshold: 0.9 } // A contagem inicia quando 50% da seção estiver visível
+            );
+
+            observer.observe(currentSection); // Observar a seção
+
+            return () => {
+                if (currentSection) {
+                    observer.unobserve(currentSection); // Certificar-se de limpar o observador
+                }
+            };
         }
-      }, []);
+    }, []);
 
 
     const [isVisible, setIsVisible] = useState(false);
@@ -74,6 +74,10 @@ export default function JourneyPage() {
         setIsVisible(true);
     };
 
+    const locale = useLocale();
+    const firstVideoSource = `/images/journey-video.mp4`;
+    const firstMobileVideoSource = `/images/journey-video-mobile.mp4`;
+
     return (
         <section className='w-screen h-full flex justify-center items-center flex-col mt-10 lg:mt-14 xl:mt-24'>
             <FabricsModal
@@ -81,6 +85,27 @@ export default function JourneyPage() {
                 onClose={() => setIsVisible(false)}
                 content={modalContent}
             />
+
+            <div className="w-[90%] h-full flex-col mb-12 md:w-[80%] bg-green-300">
+                <video
+                    src={firstVideoSource}
+                    autoPlay
+                    muted
+                    loop={false} // Não faz loop automático
+                    playsInline
+                    className="hidden md:block w-full h-full object-cover 2xl:object-contain"
+                ></video>
+
+                <video
+                    src={firstMobileVideoSource}
+                    autoPlay
+                    muted
+                    loop={false} // Não faz loop automático
+                    playsInline
+                    className="w-full h-full object-contain md:hidden"
+                ></video>
+
+            </div>
 
             <div className="w-[90%] h-full text-justify flex justify-center items-start flex-col mb-12 text-[18px] md:w-[80%] xl:text-xl">
                 <h2 className="w-full text-center text-2xl text-bluedark font-bold mt-10 mb-8 xl:text-3xl">{t('our-1')} <span className="text-laranja">{t('our-2')}</span></h2>

@@ -2,7 +2,6 @@
 
 import { useLocale } from "next-intl";
 import Link from "next/link";
-import { useState } from "react";
 
 export const FirstHomeCarrosel = () => {
     const locale = useLocale();
