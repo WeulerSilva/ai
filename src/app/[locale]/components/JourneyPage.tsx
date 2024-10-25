@@ -1,6 +1,6 @@
 "use client"
 
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 import YearDiv from "../components/YearDiv";
 import FabricsDivs from "../components/FabricsDivs";
 import { useEffect, useRef, useState } from "react";
