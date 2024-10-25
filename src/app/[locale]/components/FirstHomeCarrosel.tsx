@@ -1,5 +1,3 @@
-"use client";
-
 import { useLocale } from "next-intl";
 import Link from "next/link";
 
@@ -35,7 +33,7 @@ export const FirstHomeCarrosel = () => {
                             src={firstVideoSource}
                             autoPlay
                             muted
-                            loop={false} // Não faz loop automático
+                            loop // Não faz loop automático
                             playsInline
                             className="hidden md:block w-full h-full object-cover 2xl:object-contain"
                         ></video>
@@ -44,7 +42,7 @@ export const FirstHomeCarrosel = () => {
                             src={firstMobileVideoSource}
                             autoPlay
                             muted
-                            loop={false} // Não faz loop automático
+                            loop // Não faz loop automático
                             playsInline
                             className="w-full h-full object-contain md:hidden"
                         ></video>

@@ -74,7 +74,6 @@ export default function JourneyPage() {
         setIsVisible(true);
     };
 
-    const locale = useLocale();
     const firstVideoSource = `/images/journey-video.mp4`;
     const firstMobileVideoSource = `/images/journey-video-mobile.mp4`;
 
@@ -91,7 +90,7 @@ export default function JourneyPage() {
                     src={firstVideoSource}
                     autoPlay
                     muted
-                    loop={false} // Não faz loop automático
+                    loop
                     playsInline
                     className="hidden md:block w-full h-full object-cover 2xl:object-contain"
                 ></video>
@@ -100,7 +99,7 @@ export default function JourneyPage() {
                     src={firstMobileVideoSource}
                     autoPlay
                     muted
-                    loop={false} // Não faz loop automático
+                    loop
                     playsInline
                     className="w-full h-full object-contain md:hidden"
                 ></video>
