@@ -116,7 +116,7 @@ export const Footer = () => {
 
                                     {/* Dropdown Content */}
                                     {isOpen && (
-                                        <ul className="absolute mt-0 bg-white text-bluedark shadow-lg rounded-md">
+                                        <ul className="absolute mt-0 bg-laranja text-bluedark shadow-lg rounded-md">
                                             <li>
                                                 <Link href={`/${r}/Products?product=babyfral&banner=2`}>
                                                     {h('l3-2')}
