@@ -49,7 +49,7 @@ export const FirstHomeCarrosel = () => {
                                 muted
                                 loop={false} // Não faz loop automático
                                 playsInline
-                                className="hidden md:block w-full h-full object-cover 2xl:object-contain"
+                                className="hidden md:block w-full h-full object-cover"
                                 onEnded={handleSecondVideoEnd} // Reinicia o ciclo
                             ></video>
                         )}
