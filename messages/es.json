@@ -622,5 +622,652 @@
         "t1-4": "Los sitios pueden contener enlaces a sitios externos gestionados por terceros. ANK & ILUMER no controla estos sitios y no es responsable de sus prácticas de privacidad o contenido. El uso de estos enlaces es bajo su propio riesgo.",
         "t1-5": "ANK & ILUMER no ofrece garantías sobre la precisión o integridad del contenido de los sitios. El sitio y los materiales se proporcionan 'tal cual' y sin garantías expresas o implícitas. La responsabilidad de ANK & ILUMER por cualquier daño derivado del uso de los sitios está limitada en la máxima medida permitida por la ley.",
         "": ""
+    },
+    "product-caracter": {
+        "adult-sec": {
+            "photo-1": {
+                "l1": "Tamaños: Mediano, Grande, Extra Grande",
+                "l2": "Características:",
+                "l3": "● Súper absorbente",
+                "l4": "● Protección contra fugas",
+                "l5": "● Tejido hipoalergénico",
+                "l6": "● Tecnología antiolor",
+                "l7": "● Zonas transpirables",
+                "l8": "● Indicador de humedad",
+                "l9": "● Cintas reposicionables"
+            },
+            "photo-2": {
+                "l1": "Tamanhos: Médio, Grande, Extra Grande",
+                "l2": "Características:",
+                "l3": "● Súper absorbente",
+                "l4": "● Protección contra fugas",
+                "l5": "● Tejido hipoalergénico",
+                "l6": "● Tecnología antiolor",
+                "l7": "● Zonas transpirables",
+                "l8": "● Indicador de humedad",
+                "l9": "● Cintura elástica de 360°"
+            },
+            "photo-3": {
+                "l1": "Tamaños: Mediano, Grande, Extra Grande",
+                "l2": "Características:",
+                "l3": "● Neutraliza olores",
+                "l4": "● Sin perfume",
+                "l5": "● Sensación de frescura",
+                "l6": "● Fácil de cambiar y desechar",
+                "l7": "● 100% impermeable",
+                "l8": "● Uso para el cuidado de ancianos y bebés",
+                "l9": ""
+            },
+            "photo-4": {
+                "l1": "",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-5": {
+                "l1": "",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-6": {
+                "l1": "",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-7": {
+                "l1": "",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-8": {
+                "l1": "",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            }
+        },
+        "lady-sec": {
+            "photo-1": {
+                "l0": "Protectores Diarios de Bambú",
+                "l1": "Uso: Biodegradable (Bambú)",
+                "l2": "Características:",
+                "l3": "● Regular 24 cm / Largo 29 cm",
+                "l4": "● Pulpa de celulosa",
+                "l5": "● SAP",
+                "l6": "● 100% viscosa de bambú",
+                "l7": "● Sin perfume",
+                "l8": "● Con alas",
+                "l9": "Protector Diario",
+                "l10": "Uso: Anatómico",
+                "l11": "● Tejido extra suave",
+                "l12": "● Con canales para mejor distribución",
+                "l13": "● Sin perfume",
+                "l14": "● Con alas"
+            },
+            "photo-2": {
+                "l1": "Absorbente Nocturno",
+                "l2": "Características:",
+                "l3": "● Tejido extra suave, núcleo súper absorbente, 290 mm, sin perfume, con alas.",
+                "l4": "Protector Diario",
+                "l5": "● Tejido extra suave, canales para distribución, anatómico, sin perfume, con alas.",
+                "l6": "Absorbente Nocturno para Uso Intenso",
+                "l7": "● Tejido extra suave, base más ancha 350 mm, sin perfume, con alas.",
+                "l8": "Absorbente Biodegradable",
+                "l9": "● Pulpa FCS + SAP, 100% viscosa de bambú, PLA biodegradable, certificado FSC, sin perfume, anatómico, sin alas.",
+                "l10": "Absorbente para Incontinencia, Nocturno y Posparto",
+                "l11": "Tamaños: Mediano, Grande, Extra Grande",
+                "l12": "Práctico y discreto, ligero y refrescante, tecnología antiolor, tejido suave y transpirable, barrera protectora antivuelcos."
+            },
+            "photo-3": {
+                "l0": "Tamaños: Mediano, Grande, Extra Grande",
+                "l1": "Características:",
+                "l3": "● Neutraliza olores",
+                "l4": "● Ligero y refrescante",
+                "l5": "● Sensación de frescura",
+                "l6": "● Fácil de cambiar y desechar",
+                "l7": "● 100% impermeable",
+                "l8": "● Práctico y Discreto",
+                "l9": "",
+                "l2": "",
+                "l10": "",
+                "l11": "",
+                "l12": "",
+                "l13": "",
+                "l14": ""
+            },
+            "photo-4": {
+                "l1": "",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-5": {
+                "l1": "",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-6": {
+                "l1": "",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-7": {
+                "l1": "",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-8": {
+                "l1": "",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            }
+        },
+        "babyfral": {
+            "photo-1": {
+                "l1": "",
+                "l2": "Tabla de Tallas:",
+                "l3": "● RN: Peso 1-4 kg, Cintura: xxxx",
+                "l4": "● S (Ch/P): Peso 4-6 kg, Cintura: 34-52 cm",
+                "l5": "● M (Mediano): Peso 6-10 kg, Cintura: 35-54 cm",
+                "l6": "● L (Grande): Peso 10-12 kg, Cintura: 36-56 cm",
+                "l7": "● XL (Ex-grande): Peso 12-14 kg, Cintura: 37-57 cm",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-2": {
+                "l1": "",
+                "l2": "Tabla de Tallas:",
+                "l3": "● S (Ch/P): Peso 6 kg, Cintura: 34-52 cm",
+                "l4": "● M (Mediano): Peso 6-10 kg, Cintura: 35-54 cm",
+                "l5": "● L (Grande): Peso 10-12 kg, Cintura: 36-56 cm",
+                "l6": "● XL (Ex-grande): Peso 12-14 kg, Cintura: 37-57 cm",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-3": {
+                "l1": "Contiene 80 unidades, Tamaño: 15 x 20 cm",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-4": {
+                "l1": "",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-5": {
+                "l1": "",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-6": {
+                "l1": "",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-7": {
+                "l1": "",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-8": {
+                "l1": "",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            }
+        },
+        "petsec": {
+            "photo-1": {
+                "l1": "",
+                "l2": "Características:",
+                "l3": "● Sin fragancia",
+                "l4": "● 50 unidades",
+                "l5": "● Limpieza de la zona de los ojos, hocico, orejas, patas y pelaje.",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-4": {
+                "l1": "",
+                "l2": "Características",
+                "l3": "● Exclusivo para fluidos",
+                "l4": "● Tamaño: XS, S, M, L",
+                "l5": "● Contenido: 12 unidades",
+                "l6": "● Composición: Tela no tejida, celulosa, polímero, película de PE.",
+                "l7": "● Indicaciones de uso: Viajes y vehículos, incontinencia urinaria, condiciones médicas, ciclos de celo.",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-3": {
+                "l1": "",
+                "l2": "Características:",
+                "l3": "● Exclusivo para Xixi",
+                "l4": "● Tamanho: S, M, L, XL",
+                "l5": "● Conteúdo: 12 unidades",
+                "l6": "● Composição: Tecido não tecido, celulose, polímero, filme de polietileno.",
+                "l7": "● Indicações de Uso: Incontinência urinária, marcação de território, pós-operatório e reabilitação",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-2": {
+                "l1": "",
+                "l2": "Características:",
+                "l3": "● Práctica, con 5 capas absorbentes, secado rápido y anti fugas, Inhibidor de olor.",
+                "l4": "● Composición: Lámina no tejida, papel tissue, celulosa fluff + SAP, película de PE.",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-5": {
+                "l1": "",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-6": {
+                "l1": "",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-7": {
+                "l1": "",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-8": {
+                "l1": "",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            }
+        },
+        "ecovida": {
+            "photo-1": {
+                "l1": "",
+                "l2": "Características:",
+                "l3": "● Diseñados pensando en la ecología.",
+                "l4": "● Núcleo superabsorbente que mantiene la piel seca y cómoda.",
+                "l5": "● Capa superior biodegradable, suave y segura para la piel delicada del bebé.",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-2": {
+                "l1": "",
+                "l2": "Características",
+                "l3": "● Tamaños: 27 x 16 cm",
+                "l4": "● 100% Fibra de bambú",
+                "l5": "● 90 Hojas",
+                "l6": "● Uso: Limpieza, alimentos e higiene.",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-4": {
+                "l1": "",
+                "l2": "Características:",
+                "l3": "● Hechos con fibras recicladas y biodegradables.",
+                "l4": "● combina suavidad y resistencia.",
+                "l5": "● opción sostenible para uso diario.",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-3": {
+                "l1": "",
+                "l2": "Características:",
+                "l3": "● Compuestas de ingredientes naturales y compostables.",
+                "l4": "● libres de fragancias y parabenos.",
+                "l5": "● ideales para la limpieza delicada de la piel sensible.",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-5": {
+                "l1": "",
+                "l2": "Características:",
+                "l3": "● Diseñados pensando en la ecología.",
+                "l4": "● Núcleo superabsorbente que mantiene la piel seca y cómoda.",
+                "l5": "● Capa superior biodegradable, suave y segura para la piel delicada del bebé.",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-6": {
+                "l1": "",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-7": {
+                "l1": "",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-8": {
+                "l1": "",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            }
+        },
+        "limpdent": {
+            "photo-2": {
+                "l1": "",
+                "l2": "Características:",
+                "l3": "● Contiene flúor",
+                "l4": "● Anticaries",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-3": {
+                "l1": "",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-1": {
+                "l1": "",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-4": {
+                "l1": "",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-5": {
+                "l1": "",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-6": {
+                "l1": "",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-7": {
+                "l1": "",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-8": {
+                "l1": "",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            }
+        },
+        "al-mp": {
+            "photo-1": {
+                "l1": "",
+                "l2": "Spandex: Hilos sintéticos de elástico en rollos",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-2": {
+                "l1": "",
+                "l2": "SAP (Polímero Superabsorbente):",
+                "l3": "● Polímero en gel de alta absorción.",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-3": {
+                "l1": "",
+                "l2": "Filme PE:",
+                "l3": "● Con y Sin Impresión.",
+                "l4": "● Material laminado de polietileno con TNT.",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-4": {
+                "l1": "",
+                "l2": "Polpa de Celulosa:",
+                "l3": "● Utilizada en el núcleo absorbente de productos de cuidado personal, como pañales para bebés, productos para incontinencia de adultos, productos de higiene femenina y no-tejidos.",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-5": {
+                "l1": "",
+                "l2": "Papel Siliconado:",
+                "l3": "● Usado en la fabricación de toallas femeninas, pañales para bebés y adultos.",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-6": {
+                "l1": "",
+                "l2": "Cinta Velcro / Cinta Frontal / Cinta Mágica:",
+                "l3": "● Cintas replegables, bi y tri laminadas.",
+                "l4": "● Cintas adhesivas laterales en rollos.",
+                "l5": "● Cintas frontales de velcro.",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-7": {
+                "l1": "",
+                "l2": "Tela No-Tejida (TNT):",
+                "l3": "● Material no-tejido para diversas aplicaciones.",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-8": {
+                "l1": "",
+                "l2": "Hotmelt:",
+                "l3": "● Adhesivo termoplástico.",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            }
+        }
     }
 }

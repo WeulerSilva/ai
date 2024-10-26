@@ -174,7 +174,7 @@ export default function ProductPage({ searchParams }: { searchParams: { product?
           <div className="w-full bg-[#00679a27] h-full flex justify-center items-center flex-col">                                              {/* mt-12 md:w-[70%] xl:w-[90%] md:h-[320px] lg:h-[340px]  2xl:h-[530px]*/}
             <div className={`${t(`${productsName}.${selectedType}`)} w-full h-[165px] bg-cover bg-center bg-no-repeat md:w-full md:h-[350px] lg:h-[420px] xl:h-[530px]  2xl:h-[600px]`}>
             </div>
-            
+
             {/*
             {(productsName === "adult-sec" || productsName === 'babyfral') && (
               <div className="w-full h-full flex justify-start items-center flex-col mt-4 text-[12px] font-bold text-bluedark
@@ -231,16 +231,67 @@ export default function ProductPage({ searchParams }: { searchParams: { product?
                   <li className="list-disc border-b-4 border-white mb-2">{t(`${productsName}.caract4`)}</li>
                 </ul>*/}
 
-                <span className="text-bluedark font-bold text-base md:text-lg">{p(`${productsName}.${selectedType}.l1`)}</span>
-                <span className="text-bluedark font-bold text-base md:text-lg">{p(`${productsName}.${selectedType}.l2`)}</span>
-                <span className="text-bluedark font-bold text-base md:text-lg">{p(`${productsName}.${selectedType}.l3`)}</span>
-                <span className="text-bluedark font-bold text-base md:text-lg">{p(`${productsName}.${selectedType}.l4`)}</span>
-                <span className="text-bluedark font-bold text-base md:text-lg">{p(`${productsName}.${selectedType}.l5`)}</span>
-                <span className="text-bluedark font-bold text-base md:text-lg">{p(`${productsName}.${selectedType}.l6`)}</span>
-                <span className="text-bluedark font-bold text-base md:text-lg">{p(`${productsName}.${selectedType}.l7`)}</span>
-                <span className="text-bluedark font-bold text-base md:text-lg">{p(`${productsName}.${selectedType}.l8`)}</span>
-                <span className="text-bluedark font-bold text-base md:text-lg">{p(`${productsName}.${selectedType}.l9`)}</span>
-                
+                {(productsName === "adult-sec" || productsName === "babyfral" || productsName === "petsec" || productsName === "ecovida"
+                  || productsName === "limpdent" || productsName === "al-mp"
+                ) &&
+                  <>
+                    <span className="text-bluedark font-bold text-base md:text-lg">{p(`${productsName}.${selectedType}.l1`)}</span>
+                    <span className="text-bluedark font-semibold text-base md:text-lg">{p(`${productsName}.${selectedType}.l2`)}</span>
+                    <span className="text-bluedark text-base md:text-lg">{p(`${productsName}.${selectedType}.l3`)}</span>
+                    <span className="text-bluedark text-base md:text-lg">{p(`${productsName}.${selectedType}.l4`)}</span>
+                    <span className="text-bluedark text-base md:text-lg">{p(`${productsName}.${selectedType}.l5`)}</span>
+                    <span className="text-bluedark text-base md:text-lg">{p(`${productsName}.${selectedType}.l6`)}</span>
+                    <span className="text-bluedark text-base md:text-lg">{p(`${productsName}.${selectedType}.l7`)}</span>
+                    <span className="text-bluedark text-base md:text-lg">{p(`${productsName}.${selectedType}.l8`)}</span>
+                    <span className="text-bluedark text-base md:text-lg">{p(`${productsName}.${selectedType}.l9`)}</span>
+                  </>
+                }
+
+                {productsName === "lady-sec" && selectedType != 'photo-2' &&
+                  <>
+                    <span className="text-bluedark font-bold text-base md:text-lg">{p(`${productsName}.${selectedType}.l0`)}</span>
+                    <span className="text-bluedark font-semibold text-base md:text-lg">{p(`${productsName}.${selectedType}.l1`)}</span>
+                    <span className="text-bluedark font-semibold text-base md:text-lg">{p(`${productsName}.${selectedType}.l2`)}</span>
+                    <span className="text-bluedark text-base md:text-lg">{p(`${productsName}.${selectedType}.l3`)}</span>
+                    <span className="text-bluedark text-base md:text-lg">{p(`${productsName}.${selectedType}.l4`)}</span>
+                    <span className="text-bluedark text-base md:text-lg">{p(`${productsName}.${selectedType}.l5`)}</span>
+                    <span className="text-bluedark text-base md:text-lg">{p(`${productsName}.${selectedType}.l6`)}</span>
+                    <span className="text-bluedark text-base md:text-lg">{p(`${productsName}.${selectedType}.l7`)}</span>
+                    <span className="text-bluedark text-base md:text-lg">{p(`${productsName}.${selectedType}.l8`)}</span>
+                    <span className="text-bluedark font-bold mt-4 text-base md:text-lg">{p(`${productsName}.${selectedType}.l9`)}</span>
+                    <span className="text-bluedark font-semibold text-base md:text-lg">{p(`${productsName}.${selectedType}.l10`)}</span>
+                    <span className="text-bluedark font-semibold text-base md:text-lg">{p(`${productsName}.${selectedType}.l2`)}</span>
+                    <span className="text-bluedark text-base md:text-lg">{p(`${productsName}.${selectedType}.l11`)}</span>
+                    <span className="text-bluedark text-base md:text-lg">{p(`${productsName}.${selectedType}.l12`)}</span>
+                    <span className="text-bluedark text-base md:text-lg">{p(`${productsName}.${selectedType}.l13`)}</span>
+                    <span className="text-bluedark text-base md:text-lg">{p(`${productsName}.${selectedType}.l14`)}</span>
+                  </>
+                }
+
+                {productsName === "lady-sec" && selectedType === 'photo-2' &&
+                  <>
+                    <span className="text-bluedark font-bold text-base md:text-lg">{p(`${productsName}.${selectedType}.l1`)}</span>
+                    <span className="text-bluedark font-semibold text-base md:text-lg">{p(`${productsName}.${selectedType}.l2`)}</span>
+                    <span className="text-bluedark text-base md:text-lg">{p(`${productsName}.${selectedType}.l3`)}</span>
+
+                    <span className="text-bluedark mt-4 text-base font-bold md:text-lg">{p(`${productsName}.${selectedType}.l4`)}</span>
+                    <span className="text-bluedark text-base font-semibold md:text-lg">{p(`${productsName}.${selectedType}.l2`)}</span>
+                    <span className="text-bluedark text-base md:text-lg">{p(`${productsName}.${selectedType}.l5`)}</span>
+
+                    <span className="text-bluedark mt-4 text-base font-bold md:text-lg">{p(`${productsName}.${selectedType}.l6`)}</span>
+                    <span className="text-bluedark text-base font-semibold md:text-lg">{p(`${productsName}.${selectedType}.l2`)}</span>
+                    <span className="text-bluedark text-base md:text-lg">{p(`${productsName}.${selectedType}.l7`)}</span>
+
+                    <span className="text-bluedark mt-4 text-base font-bold md:text-lg">{p(`${productsName}.${selectedType}.l8`)}</span>
+                    <span className="text-bluedark text-base font-semibold md:text-lg">{p(`${productsName}.${selectedType}.l2`)}</span>
+                    <span className="text-bluedark text-base md:text-lg">{p(`${productsName}.${selectedType}.l9`)}</span>
+
+                    <span className="text-bluedark mt-4 text-base font-bold md:text-lg">{p(`${productsName}.${selectedType}.l10`)}</span>
+                    <span className="text-bluedark text-base font-semibold md:text-lg">{p(`${productsName}.${selectedType}.l11`)}</span>
+                    <span className="text-bluedark text-base font-semibold md:text-lg">{p(`${productsName}.${selectedType}.l2`)}</span>
+                    <span className="text-bluedark text-base md:text-lg">{p(`${productsName}.${selectedType}.l9`)}</span>
+                  </>
+                }
               </div>
             )}
 

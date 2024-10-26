@@ -622,5 +622,652 @@
         "t1-4": "The sites may contain links to external sites managed by third parties. ANK & ILUMER does not control these sites and is not responsible for their privacy practices or content. The use of these links is at the user's own risk.",
         "t1-5": "ANK & ILUMER makes no warranties regarding the accuracy or completeness of the content of the sites. The site and materials are provided 'as is' and without any express or implied warranties. ANK & ILUMER's liability for any damages arising from the use of the sites is limited to the maximum extent permitted by law.",
         "": ""
+    },
+    "product-caracter": {
+        "adult-sec": {
+            "photo-1": {
+                "l1": "Sizes: Medium, Large, Extra Large",
+                "l2": "Features:",
+                "l3": "● Super absorbent",
+                "l4": "● Leak protection",
+                "l5": "● Hypoallergenic fabric",
+                "l6": "● Anti-odor technology",
+                "l7": "● Breathable zones",
+                "l8": "● Wetness indicator",
+                "l9": "● Repositionable tabs"
+            },
+            "photo-2": {
+                "l1": "Sizes: Medium, Large, Extra Large",
+                "l2": "Features:",
+                "l3": "● Super absorbent",
+                "l4": "● Leak protection",
+                "l5": "● Hypoallergenic fabric",
+                "l6": "● Anti-odor technology",
+                "l7": "● Breathable zones",
+                "l8": "● Wetness indicator",
+                "l9": "● 360° elastic waistband"
+            },
+            "photo-3": {
+                "l1": "Sizes: Medium, Large, Extra Large",
+                "l2": "Features:",
+                "l3": "● Neutralizes odors",
+                "l4": "● Unscented",
+                "l5": "● Fresh feel",
+                "l6": "● Easy to replace and dispose of",
+                "l7": "● 100% waterproof",
+                "l8": "● Suitable for elderly and baby care",
+                "l9": ""
+            },
+            "photo-4": {
+                "l1": "",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-5": {
+                "l1": "",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-6": {
+                "l1": "",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-7": {
+                "l1": "",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-8": {
+                "l1": "",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            }
+        },
+        "lady-sec": {
+            "photo-1": {
+                "l0": "Bamboo Daily Liners",
+                "l1": "Use: Biodegradable (Bamboo)",
+                "l2": "Features:",
+                "l3": "● Regular 24 cm / Long 29 cm",
+                "l4": "● Cellulose pulp",
+                "l5": "● SAP",
+                "l6": "● 100% bamboo viscose",
+                "l7": "● Unscented",
+                "l8": "● With wings",
+                "l9": "Daily Liner",
+                "l10": "Use: Anatomical",
+                "l11": "● Extra soft fabric",
+                "l12": "● With channels for better distribution",
+                "l13": "● Unscented",
+                "l14": "● With wings"
+            },
+            "photo-2": {
+                "l1": "Overnight Pad",
+                "l2": "Features:",
+                "l3": "● Extra soft fabric, super absorbent core, 290 mm, unscented, with wings.",
+                "l4": "Daily Liner",
+                "l5": "● Extra soft fabric, channels for distribution, anatomical, unscented, with wings.",
+                "l6": "Overnight Pad for Heavy Flow",
+                "l7": "● Extra soft fabric, wider base 350 mm, unscented, with wing.",
+                "l8": "Biodegradable Pad",
+                "l9": "● FSC pulp + SAP, 100% bamboo viscose, biodegradable PLA, FSC certified, unscented, anatomical, no wings.",
+                "l10": "Incontinence, Overnight, and Postpartum Pad",
+                "l11": "Sizes: Medium, Large, Extra Large",
+                "l12": "Practical and discreet, lightweight and refreshing, anti-odor technology, soft and breathable fabric, anti-leak protection barrier."
+            },
+            "photo-3": {
+                "l0": "Sizes: Medium, Large, Extra Large",
+                "l1": "Features:",
+                "l3": "● Neutralizes odors",
+                "l4": "● Lightweight and refreshing",
+                "l5": "● Fresh sensation",
+                "l6": "● Easy to change and dispose of",
+                "l7": "● 100% waterproof",
+                "l8": "● Practical and Discreet",
+                "l9": "",
+                "l2": "",
+                "l10": "",
+                "l11": "",
+                "l12": "",
+                "l13": "",
+                "l14": ""
+            },
+            "photo-4": {
+                "l1": "",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-5": {
+                "l1": "",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-6": {
+                "l1": "",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-7": {
+                "l1": "",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-8": {
+                "l1": "",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            }
+        },
+        "babyfral": {
+            "photo-1": {
+                "l1": "",
+                "l2": "Size Chart:",
+                "l3": "● NB: Weight 1-4 kg, Waist: xxxx",
+                "l4": "● S (Ch/P): Weight 4-6 kg, Waist: 34-52 cm",
+                "l5": "● M (Medium): Weight 6-10 kg, Waist: 35-54 cm",
+                "l6": "● L (Large): Weight 10-12 kg, Waist: 36-56 cm",
+                "l7": "● XL: Weight 12-14 kg, Waist: 37-57 cm",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-2": {
+                "l1": "",
+                "l2": "Size Chart:",
+                "l3": "● S (Ch/P): Weight 6 kg, Waist: 34-52 cm",
+                "l4": "● M (Medium): Weight 6-10 kg, Waist: 35-54 cm",
+                "l5": "● L (Large): Weight 10-12 kg, Waist: 36-56 cm",
+                "l6": "● XL: Weight 12-14 kg, Waist: 37-57 cm",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-3": {
+                "l1": "Contains 80 units, Size: 15 x 20 cm",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-4": {
+                "l1": "",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-5": {
+                "l1": "",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-6": {
+                "l1": "",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-7": {
+                "l1": "",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-8": {
+                "l1": "",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            }
+        },
+        "petsec": {
+            "photo-1": {
+                "l1": "",
+                "l2": "Features:",
+                "l3": "● Fragrance-free",
+                "l4": "● 50 units",
+                "l5": "● Cleans eyes, snout, ears, paws, and fur.",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-4": {
+                "l1": "",
+                "l2": "Features:",
+                "l3": "● Fluids only",
+                "l4": "● Size: XS, S, M, L",
+                "l5": "● Contains: 12 units",
+                "l6": "● Composition: Non-woven fabric, fluff pulp, polymer, PE film.",
+                "l7": "● Indications for use: Travel and vehicles, urinary incontinence, post-surgery, heat cycles.",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-3": {
+                "l1": "",
+                "l2": "Features:",
+                "l3": "● Pee only",
+                "l4": "● Size: S, M, L, XL",
+                "l5": "● Contains: 12 units",
+                "l6": "● Composition: Non-woven fabric, fluff pulp, polymer, PE film.",
+                "l7": "● Indications for use: Urinary incontinence, territorial marking, post-surgery or medical conditions",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-2": {
+                "l1": "",
+                "l2": "Features:",
+                "l3": "● Practical, 5 absorbent layers, quick-drying, anti-leak, Odor inhibitor.",
+                "l4": "● Composition: Non-woven topsheet, tissue paper, fluff pulp + SAP, PE film backsheet",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-5": {
+                "l1": "",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-6": {
+                "l1": "",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-7": {
+                "l1": "",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-8": {
+                "l1": "",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            }
+        },
+        "ecovida": {
+            "photo-1": {
+                "l1": "",
+                "l2": "Features:",
+                "l3": "● Designed with eco-friendliness in mind.",
+                "l4": "● Super-absorbent core keeps skin dry and comfortable.",
+                "l5": "● Biodegradable top layer is gentle and safe for baby's sensitive skin.",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-2": {
+                "l1": "",
+                "l2": "Features:",
+                "l3": "● Sizes: 27 x 16 cm",
+                "l4": "● 100% Bamboo Fiber",
+                "l5": "● 90 Sheets",
+                "l6": "● Use: Cleaning, food, and hygiene.",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-4": {
+                "l1": "",
+                "l2": "Features:",
+                "l3": "● Made with recycled and biodegradable fibers.",
+                "l4": "● Combines softness and strength.",
+                "l5": "● Sustainable for daily use.",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-3": {
+                "l1": "",
+                "l2": "Features:",
+                "l3": "● Natural and compostable ingredients.",
+                "l4": "● Free of fragrances and parabens.",
+                "l5": "● Ideal for gentle cleaning of sensitive skin.",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-5": {
+                "l1": "",
+                "l2": "Features:",
+                "l3": "● Developed with ecology in mind.",
+                "l4": "● Superabsorbent core to keep skin dry and comfortable.",
+                "l5": "● Biodegradable top layer, soft and safe for baby's delicate skin.",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-6": {
+                "l1": "",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-7": {
+                "l1": "",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-8": {
+                "l1": "",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            }
+        },
+        "limpdent": {
+            "photo-2": {
+                "l1": "",
+                "l2": "Features:",
+                "l3": "● Contains fluoride",
+                "l4": "● Anti-cavity",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-3": {
+                "l1": "",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-1": {
+                "l1": "",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-4": {
+                "l1": "",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-5": {
+                "l1": "",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-6": {
+                "l1": "",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-7": {
+                "l1": "",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-8": {
+                "l1": "",
+                "l2": "",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            }
+        },
+        "al-mp": {
+            "photo-1": {
+                "l1": "",
+                "l2": "Spandex: Synthetic elastic threads in rolls",
+                "l3": "",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-2": {
+                "l1": "",
+                "l2": "SAP (Super Absorbent Polymer):",
+                "l3": "● High absorption gel polymer",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-3": {
+                "l1": "",
+                "l2": "PE Film:",
+                "l3": "● With and Without Printing.",
+                "l4": "● Polyethylene laminated material with nonwoven fabric (TNT)",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-4": {
+                "l1": "",
+                "l2": "Fluff Pulp:",
+                "l3": "● Used in the absorbent core of personal care products such as baby diapers, adult incontinence products, feminine hygiene products, and nonwoven materials.",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-5": {
+                "l1": "",
+                "l2": "Silicone Paper:",
+                "l3": "● Used in the manufacture of feminine pads, baby and adult diapers.",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-6": {
+                "l1": "",
+                "l2": "Velcro Tape / Frontal Tape / Magic Tape:",
+                "l3": "● Retractable, bi and tri laminated tapes.",
+                "l4": "● Side adhesive tapes in roll form.",
+                "l5": "● Frontal Velcro tapes.",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-7": {
+                "l1": "",
+                "l2": "Nonwoven Fabric:",
+                "l3": "● Versatile nonwoven material for various applications.",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            },
+            "photo-8": {
+                "l1": "",
+                "l2": "Hotmelt:",
+                "l3": "● Thermoplastic adhesive",
+                "l4": "",
+                "l5": "",
+                "l6": "",
+                "l7": "",
+                "l8": "",
+                "l9": ""
+            }
+        }
     }
 }
