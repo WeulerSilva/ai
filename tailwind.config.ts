@@ -78,6 +78,7 @@ const config: Config = {
         "logo-6": "url('/images/logo-6.webp')",
         "logo-7": "url('/images/logo-7.png')",
         "logo-8": "url('/images/logo-8.png')",
+        "logo-9": "url('/images/logo-9.png')",
         "bag": "url('/images/bag.png')",
         "box-brand": "url('/images/box-brand.png')",
         "products": "url('/images/products-bg.webp')",

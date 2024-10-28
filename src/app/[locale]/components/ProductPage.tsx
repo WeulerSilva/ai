@@ -1,6 +1,6 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import RawMaterial from "../components/RawMaterial";
 import { AboutSpan } from "../components/AboutSpan";
@@ -17,6 +17,7 @@ export default function ProductPage({ searchParams }: { searchParams: { product?
   const [visibleIcons, setVisibleIcons] = useState(0);
   const [productsName, setProductsName] = useState('adult-sec');
   const [selectedType, setSelectedType] = useState("photo-2");
+  const locale = useLocale();
 
   useEffect(() => {
     if (product) {
@@ -34,7 +35,7 @@ export default function ProductPage({ searchParams }: { searchParams: { product?
     ["bg-logo-2", "limpdent"],
     ["bg-logo-4", "petsec"],
     ["bg-logo-6", "ecovida"],
-    ["bg-logo-7", "al-mp"]
+    [`${locale === 'en' ? "bg-logo-9" : "bg-logo-7"}`,"al-mp"]
   ];
   {/*["bg-logo-8", "al-wl"]*/ }
 
