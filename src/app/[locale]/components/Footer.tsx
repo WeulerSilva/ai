@@ -75,7 +75,6 @@ export const Footer = () => {
                         <div className="flex flex-col text-white">
                             <span>{h('l1')}</span>
                             <ul className="text-bluedark text-[12px] xl:text-[14px]">
-                                <Link href={`/${r}/Contact`}><li>{h('li-1')}</li></Link>
                                 <Link href={`/${r}/Contact`}><li>{h('li-2')}</li></Link>
                             </ul>
                         </div>
@@ -149,7 +148,7 @@ export const Footer = () => {
                                 {/* Segundo UL */}
                                 <ul>
                                     <li>
-                                        <Link href={`/${r}/Products#raw`}>{h('l3-7')}</Link>
+                                        <Link href={`/${r}/Products?product=al-mp&banner=6`}>{h('l3-7')}</Link>
                                     </li>
                                 </ul>
                             </div>
@@ -224,7 +223,6 @@ export const Footer = () => {
                         <div className={`overflow-hidden transition-all duration-500 ${expandedSections[0] ? "h-[44px]" : "h-[0px]"} 
                             border-b-2 border-bluedark`}>
                             <ul className="text-white text-[13px] font-semibold">
-                                <Link href={`/${r}/Contact`}><li>{h('li-1')}</li></Link>
                                 <Link href={`/${r}/Contact`}><li>{h('li-2')}</li></Link>
                             </ul>
                         </div>
@@ -264,7 +262,7 @@ export const Footer = () => {
                                 <ul>
                                     <Link href={`/${r}/Products?product=petsec&banner=4`}><li>{h('l3-5')}</li></Link>
                                     <Link href={`/${r}/Products?product=ecovida&banner=5`}><li>{h('l3-6')}</li></Link>
-                                    <Link href={`/${r}/Products#raw`}><li>{h('l3-7')}</li></Link>
+                                    <Link href={`/${r}/Products?product=al-mp&banner=6`}><li>{h('l3-7')}</li></Link>
                                 </ul>
                             </div>
                         </div>

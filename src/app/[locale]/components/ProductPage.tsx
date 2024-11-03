@@ -289,8 +289,6 @@ export default function ProductPage({ searchParams }: { searchParams: { product?
 
                     <span className="text-bluedark mt-4 text-base font-bold md:text-lg">{p(`${productsName}.${selectedType}.l10`)}</span>
                     <span className="text-bluedark text-base font-semibold md:text-lg">{p(`${productsName}.${selectedType}.l11`)}</span>
-                    <span className="text-bluedark text-base font-semibold md:text-lg">{p(`${productsName}.${selectedType}.l2`)}</span>
-                    <span className="text-bluedark text-base md:text-lg">{p(`${productsName}.${selectedType}.l9`)}</span>
                   </>
                 }
               </div>

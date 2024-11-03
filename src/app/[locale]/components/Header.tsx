@@ -51,8 +51,9 @@ export default function Header() {
                                             {t(item.key)}
                                         </a>
                                     </li>
-                                    {item.key === 'Contact' &&
-                                        <div className="w-[1px] h-[60px] z-30 hidden md:absolute md:top-[-38px] right-[30px] md:flex justify-center items-center">
+                                    {item.key === 'Contact' && 
+                                        <div className="w-[100px] h-[60px] z-30 hidden md:absolute md:bottom-[28px] right-[30px] md:flex justify-center items-center">
+                                            {/*md:top-[-38px]*/}
                                             <LanguageToggle />
                                         </div>
                                     }
