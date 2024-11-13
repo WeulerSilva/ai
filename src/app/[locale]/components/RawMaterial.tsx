@@ -20,7 +20,7 @@ export default function RawMaterial() {
                     ></video>
                 </div>
 
-                <div className="flex justify-center items-center w-full lg:mt-6">
+                <div className="flex justify-center items-center w-full mt-2 lg:mt-6">
                     <AboutSpan text={t('more-sec')}
                         style="bg-bluedark text-laranja mr-6 md:mr-0 text-[12px] lg:text-[16px] xl:text-base"
                         link="/Contact" />

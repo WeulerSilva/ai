@@ -4,6 +4,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import RawMaterial from "../components/RawMaterial";
 import { AboutSpan } from "../components/AboutSpan";
+import Link from "next/link";
 
 type LogoItem = [string, string];
 
@@ -35,7 +36,7 @@ export default function ProductPage({ searchParams }: { searchParams: { product?
     ["bg-logo-2", "limpdent"],
     ["bg-logo-4", "petsec"],
     ["bg-logo-6", "ecovida"],
-    [`${locale === 'en' ? "bg-logo-9" : "bg-logo-7"}`,"al-mp"]
+    [`${locale === 'en' ? "bg-logo-9" : "bg-logo-7"}`, "al-mp"]
   ];
   {/*["bg-logo-8", "al-wl"]*/ }
 
@@ -294,33 +295,39 @@ export default function ProductPage({ searchParams }: { searchParams: { product?
               </div>
             )}
 
-            <a href={`
+            <div className="w-full flex justify-center items-center my-4 flex-col md:space-x-6 md:flex-row">
+              <a href={`
               ${changeBanner === 0 &&
-              "https://online.fliphtml5.com/rhkre/pebv/"
-              ||
-              changeBanner === 1 &&
-              "https://online.fliphtml5.com/gqmqw/mlyt/"
-              ||
-              changeBanner === 2 &&
-              "https://online.fliphtml5.com/rhkre/dvlo/"
-              ||
-              changeBanner === 3 &&
-              "https://online.fliphtml5.com/gqmqw/prhs/"
-              ||
-              changeBanner === 4 &&
-              "https://online.fliphtml5.com/gqmqw/lnju/"
-              ||
-              changeBanner === 5 &&
-              "https://online.fliphtml5.com/rhkre/arbu/"
-              ||
-              changeBanner === 6 &&
-              "https://online.fliphtml5.com/mtgvx/oljx/#p=1"
-              }
+                "https://online.fliphtml5.com/rhkre/pebv/"
+                ||
+                changeBanner === 1 &&
+                "https://online.fliphtml5.com/gqmqw/mlyt/"
+                ||
+                changeBanner === 2 &&
+                "https://online.fliphtml5.com/rhkre/dvlo/"
+                ||
+                changeBanner === 3 &&
+                "https://online.fliphtml5.com/gqmqw/prhs/"
+                ||
+                changeBanner === 4 &&
+                "https://online.fliphtml5.com/gqmqw/lnju/"
+                ||
+                changeBanner === 5 &&
+                "https://online.fliphtml5.com/rhkre/arbu/"
+                ||
+                changeBanner === 6 &&
+                "https://online.fliphtml5.com/mtgvx/oljx/#p=1"
+                }
             `} target="_blank"
-              className="bg-bluedark text-laranja my-2 mb-4 text-[10px] uppercase font-semibold rounded-3xl px-3
+                className="bg-bluedark text-laranja text-[10px] uppercase font-semibold rounded-3xl px-3
                 lg:text-[12px] xl:text-[15px]">
-              {t('folder')}
-            </a>
+                {t('folder')}
+              </a>
+
+              <AboutSpan text={t('more')}
+                        style="bg-bluedark text-laranja mr-6 md:mr-0 text-[12px] lg:text-[16px] xl:text-[15px]"
+                        link="/Contact" />
+            </div>
 
           </div>
 
