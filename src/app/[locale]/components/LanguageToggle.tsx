@@ -29,7 +29,7 @@ export default function LanguageToggle() {
 
     return (
         <>
-            <div className='w-[86px] h-[30px] flex justify-around items-center bg-black'>
+            <div className='w-[86px] h-[30px] flex justify-around items-center bg-black/80 rounded-3xl'>
                 <Link href={buildNewPath('pt')} locale='pt'>
                     <div className={`flex items-center justify-center py-2 hover:bg-laranja/70 rounded-[1px]`}>
                         <Image

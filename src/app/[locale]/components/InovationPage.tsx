@@ -6,8 +6,8 @@ export default function InovationPage() {
     const t = useTranslations('journey');
 
     return (
-        <section className='w-screen h-full flex justify-center items-center flex-col mt-16 lg:mt-14 xl:mt-24'>
-            <div className="w-full h-[60vh] bg-green-200 md:w-[90%] lg:h-[80%]">
+        <section className='w-screen h-full flex justify-center items-center flex-col mt-16 lg:mt-14 xl:mt-36'>
+            <div className="hidden w-full h-[60vh] bg-green-200 md:w-[90%] lg:h-[80%]">
                 <video src="/images/inov.mp4"
                     controls
                     autoPlay

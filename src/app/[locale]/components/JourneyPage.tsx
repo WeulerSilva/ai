@@ -85,7 +85,7 @@ export default function JourneyPage() {
                 content={modalContent}
             />
 
-            <div className="w-[90%] h-full flex-col mb-12 md:w-[80%] bg-green-300">
+            <div className="w-[90%] h-full flex-col mb-12 md:w-[80%]">
                 <video
                     src={firstVideoSource}
                     autoPlay

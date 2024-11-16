@@ -74,10 +74,14 @@ export default function Pages() {
             <div className="w-full flex flex-col justify-center items-center md:flex-row md:items-start md:justify-start md:w-[80%]">
                 <div className="w-full flex flex-col justify-center items-center md:items-start">
                     <h2 className=" text-2xl text-bluedark font-bold mt-12 mb-6 xl:text-4xl">E<span className="text-laranja">-mail</span></h2>
-                    <a href="mailto:info@ank-ilumer.com" className="w-[40px] h-[40px] flex justify-center items-center cursor-pointer rounded-full 
+                    <div className="flex justify-center items-center space-x-4">
+                      <a href="mailto:info@ank-ilumer.com" className="w-[40px] h-[40px] flex justify-center items-center cursor-pointer rounded-full 
                                bg-bluedark text-laranja lg:w-[30px] lg:h-[30px] xl:w-[40px] xl:h-[40px]">
                         <MdEmail className="w-[85%] h-[85%]" />
                     </a>
+                    <a href="mailto:info@ank-ilumer.com" className="text-bluedark font-bold text-lg">info@ank-ilumer.com</a>
+                    </div>
+                    
                 </div>
 
                 <div className="w-full flex justify-center flex-col items-center md:items-start">
