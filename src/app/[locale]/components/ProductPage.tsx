@@ -39,7 +39,7 @@ export default function ProductPage({ searchParams }: { searchParams: { product?
   ];
   {/*["bg-logo-8", "al-wl"]*/ }
 
-
+  
   const nextIcons = () => {
     setVisibleIcons((prev) =>
       prev + 2 >= logos.length ? 0 : prev + 2
