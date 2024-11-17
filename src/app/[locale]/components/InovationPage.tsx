@@ -38,7 +38,7 @@ export default function InovationPage() {
                     </div>
 
                     <div className="w-full h-[50%] flex flex-col space-y-2 md:space-y-0 md:space-x-2 md:flex-row lg:h-full lg:w-[50%]">
-                        <div className="w-full h-full bg-inovation bg-cover bg-center bg-no-repeat md:bg-cover lg:bg-left bg-green-200 xl:bg-left"></div>
+                        <div className="w-full h-full bg-inovation bg-cover bg-center bg-no-repeat md:bg-cover lg:bg-left xl:bg-left"></div>
                     </div>
                 </div>
             </div>
@@ -58,7 +58,7 @@ export default function InovationPage() {
                     </div>
 
                     <div className="w-full h-[50%] flex flex-col space-y-2 lg:border-l-[16px] border-laranja md:space-y-0 md:space-x-2 md:flex-row lg:h-full lg:w-[50%]">
-                        <div className="w-full h-full bg-sustentability bg-cover bg-center bg-no-repeat md:bg-cover lg:bg-center bg-green-200"></div>
+                        <div className="w-full h-full bg-sustentability bg-cover bg-center bg-no-repeat md:bg-cover lg:bg-center"></div>
                     </div>
                 </div>
             </div>

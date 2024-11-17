@@ -28,6 +28,7 @@ export default function LanguageToggle() {
     };
 
     return (
+        
         <>
             <div className='w-[86px] h-[30px] flex justify-around items-center bg-black/80 rounded-3xl'>
                 <Link href={buildNewPath('pt')} locale='pt'>
