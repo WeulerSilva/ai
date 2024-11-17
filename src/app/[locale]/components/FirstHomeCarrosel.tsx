@@ -33,6 +33,7 @@ export const FirstHomeCarrosel = () => {
                             src={firstVideoSource}
                             autoPlay
                             muted
+                            controls
                             loop // Não faz loop automático
                             playsInline
                             className="hidden md:block w-full h-full object-cover 2xl:object-contain"
