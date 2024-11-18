@@ -305,7 +305,7 @@ export default function ProductPage({ searchParams }: { searchParams: { product?
               </div>
             )}
 
-            <div className="w-full flex justify-center items-center my-4 flex-col md:space-x-6 md:flex-row">
+            <div className="w-full flex justify-center items-center my-4 flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
               <a href={`
               ${changeBanner === 0 &&
                 "https://online.fliphtml5.com/wiyip/dqyj/"
