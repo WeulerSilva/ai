@@ -39,7 +39,7 @@ export default function ProductPage({ searchParams }: { searchParams: { product?
   ];
   {/*["bg-logo-8", "al-wl"]*/ }
 
-  
+
   const nextIcons = () => {
     setVisibleIcons((prev) =>
       prev + 2 >= logos.length ? 0 : prev + 2
@@ -248,7 +248,7 @@ export default function ProductPage({ searchParams }: { searchParams: { product?
                   </>
                 }
 
-                {productsName === "lady-sec" && selectedType != 'photo-2' &&
+                {productsName === "lady-sec" && selectedType === 'photo-3' &&
                   <>
                     <span className="text-bluedark font-bold text-base md:text-lg">{p(`${productsName}.${selectedType}.l0`)}</span>
                     <span className="text-bluedark font-semibold text-base md:text-lg">{p(`${productsName}.${selectedType}.l1`)}</span>
@@ -291,28 +291,39 @@ export default function ProductPage({ searchParams }: { searchParams: { product?
                     <span className="text-bluedark text-base font-semibold md:text-lg">{p(`${productsName}.${selectedType}.l11`)}</span>
                   </>
                 }
+
+                {productsName === "lady-sec" && selectedType === 'photo-1' &&
+                  <>
+                    <span className="text-bluedark font-bold text-base md:text-lg">{p(`${productsName}.${selectedType}.l3`)}</span>
+                    <span className="text-bluedark text-base">{p(`${productsName}.${selectedType}.l4`)}</span>
+
+                    <br/>
+                    <span className="text-bluedark font-bold text-base md:text-lg">{p(`${productsName}.${selectedType}.l6`)}</span>
+                    <span className="text-bluedark text-base">{p(`${productsName}.${selectedType}.l7`)}</span>
+                  </>
+                }
               </div>
             )}
 
             <div className="w-full flex justify-center items-center my-4 flex-col md:space-x-6 md:flex-row">
               <a href={`
               ${changeBanner === 0 &&
-                "https://online.fliphtml5.com/rhkre/pebv/"
+                "https://online.fliphtml5.com/wiyip/dqyj/"
                 ||
                 changeBanner === 1 &&
-                "https://online.fliphtml5.com/gqmqw/mlyt/"
+                "https://online.fliphtml5.com/wiyip/edkx/"
                 ||
                 changeBanner === 2 &&
-                "https://online.fliphtml5.com/rhkre/dvlo/"
+                "https://online.fliphtml5.com/wiyip/zdby/"
                 ||
                 changeBanner === 3 &&
                 "https://online.fliphtml5.com/gqmqw/prhs/"
                 ||
                 changeBanner === 4 &&
-                "https://online.fliphtml5.com/gqmqw/lnju/"
+                "https://online.fliphtml5.com/wiyip/xhhm/"
                 ||
                 changeBanner === 5 &&
-                "https://online.fliphtml5.com/rhkre/arbu/"
+                "https://online.fliphtml5.com/wiyip/hixt/"
                 ||
                 changeBanner === 6 &&
                 "https://online.fliphtml5.com/mtgvx/oljx/#p=1"
@@ -324,8 +335,8 @@ export default function ProductPage({ searchParams }: { searchParams: { product?
               </a>
 
               <AboutSpan text={t('more')}
-                        style="bg-bluedark text-laranja mr-6 md:mr-0 text-[12px] lg:text-[16px] xl:text-[15px]"
-                        link="/Contact" />
+                style="bg-bluedark text-laranja mr-6 md:mr-0 text-[12px] lg:text-[16px] xl:text-[15px]"
+                link="/Contact" />
             </div>
 
           </div>
