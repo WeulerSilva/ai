@@ -16,15 +16,12 @@ export const Footer = () => {
     const p = useTranslations('politics');
     const r = useLocale();
 
-    const toggleExpand = (index: number) => {
-        // Alterna o estado da seção clicada
-        setExpandedSections((prev) => {
-            const newState = [...prev];
-            newState[index] = !newState[index]; // Alterna a seção com base no índice
-            return newState;
-        });
-    };
-
+    const toggleExpand = (index: number, forceClose: boolean = false) => {
+    setExpandedSections((prev) => ({
+        ...prev,
+        [index]: forceClose ? false : !prev[index],
+    }));
+};
     const toggleDropdown = () => {
         setIsOpen(!isOpen);
     };
@@ -117,27 +114,27 @@ export const Footer = () => {
                                     {isOpen && (
                                         <ul className="absolute mt-0 bg-laranja text-bluedark shadow-lg rounded-md">
                                             <li>
-                                                <Link href={`/${r}/Products?product=babyfral&banner=2`}>
+                                                <Link onClick={() => setIsOpen(false)} href={`/${r}/Products?product=babyfral&banner=2`}>
                                                     {h('l3-2')}
                                                 </Link>
                                             </li>
                                             <li>
-                                                <Link href={`/${r}/Products?product=lady-sec&banner=1`}>
+                                                <Link onClick={() => setIsOpen(false)} href={`/${r}/Products?product=lady-sec&banner=1`}>
                                                     {h('l3-3')}
                                                 </Link>
                                             </li>
                                             <li>
-                                                <Link href={`/${r}/Products?product=adult-sec&banner=0`}>
+                                                <Link onClick={() => setIsOpen(false)} href={`/${r}/Products?product=adult-sec&banner=0`}>
                                                     {h('l3-4')}
                                                 </Link>
                                             </li>
                                             <li>
-                                                <Link href={`/${r}/Products?product=petsec&banner=4`}>
+                                                <Link onClick={() => setIsOpen(false)} href={`/${r}/Products?product=petsec&banner=4`}>
                                                     {h('l3-5')}
                                                 </Link>
                                             </li>
                                             <li>
-                                                <Link href={`/${r}/Products?product=ecovida&banner=5`}>
+                                                <Link onClick={() => setIsOpen(false)} href={`/${r}/Products?product=ecovida&banner=5`}>
                                                     {h('l3-6')}
                                                 </Link>
                                             </li>

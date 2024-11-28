@@ -90,8 +90,8 @@ export const SecondHomeCarrosel = () => {
       {/* Exibição do banner */}
       <Link className="w-full h-full flex justify-center items-center" href={`${locale}/Products?product=${marca[changeBanner]}&banner=${changeBanner}`}>
         <div
-          className={`w-full h-[430px] mb-4 bg-cover mt-10 bg-center bg-no-repeat relative cursor-pointer md:mt-0 xl:mt-10 md:w-[90%] 
-            z-40 md:bg-cover md:bg-top md:h-[225px] lg:h-[300px] xl:h-[420px] 2xl:h-[560px] xl:bg-contain
+          className={`w-full h-[400px] mb-4 bg-cover mt-10 bg-center bg-no-repeat relative cursor-pointer md:mt-0 xl:mt-10 md:w-[90%] 
+            z-40 md:bg-contain md:bg-top md:h-[280px] lg:h-[340px] xl:h-[420px] 2xl:h-[560px] xl:bg-contain
             ${changeBanner === 0 && locale === 'pt' ? 'bg-banner-mobile-2-pt md:bg-banner-2-pt' : ''}
             ${changeBanner === 0 && locale === 'en' ? 'bg-banner-mobile-2-en md:bg-banner-2-en' : ''}
             ${changeBanner === 0 && locale === 'es' ? 'bg-banner-mobile-2-es md:bg-banner-2-es' : ''}

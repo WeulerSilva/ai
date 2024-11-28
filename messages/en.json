@@ -177,7 +177,7 @@
             "photo-1": "bg-lady-protetor",
             "photo-2": "bg-lady-absorvente",
             "photo-3": "bg-lady-fralda",
-            "type-1": "Panty Liners",
+            "type-1": "Bamboo Liners",
             "type-2": "Feminine Pads and Panty Liners",
             "type-3": "Disposable Pants",
             "type-4": "",
@@ -358,15 +358,15 @@
         "ecovida": {
             "h1": "Sustainability, Well-being, and Protection",
             "photo-1": "bg-eco-fralda",
-            "photo-2": "bg-eco-toalha",
+            "photo-5": "bg-eco-toalha",
             "photo-3": "bg-eco-lenço",
             "photo-4": "bg-eco-papel",
-            "photo-5": "bg-eco-roupa",
+            "photo-2": "bg-eco-roupa",
             "type-1": "Bamboo Diaper",
-            "type-2": "Kitchen Paper and Toilet Paper",
+            "type-5": "Kitchen Paper and Toilet Paper",
             "type-3": "Wet Wipes",
             "type-4": "Toilet Paper",
-            "type-5": "Bamboo Pants",
+            "type-2": "Bamboo Pants",
             "type-6": "",
             "type-7": "",
             "type-8": "",
@@ -635,7 +635,7 @@
                 "l6": "● Anti-odor technology.",
                 "l7": "● Breathable zones.",
                 "l8": "● Wetness indicator.",
-                "l9": "● Repositionable tabs."
+                "l9": "● Repositionable tape."
             },
             "photo-2": {
                 "l1": "Sizes: Medium, Large, Extra Large",
@@ -734,18 +734,18 @@
                 "l14": ""
             },
             "photo-2": {
-                "l1": "Overnight Pad",
+                "l1": "Daily and Night Use Sanitary Pads",
                 "l2": "",
-                "l3": "● Extra soft fabric, super absorbent core, 290 mm, unscented, with wings.",
+                "l3": "● Extra-soft fabric, super-absorbent core, anatomically designed for better body adaptation, with wings, and fragrance-free.",
                 "l4": "",
                 "l5": "",
                 "l6": "Overnight Pad for Heavy Flow",
                 "l7": "● Extra soft fabric, wider base 350 mm, unscented, with wing.",
-                "l8": "Biodegradable Pad",
-                "l9": "● FSC pulp + SAP, 100% bamboo viscose, biodegradable PLA, FSC certified, unscented, anatomical, no wings.",
-                "l10": "Incontinence, Overnight, and Postpartum Pad",
-                "l11": "Sizes: Medium, Large, Extra Large",
-                "l12": "Practical and discreet, lightweight and refreshing, anti-odor technology, soft and breathable fabric, anti-leak protection barrier."
+                "l8": "",
+                "l9": "",
+                "l10": "Panty Liners - All-Day Protection",
+                "l11": "● Extra-soft fabric, delicately protects with its texture, hypoallergenic aloe vera coating, and anatomical design. Provides better body adaptation with breathable materials.",
+                "l12": ""
             },
             "photo-3": {
                 "l0": "Sizes: Medium, Large, Extra Large",

@@ -24,7 +24,7 @@ export default function HomePage() {
               <h6 className='text-[22px] font-semibold text-bluedark pl-6 uppercase font-conthrax md:pl-0 md:text-md lg:text-2xl xl:text-5xl'>
                 ANK & ILUMER
               </h6>
-              <AboutSpan link='/Inovation' style='bg-bluedark text-laranja mr-6 md:mr-0 text-[12px] lg:text-[16px] xl:text-lg' />
+              <AboutSpan link='/Journey' style='bg-bluedark text-laranja mr-6 md:mr-0 text-[12px] lg:text-[16px] xl:text-lg' />
             </div>
 
             <div className='w-full h-[6px] bg-laranja xl:mt-2'></div>
@@ -102,7 +102,7 @@ export default function HomePage() {
                   >{t('more')}</Link>*/}
                 </div>
 
-                <p id='wl' className='w-full mt-4 px-6 text-bluedark text-justify font-nexa font-medium md:px-0 md:mt-6 
+                <p id='wl' className='w-full mt-4 px-6 text-bluedark text-justify tracking-[-1px] font-nexa font-medium md:px-0 md:mt-6 
                   md:text-[16px] md:w-[90%] md:mb-[30px] xl:text-[20px]'>
                   <span className='md:pr-4 lg:pr-6 xl:pr-12'></span>
                   {t('white-p')}

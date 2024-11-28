@@ -237,7 +237,7 @@ export default function ProductPage({ searchParams }: { searchParams: { product?
                 ) &&
                   <>
                     <span className="text-bluedark font-bold text-base md:text-lg">{p(`${productsName}.${selectedType}.l1`)}</span>
-                    <span className="text-bluedark font-semibold text-base md:text-lg">{p(`${productsName}.${selectedType}.l2`)}</span>
+                    <span className="text-bluedark text-base md:text-lg">{p(`${productsName}.${selectedType}.l2`)}</span>
                     <span className="text-bluedark text-base md:text-lg">{p(`${productsName}.${selectedType}.l3`)}</span>
                     <span className="text-bluedark text-base md:text-lg">{p(`${productsName}.${selectedType}.l4`)}</span>
                     <span className="text-bluedark text-base md:text-lg">{p(`${productsName}.${selectedType}.l5`)}</span>
