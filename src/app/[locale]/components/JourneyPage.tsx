@@ -183,8 +183,9 @@ export default function JourneyPage() {
                             </span>
                         </div>
                     </div>
-
-                    <div className="flex justify-start items-start">
+                
+                    {/* removendo o contador de produtos */}
+                    <div className="hidden justify-start items-start">
                         <div className="w-11 h-11 bg-laranja mr-3">
                             <IoMdCart className="w-full h-full text-bluedark" />
                         </div>

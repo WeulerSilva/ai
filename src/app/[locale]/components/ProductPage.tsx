@@ -4,6 +4,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import RawMaterial from "../components/RawMaterial";
 import { AboutSpan } from "../components/AboutSpan";
+import Link from "next/link";
 
 type LogoItem = [string, string];
 
@@ -59,9 +60,18 @@ export default function ProductPage({ searchParams }: { searchParams: { product?
   return (
     <section className='w-screen h-full flex justify-center items-center flex-col mt-16 lg:mt-16 xl:mt-20'>
       <div className='w-[90%] h-full flex justify-start items-start flex-col lg:w-[80%]'>
-        <h1 className='text-bluedark text-[20px] font-bold mb-4 lg:text-[24px] md:mb-0 lg:mb-4 xl:text-3xl 2xl:mb-10'>
-          {t('h1')} <span className='text-laranja'>{t('h1-2')}</span>
-        </h1>
+        <div className="w-full flex flex-col">
+          <h1 className='text-bluedark text-[20px] font-bold mb-2 lg:text-[24px] md:mb-0 lg:mb-4 xl:text-3xl 2xl:mt-10'>
+            {t('h1')} <span className='text-laranja'>{t('h1-2')}</span>
+            <AboutSpan text={t('more-1')}
+              style="hidden bg-bluedark text-laranja ml-10 md:inline md:mr-0 md:mt-4 text-[10px]"
+              link="/Contact" />
+          </h1>
+          <AboutSpan text={t('more-1')}
+            style="w-[200px] bg-bluedark text-laranja text-[10px] mb-6 md:hidden"
+            link="/Contact" />
+        </div>
+
 
         {/* Carrossel para mobile */}
         <div className="w-full h-[60px] bg-white flex justify-center items-center mb-4 md:hidden relative">
@@ -297,7 +307,7 @@ export default function ProductPage({ searchParams }: { searchParams: { product?
                     <span className="text-bluedark font-bold text-base md:text-lg">{p(`${productsName}.${selectedType}.l3`)}</span>
                     <span className="text-bluedark text-base">{p(`${productsName}.${selectedType}.l4`)}</span>
 
-                    <br/>
+                    <br />
                     <span className="text-bluedark font-bold text-base md:text-lg">{p(`${productsName}.${selectedType}.l6`)}</span>
                     <span className="text-bluedark text-base">{p(`${productsName}.${selectedType}.l7`)}</span>
                   </>
