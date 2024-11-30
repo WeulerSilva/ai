@@ -4,7 +4,6 @@ import { useLocale, useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import RawMaterial from "../components/RawMaterial";
 import { AboutSpan } from "../components/AboutSpan";
-import Link from "next/link";
 
 type LogoItem = [string, string];
 
