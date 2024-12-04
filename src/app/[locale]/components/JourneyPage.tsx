@@ -142,7 +142,7 @@ export default function JourneyPage() {
             </div>
 
             <div className="w-screen bg-laranja border-y-4 border-bluedark flex justify-center py-10 lg:h-[200px]" ref={sectionRef}>
-                <div className="w-[90%] h-full text-white flex justify-between items-start flex-col 
+                <div className="w-[90%] h-full text-white flex justify-around items-start flex-col 
            space-y-10 lg:items-center lg:space-y-0 lg:flex-row mg:w-[80%] lg:w-[90%]">
 
                     <div className="flex justify-start items-start">
