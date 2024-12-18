@@ -63,7 +63,7 @@ export default function ProductPage({ searchParams }: { searchParams: { product?
           <h1 className='text-bluedark text-[20px] font-bold mb-2 lg:text-[24px] md:mb-0 lg:mb-4 xl:text-3xl 2xl:mt-10'>
             {t('h1')} <span className='text-laranja'>{t('h1-2')}</span>
             <AboutSpan text={t('more-1')}
-              style="hidden bg-bluedark text-laranja ml-10 md:inline md:mr-0 md:mt-4 text-[10px]"
+              style="hidden bg-bluedark text-laranja ml-10 md:inline md:mr-0 md:mt-4 md:px-4 text-[13px]"
               link="/Contact" />
           </h1>
           <AboutSpan text={t('more-1')}

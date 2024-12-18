@@ -92,32 +92,36 @@ export const EmailContact = () => {
 
             <div className='text-bluedark w-full h-[450px] flex justify-center items-center flex-col text-[15px] text-justify 
                    bg-[#F0F0F0] relative md:mt-4 md:h-[260px] md:pl-0 md:w-[90%]'>
-                    <div className="hidden w-[30%] h-full bg-atendent bg-cover bg-no-repeat left-0
+                <div className="hidden w-[30%] h-full bg-atendent bg-cover bg-no-repeat left-0
                     md:bg-left md:block md:absolute"></div>
                 <div className="w-full h-full flex justify-center items-center flex-col mt-7 md:items-start">
-                <h2 className="w-full text-center text-2xl text-bluedark font-bold mb-6 md:text-right md:pr-[5%] lg:pr-0 lg:text-center xl:text-4xl">
-                    {t('be-1')} <span className="text-laranja">{t('be-2')}</span></h2>
+                    <h2 className="w-full text-center text-2xl text-bluedark font-bold mb-6 md:text-right md:pr-[5%] lg:pr-0 lg:text-center xl:text-4xl">
+                        {t('be-1')} <span className="text-laranja">{t('be-2')}</span></h2>
 
                     <form className="w-full h-full font-gothan flex justify-end items-start  flex-col
                             md:text-[12px] md:flex-row lg:text-[15px] md:w-[95%] md:space-x-6 2xl:space-x-1" onSubmit={sendEmail}>
                         <div className="w-full flex items-center justify-between flex-col md:w-[28%] md:h-[60%]">
                             <div className="w-full flex items-center flex-col mb-6 md:mb-0 md:items-start">
                                 <input type="text"
+                                    id="name"
+                                    name="name"
                                     placeholder={nameError || t('name')}
                                     onChange={(e) => setName(e.target.value)}
                                     value={name}
                                     maxLength={100}
-                                    className={`w-[90%] h-[45px] bg-white rounded-3xl md:w-full 2xl:w-[95%]
+                                    className={`w-[90%] h-[45px] bg-white rounded-3xl pl-3 md:w-full 2xl:w-[95%]
                                         ${nameError ? 'placeholder-red-600' : 'placeholder:text-black placeholder:pl-6'}`}
                                 />
                             </div>
 
                             <div className="w-full flex flex-col items-center md:items-start">
                                 <input type="text"
+                                    id="email"
+                                    name="email"
                                     placeholder={emailError || t('email')}
                                     onChange={(e) => setEmail(e.target.value)}
                                     value={email}
-                                    className={`w-[90%] h-[45px] bg-white rounded-3xl md:w-full 2xl:w-[95%]
+                                    className={`w-[90%] h-[45px] bg-white rounded-3xl pl-3 md:w-full 2xl:w-[95%]
                                         ${emailError ? 'placeholder-red-600' : 'placeholder:text-black placeholder:pl-6'}`}
                                 />
                             </div>
@@ -127,11 +131,13 @@ export const EmailContact = () => {
                         <div className="w-full h-full mt-7 flex justify-center items-center flex-col md:flex-row md:mt-0 md:w-[30%]">
                             <div className="w-full h-full flex justify-start items-center flex-col md:items-start">
                                 <textarea
+                                    id="message"
+                                    name="message"
                                     placeholder={messageError || t('message')}
                                     onChange={(e) => setMessage(e.target.value)}
                                     value={message}
                                     maxLength={500}
-                                    className={`w-[90%] h-[109px] bg-white rounded-2xl md:w-[65%] lg:w-[85%] xl:w-[90%] 2xl:w-[95%]
+                                    className={`w-[90%] h-[109px] bg-white rounded-2xl pl-3 md:w-[65%] lg:w-[85%] xl:w-[90%] 2xl:w-[95%]
                                         ${messageError ? 'placeholder-red-600' : 'placeholder:text-black placeholder:pt-3 placeholder:pl-6'}`}
                                 />
                             </div>
