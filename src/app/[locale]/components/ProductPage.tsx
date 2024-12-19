@@ -8,7 +8,6 @@ import { AboutSpan } from "../components/AboutSpan";
 type LogoItem = [string, string];
 
 export default function ProductPage({ searchParams }: { searchParams: { product?: string, banner?: number } }) {
-  const h = useTranslations('HomePage');
   const t = useTranslations('products');
   const p = useTranslations('product-caracter');
   const product = searchParams?.product;
