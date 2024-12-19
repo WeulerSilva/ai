@@ -71,7 +71,6 @@ export default async function LocaleLayout({
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel='icon' href="/favicon-1.ico" />
-        {/*<meta name="google-site-verification" content="0o2UdGHKMas5T31hyhg1W6i_mzoKLRoLRnFM_ZrbHw8" />*/}
       </head>
       <SpeedInsights />
       <body className='overflow-x-hidden'>

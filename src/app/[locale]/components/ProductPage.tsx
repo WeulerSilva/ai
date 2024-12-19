@@ -185,61 +185,9 @@ export default function ProductPage({ searchParams }: { searchParams: { product?
             <div className={`${t(`${productsName}.${selectedType}`)} w-full h-[165px] bg-cover bg-center bg-no-repeat md:w-full md:h-[350px] lg:h-[420px] xl:h-[530px]  2xl:h-[600px]`}>
             </div>
 
-            {/*
-            {(productsName === "adult-sec" || productsName === 'babyfral') && (
-              <div className="w-full h-full flex justify-start items-center flex-col mt-4 text-[12px] font-bold text-bluedark
-              md:text-lg lg:text-[12px] lg:w-[90%] lg:leading-4 xl:leading-5 xl:text-base 2xl:leading-6 2xl:text-xl">
-                <div className="w-full flex items-center lg:w-[90%]">
-                  <div className="w-full flex items-center flex-col">
-                    <span>{t('size')}</span>
-                  </div>
-
-                  <div className="w-full flex items-center flex-col">
-                    <span>{t('weight')}</span>
-                  </div>
-
-                  <div className="w-full flex items-center flex-col">
-                    <span>{t('waistline')}</span>
-                  </div>
-                </div>
-
-
-
-                <div className="w-full h-full flex justify-start items-center flex-col mt-4">
-                  <div className="w-[90%] flex justify-around items-center bg-white border-2 border-bluedark rounded-3xl mb-4
-                  text-[12px] 2xl:text-lg">
-                    <span className="px-4 w-[116px] 2xl:w-[200px]"><span className="text-base md:text-xl 2xl:text-2xl">M</span> {t('size-1')}</span>
-                    <span className="border-x-2 border-bluedark px-2">{t(`${productsName}.size-m`)}</span>
-                    <span className="px-8 w-[117px] 2xl:w-[200px] 2xl:text-right">{t(`${productsName}.cint-m`)}</span>
-                  </div>
-
-                  <div className="w-[90%] flex justify-around items-center bg-white border-2 border-bluedark rounded-3xl mb-4
-                  text-[12px] 2xl:text-lg">
-                    <span className="px-4 w-[116px] 2xl:w-[200px]"><span className="text-base md:text-2xl 2xl:text-3xl">L</span> {t('size-2')}</span>
-                    <span className="border-x-2 border-bluedark px-2">{t(`${productsName}.size-l`)}</span>
-                    <span className="px-8 w-[118px] 2xl:w-[200px] 2xl:text-right">{t(`${productsName}.cint-l`)}</span>
-                  </div>
-
-                  <div className="w-[90%] flex justify-around items-center bg-white border-2 border-bluedark rounded-3xl mb-4
-                  text-[12px] 2xl:text-lg">
-                    <span className="px-4 w-[116px] 2xl:w-[200px]"><span className="text-base md:text-2xl 2xl:text-3xl">XL</span> {t('size-3')}</span>
-                    <span className="border-x-2 border-bluedark px-2">{t(`${productsName}.size-xl`)}</span>
-                    <span className="px-8 w-[118px] 2xl:w-[200px] 2xl:text-right">{t(`${productsName}.cint-xl`)}</span>
-                  </div>
-                </div>
-              </div>
-            )}
-
-            */}
             {(productsName) && (
               <div className="w-[85%] h-full flex flex-col justify-start items-start pt-8 md:w-[85%] lg:w-[70%]">
                 <h6 className="text-xl mb-4 font-bold text-bluedark md:text-3xl 2xl:text-4xl">{t('carac-1')} <span className="text-laranja">{t('carac-2')}</span></h6>
-                {/*<ul className="text-base font-bold text-bluedark md:text-xl xl:text-2xl">
-                  <li className="list-disc border-b-4 border-white mb-2">{t(`${productsName}.caract1`)}</li>
-                  <li className="list-disc border-b-4 border-white mb-2">{t(`${productsName}.caract2`)}</li>
-                  <li className="list-disc border-b-4 border-white mb-2">{t(`${productsName}.caract3`)}</li>
-                  <li className="list-disc border-b-4 border-white mb-2">{t(`${productsName}.caract4`)}</li>
-                </ul>*/}
 
                 {(productsName === "adult-sec" || productsName === "babyfral" || productsName === "petsec" || productsName === "ecovida"
                   || productsName === "limpdent" || productsName === "al-mp"
@@ -350,68 +298,7 @@ export default function ProductPage({ searchParams }: { searchParams: { product?
 
           </div>
 
-
-
-          {/* Infors about the products */}                                                 {/*justify-start md:py-8 lg:w-[60%] lg:h-[1100px] 2xl:h-[1000px] */}
-          <div className="hidden w-full h-full bg-[#00679a27]  justify-center items-center py-2 ">
-            <div className="w-full h-[90%] bg-white rounded-[40px] flex flex-col justify-start items-center px-6 2xl:h-full lg:w-[90%]">
-              <div className="flex items-start justify-between w-full mt-6 mb-3">
-                <h6 className="text-xl font-bold text-bluelight md:text-2xl xl:text-2xl">{t(`${productsName}.h1`)}</h6>
-                <span className={`w-[120px] h-[60px] bg-contain bg-center bg-no-repeat
-                  ${productsName === 'babyfral' || productsName === 'adult-sec' ? 'bg-unisex' : ''}`}></span>
-              </div>
-
-              <div className="w-full h-full flex flex-col justify-start items-start mb-16">
-                <ul className="space-y-4 text-justify">
-                  <div className={`${productsName === '.' ? 'text-white' : 'text-bluedark'} text-lg font-semibold md:text-xl xl:text-xl`}>
-                    <li className="uppercase">{t(`${productsName}.li-1`)}</li>
-                    <p className="text-base xl:text-lg">{t(`${productsName}.li-11-p`)}</p>
-                    <p className="text-base xl:text-lg">{t(`${productsName}.li-12-p`)}</p>
-                    <p className="text-base xl:text-lg">{t(`${productsName}.li-13-p`)}</p>
-                    <p className="text-base xl:text-lg">{t(`${productsName}.li-14-p`)}</p>
-                    <p className="text-base xl:text-lg">{t(`${productsName}.li-15-p`)}</p>
-                    <p className="text-base xl:text-lg">{t(`${productsName}.li-16-p`)}</p>
-                    <p className="text-base xl:text-lg">{t(`${productsName}.li-17-p`)}</p>
-                    <p className="text-base xl:text-lg">{t(`${productsName}.li-18-p`)}</p>
-                  </div>
-
-                  <div className={`${productsName === '.' ? 'text-white' : 'text-bluedark'} text-lg font-semibold md:text-xl xl:text-xl`}>
-                    <li className="uppercase">{t(`${productsName}.li-2`)}</li>
-                    <p className="text-base xl:text-lg">{t(`${productsName}.li-21-p`)}</p>
-                    <p className="text-base xl:text-lg">{t(`${productsName}.li-22-p`)}</p>
-                    <p className="text-base xl:text-lg">{t(`${productsName}.li-23-p`)}</p>
-                    <p className="text-base xl:text-lg">{t(`${productsName}.li-24-p`)}</p>
-                    <p className="text-base xl:text-lg">{t(`${productsName}.li-25-p`)}</p>
-                    <p className="text-base xl:text-lg">{t(`${productsName}.li-26-p`)}</p>
-                    <p className="text-base xl:text-lg">{t(`${productsName}.li-27-p`)}</p>
-                    <p className="text-base xl:text-lg">{t(`${productsName}.li-28-p`)}</p>
-                  </div>
-
-                  <div className={`${productsName === '.' ? 'text-white' : 'text-bluedark'} text-lg font-semibold md:text-xl xl:text-xl`}>
-                    <li className="uppercase">{t(`${productsName}.li-3`)}</li>
-                    <p className="text-base xl:text-lg">{t(`${productsName}.li-31-p`)}</p>
-                    <p className="text-base xl:text-lg">{t(`${productsName}.li-32-p`)}</p>
-                    <p className="text-base xl:text-lg">{t(`${productsName}.li-33-p`)}</p>
-                    <p className="text-base xl:text-lg">{t(`${productsName}.li-34-p`)}</p>
-                    <p className="text-base xl:text-lg">{t(`${productsName}.li-35-p`)}</p>
-                    <p className="text-base xl:text-lg">{t(`${productsName}.li-36-p`)}</p>
-                    <p className="text-base xl:text-lg">{t(`${productsName}.li-37-p`)}</p>
-                    <p className="text-base xl:text-lg">{t(`${productsName}.li-38-p`)}</p>
-                  </div>
-
-                  <div className='w-full flex items-center justify-center md:justify-start md:items-center'>
-                    <AboutSpan text={h('more-sec')}
-                      style='bg-bluedark text-laranja mt-12 md:mt-0 text-[10px] lg:text-[12px] xl:text-[15px]'
-                      link='/Contact' />
-                  </div>
-
-                </ul>
-              </div>
-            </div>
-          </div>
         </div>
-
-
       </div>
 
       <RawMaterial />

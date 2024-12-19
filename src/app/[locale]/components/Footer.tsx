@@ -176,29 +176,6 @@ export const Footer = () => {
                                             p(''),
                                         )}
                                 >{h('l4-1')}</li>
-
-                                {/*<li className="cursor-pointer"
-                                    onClick={() =>
-                                        openModal(
-                                            p('t1-name-1'),
-                                            p('t1-name-2'),
-                                            p('t1-1'),
-                                            p('t1-2'),
-                                            p('t1-3'),
-                                            p('t1-4'),
-                                            p('t1-5'),
-                                            p(''),
-                                            p(''),
-                                            p(''),
-                                            p(''),
-                                            p(''),
-                                            p(''),
-                                            p(''),
-                                            p(''),
-                                            p(''),
-                                            p(''),
-                                        )}
-                                >{h('l4-2')}</li>*/}
                             </ul>
                         </div>
                     </div>
@@ -296,29 +273,6 @@ export const Footer = () => {
                                             p('')
                                         )}
                                 >{h('l4-1')}</li>
-
-                                {/*<li className="cursor-pointer"
-                                    onClick={() =>
-                                        openModal(
-                                            p('t1-name-1'),
-                                            p('t1-name-2'),
-                                            p('t1-1'),
-                                            p('t1-2'),
-                                            p('t1-3'),
-                                            p('t1-4'),
-                                            p('t1-5'),
-                                            p(''),
-                                            p(''),
-                                            p(''),
-                                            p(''),
-                                            p(''),
-                                            p(''),
-                                            p(''),
-                                            p(''),
-                                            p(''),
-                                            p('t1-name-3'),
-                                        )}
-                                >{h('l4-2')}</li>*/}
                             </ul>
                         </div>
                     </div>

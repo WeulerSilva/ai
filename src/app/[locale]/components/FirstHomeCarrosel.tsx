@@ -3,25 +3,12 @@ import Link from "next/link";
 
 export const FirstHomeCarrosel = () => {
     const locale = useLocale();
-    {/*const [isFirstVideoPlaying, setIsFirstVideoPlaying] = useState(true); // Estado para alternar os vídeos*/}
 
     // Fontes dos vídeos com base no idioma
     const firstVideoSource = `/images/home-${locale}.mp4`;
     {/*const secondVideoSource = `/images/ank-home.mp4`;*/}
     const firstMobileVideoSource = `/images/home-mobile-${locale}.mp4`;
     {/*const secondMobileVideoSource = `/images/ank-home-mobile.mp4`;*/}
-
-    {/*
-    // Função chamada quando o primeiro vídeo termina
-    const handleFirstVideoEnd = () => {
-        setIsFirstVideoPlaying(false); // Muda para o segundo vídeo
-    };
-
-    // Função chamada quando o segundo vídeo termina (reinicia o ciclo)
-    const handleSecondVideoEnd = () => {
-        setIsFirstVideoPlaying(true); // Volta para o primeiro vídeo
-    };
-     */}
 
     return (
         <section>
@@ -47,56 +34,6 @@ export const FirstHomeCarrosel = () => {
                             playsInline
                             className="w-full h-full object-contain md:hidden"
                         ></video>
-
-                        {/*
-                        {/* Vídeo para dispositivos desktop 
-                        {isFirstVideoPlaying ? (
-                            <video 
-                                src={firstVideoSource}
-                                autoPlay
-                                muted
-                                loop={false} // Não faz loop automático
-                                playsInline
-                                className="hidden md:block w-full h-full object-cover 2xl:object-contain"
-                                onEnded={handleFirstVideoEnd} // Alterna para o segundo vídeo
-                            ></video>
-                        ) : (
-                            <video 
-                                src={secondVideoSource}
-                                autoPlay
-                                muted
-                                loop={false} // Não faz loop automático
-                                playsInline
-                                className="hidden md:block w-full h-full object-cover"
-                                onEnded={handleSecondVideoEnd} // Reinicia o ciclo
-                            ></video>
-                        )}
-                        */}
-
-                        {/* Vídeo para dispositivos mobile 
-                        {isFirstVideoPlaying ? (
-                            <video 
-                                src={firstMobileVideoSource}
-                                autoPlay
-                                muted
-                                loop={false} // Não faz loop automático
-                                playsInline
-                                className="w-full h-full object-contain md:hidden"
-                                onEnded={handleFirstVideoEnd} // Alterna para o segundo vídeo
-                            ></video>
-                        ) : (
-                            <video 
-                                src={secondMobileVideoSource}
-                                autoPlay
-                                muted
-                                loop={false} // Não faz loop automático
-                                playsInline
-                                className="w-full h-full object-cover md:hidden"
-                                onEnded={handleSecondVideoEnd} // Reinicia o ciclo
-                            ></video>
-                        )}
-                        */}
-
                     </div>
                 </Link>
             </div>
